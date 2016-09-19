@@ -12,9 +12,15 @@ var gulp = require('gulp'),
 // Set paths
 var paths = {
   sass: ['sass/**/*.+(scss|sass)'],
-  sassStyleguide: ['sass/app.sass'],
+  sassStyleguide: [
+    'sass/**/*.+(scss|sass)',
+    '!sass/_*.+(scss|sass)'
+  ],
   html: ['sass/**/*.html'],
-  mustache: ['html-prototype-sandbox/*.html', 'html-prototype-sandbox/**/*.mustache'],
+  mustache: [
+    'html-prototype-sandbox/*.html',
+    'html-prototype-sandbox/**/*.mustache'
+  ],
   styleguide: 'styleguide',
   scripts: {
     base:       'js',
@@ -27,20 +33,6 @@ gulp.task('scripts', function(){
   return gulp.src(paths.scripts.components)
     .pipe(concat('bootsmacss.js'))
     .pipe(gulp.dest('js'));
-});
-
-
-// Define copying images task
-gulp.task('images', function() {
-  gulp.src(['images/**'])
-    .pipe(gulp.dest(paths.styleguide + '/images'));
-});
-
-
-// Define copying component's javascript task
-gulp.task('js', function() {
-  gulp.src(['js/components/**'])
-    .pipe(gulp.dest(paths.styleguide + '/js/components'));
 });
 
 
@@ -79,7 +71,6 @@ gulp.task('styleguide:generate', function() {
       }))
     .pipe(gulp.dest(paths.styleguide));
 });
-
 gulp.task('styleguide:applystyles', function() {
   return gulp.src('sass/app.sass')
     .pipe(sass({
@@ -88,8 +79,17 @@ gulp.task('styleguide:applystyles', function() {
     .pipe(styleguide.applyStyles())
     .pipe(gulp.dest(paths.styleguide));
 });
-
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
+// Define copying images for styleguide task
+gulp.task('images', function() {
+  gulp.src(['images/**'])
+    .pipe(gulp.dest(paths.styleguide + '/images'));
+});
+// Define copying javascript for styleguide task
+gulp.task('js', function() {
+  gulp.src(['js/components/**'])
+    .pipe(gulp.dest(paths.styleguide + '/js/components'));
+});
 
 
 // Listen folders for changes and apply defined tasks

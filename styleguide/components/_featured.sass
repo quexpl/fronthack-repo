@@ -1,0 +1,43 @@
+// Featured
+//
+// List of featured items. Good for pricing plans and point by point
+// descriptions.
+//
+// Markup: html/featured.html
+//
+// Styleguide 4.5
+
+// Component
+// --------------------------------------------------
+.featured
+  display: table
+  width: 100%
+  padding-left: 0
+  margin-bottom: $line-height-computed
+
+// Elements
+// --------------------------------------------------
+.featured__item
+  display: table-row
+  vertical-align: middle
+  &:not(:last-child)
+    .featured__text,
+    .featured__icon
+      border-bottom: 1px solid $gray-lighter
+
+.featured__text
+  display: table-cell
+  padding: 15px 20px
+
+.featured__icon
+  display: table-cell
+  vertical-align: middle
+
+.featured__circle
+  width: 30px
+  height: 30px
+  float: right
+  +circle($brand-primary)
+  .icon
+    +icon-size(30px)
+    color: #fff

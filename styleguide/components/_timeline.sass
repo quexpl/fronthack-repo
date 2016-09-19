@@ -1,0 +1,110 @@
+// Timeline
+//
+// Reusable page title component
+//
+// Markup: html/timeline.html
+//
+// default               - Default style
+// .timeline__item--past - Disabled effect for past events
+// .timeline__item--now  - Highlighted effect for present event
+//
+// Styleguide 4.23
+
+// Component
+// --------------------------------------------------
+
+// Elements
+// --------------------------------------------------
+.timeline__item,
+.timeline__legend
+  display: table
+  width: 100%
+
+.timeline__legend
+  margin-bottom: $line-height-computed * 0.667
+
+.timeline__time,
+.timeline__text,
+.timeline__legend-time,
+.timeline__legend-text,
+  display: table-cell
+
+.timeline__time,
+.timeline__legend-time
+  width: 70px
+  padding: 0 20px 0 0
+  text-align: left
+  +breakpoint(tablet)
+    width: 125px
+    text-align: right
+  +breakpoint(desktop)
+    padding: 0 40px 0 0
+
+
+.timeline__text,
+.timeline__legend-text
+  padding: 0 0 0 20px
+  +breakpoint(desktop)
+    padding: 0 0 0 40px
+
+.timeline__text
+  border-left: 1px $gray-lighter solid
+  position: relative
+  &:before
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 1px
+    left: -10px
+    background-color: $brand-primary
+    border: 6px #fff solid
+    border-radius: 50%
+
+.timeline__title
+  font-size: $font-size-large
+  font-weight: $font-weight-medium
+  margin: 0
+  text-transform: uppercase
+
+.timeline__description
+  width: 100%
+  padding-bottom: 20px
+  border-bottom: 1px $gray-lighter solid
+  margin-bottom: 20px
+  p
+    margin-bottom: $line-height-computed / 3
+    &:last-child
+      margin: 0
+
+// Last item styling
+.timeline__item:last-of-type
+  .timeline__text
+    border: none
+  .timeline__description
+    border: none
+    padding: 0
+
+
+// Modifiers
+// --------------------------------------------------
+.timeline__item--past
+  &, .timeline__title
+    color: $gray-light
+  .timeline__text:before
+    background-color: $gray-light
+
+.timeline__item--now
+  .timeline__time
+    font-weight: $font-weight-medium
+  .timeline__text:before
+    background-color: $yellow
+
+
+// Dependencies
+// --------------------------------------------------
+.timeline__legend .label-default
+  background-color: $gray-lighter
+  font-size: $font-size-xsmall
+  white-space: normal
