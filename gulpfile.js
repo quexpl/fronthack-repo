@@ -73,6 +73,7 @@ gulp.task('styleguide:generate', function() {
         server: true,
         sideNav: true,
         rootPath: paths.styleguide,
+        appRoot: '/bootsmacss/docs',
         overviewPath: 'README.md',
         commonClass: 'body'
       }))
