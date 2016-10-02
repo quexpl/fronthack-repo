@@ -9,8 +9,7 @@ Bootsmacss
 ## Technologies included
 
 * **[Flexbox Grid](http://flexboxgrid.com/)** - a grid system based on the flex display property.
-* **[FormHack](http://formhack.io/)** - Minimalist form reset 
-* **[]()** - 
+* **[FormHack](http://formhack.io/)** - Minimalist form reset
 * **[SMACSS](https://smacss.com/)** - modular stylesheet approach that splits everything into components
 * **[SASS](http://sass-lang.com/)** - keeps your stylesheets's syntax clean and tidy
 * **[BEM](http://getbem.com/)** - stylish structure for each SASS component
