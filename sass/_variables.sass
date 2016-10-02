@@ -28,21 +28,14 @@ $red: #e50038
 
 //** Primary brand colors assigment
 $brand-primary: $blue
-$brand-primary-dark: $blue-dark
 $brand-primary-light: $azure
-$brand-primary-lighter: $blue-light
-$brand-primary-gray: $gray-light
-$brand-success: $green
-$brand-danger: $red
 
-//== Scaffolding
-//
-//## Settings for some of the most global styles.
+//** Settings for some of the most global styles.
+$body-bg:          $almost-white
+$text-color:       $gray-base
+$link-color:       $gray-base
+$link-hover-color: lighten($link-color, 15%)
 
-$body-bg: #f6f7f8
-
-$text-color: $gray-base
-$link-color: $brand-primary
 
 //== Typography
 //
@@ -52,6 +45,7 @@ $font-family-serif: "Roboto Slab", Georgia, "Times New Roman", Times, serif
 $font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif
 $font-family-sans-condensed: "Roboto Condensed", Helvetica, Arial, sans-serif
 $font-family-base: $font-family-sans-serif
+$font-family-paragraphs: $font-family-serif
 
 $font-size-base: 16px
 $font-size-large: 24px
@@ -64,141 +58,64 @@ $font-size-h3: 20px
 $font-size-h4: 16px
 
 $line-height-computed: 26px
+$paragraphs-margin: $line-height-computed
 
 $font-weight-thin: 200
 $font-weight: 300
-$font-weight-medium: 500
+$font-weight-bold: 500
 
 $headings-font-family: $font-family-serif
 $headings-font-weight: 400
 
-//== Components
-//
-//## Define common padding and border radius sizes and more.
-
-$padding-small-vertical: 4px
-$padding-large-vertical: 12px
-
-//** Z-indexes used across BootSMACSS components
-$z-index-1: 100
-$z-index-2: 101
-$z-index-3: 103
-
-//== Tables
-//
-//## Customizes the `.table` component with basic values, each used across all table variations.
-
-$table-cell-padding: $line-height-computed / 3
-$table-bg-header: $gray-lightest
-$table-bg-accent: $almost-white
-$table-border-color: $gray-light
-
-//== Buttons
-//
-//## Bootstrap's buttons.
-
-$btn-font-weight: 300
-
-$btn-primary-bg: $brand-primary
-$btn-primary-border: darken($brand-primary, 5%)
-
-//== Forms
-//
-//##
-
-$input-border: $gray-light
-$input-border-radius: 0
-$input-border-radius-large: 0
-$input-border-radius-small: 0
-$input-height-base: 40px
-$input-color-placeholder: $brand-primary-dark
 
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
-//** Additional XXS breakpoint provided by BootSMACSS
-$screen-xs: 480px
-$screen-xxs: 0
-$screen-xxs-min: $screen-xxs
-$sm-phone: $screen-xxs-min
-$screen-xxs-max: $screen-xs - 1
+// Max page width
+$max-page-width:       1000px
+$max-page-width-front: 1310px
 
-//== Navs
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  24em
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  48em
+$screen-sm-min:              $screen-sm
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  64em
+$screen-md-min:              $screen-md
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  75em
+$screen-lg-min:              $screen-lg
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1)
+$screen-sm-max:              ($screen-md-min - 1)
+$screen-md-max:              ($screen-lg-min - 1)
+
+
+//== FormHack variable overrides
 //
-//##
+//## Define the maximum width of `.container` for different screen sizes.
 
-//== Tabs
-$tabs-active-background: $brand-primary-lighter
-$tabs-accent: $brand-primary
-
-//== Tooltips
-//
-//##
-
-$tooltip-bg: $brand-primary
-
-//== Labels
-//
-//##
-
-$label-default-bg: $brand-primary-light
-
-//== Modals
-//
-//##
-
-$modal-lg: 1024px
-$modal-backdrop-bg: $gray-lighter
-$modal-backdrop-opacity: 0.9
-
-//== Panels
-//
-//##
-
-//** Panel group horizonta variables.
-$panel-group-horizontal-height: 450px
-$panel-group-horizontal-body-width: 210px
-$panel-group-horizontal-bg: white
-
-//== Breadcrumbs
-//
-//##
-
-$breadcrumb-color: white
-$breadcrumb-padding-vertical: 3px
-
-//== Carousel
-//
-//##
-
-$carousel-caption-bg: $brand-primary
-$carousel-controls-color: $brand-primary
-
-//== Iconography
-//
-//## Specify custom location and filename of the included Glyphicons icon font.
-
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../images/fonts/")
-
-//
-// BootSMACSS variables
-// --------------------------------------------------
-
-//== Social links
-//
-//##
-
-$social-links-size: 50px
-$social-links-color: $brand-primary
-
-//== Ornament
-//
-//##
-
-$ornament-default: $brand-primary
-
-//== News carousel
-//
-//##
-$news-carousel-height: 400px
+// Font
+$fh-font-family: inherit
+$fh-font-size: inherit
+$fh-font-color: inherit

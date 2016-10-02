@@ -7,7 +7,7 @@
 // default              - Default style
 // .cloudlet--fullwidth - Becomes 100% width
 //
-// Styleguide 4.27
+// Styleguide 2.27
 
 
 // Component
@@ -16,7 +16,7 @@
   background-color: $gray-lightest
   position: relative
   margin: 0 20px 20px 0
-  +middle-align
+  display: table
   &:before
     content: ''
     display: block
@@ -31,8 +31,12 @@
 
 // Elements
 // --------------------------------------------------
+.cloudlet__inner
+  display: table-row
+
 .cloudlet__col
   padding: 15px 25px
+  display: table-cell
   &:not(:last-of-type)
     border-right: 1px #fff solid
   h3
