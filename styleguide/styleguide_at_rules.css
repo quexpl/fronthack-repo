@@ -4,7 +4,29 @@
   src: url("../images/fonts/waat-icons.eot?#iefix") format("embedded-opentype"), url("../images/fonts/waat-icons.woff") format("woff"), url("../images/fonts/waat-icons.ttf") format("truetype"), url("../images/fonts/waat-icons.svg#icomoon") format("svg");
 }
 
-@keyframes popover {
+@keyframes popover-inner {
+  0% {
+    opacity: 0;
+    bottom: 25%;
+    transform: scale(0.05) rotate(30deg) rotateX(90deg);
+  }
+
+  50% {
+    transform: rotate(-10deg) rotateX(-2deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 100%;
+    transform: scale(1);
+  }
+}
+
+@keyframes popover-overlay {
   0% {
     opacity: 0;
   }

@@ -2734,6 +2734,10 @@ input[type="submit"] {
 .page-title--condensed {
   padding-bottom: 5px; }
 
+.popover-demo {
+  margin: 150px 0 20px;
+  text-align: center; }
+
 .popover {
   position: relative;
   display: inline-block; }
@@ -2804,16 +2808,38 @@ input[type="submit"] {
     left: auto;
     right: 19px; }
 
-.popover.is-open .popover__overlay,
-.popover.is-open .popover__inner {
+.popover.is-open .popover__overlay {
   display: block;
-  animation-name: popover;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in;
+  animation-name: popover-overlay;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
-@keyframes popover {
+.popover.is-open .popover__inner {
+  display: block;
+  transform-origin: bottom left;
+  animation-name: popover-inner;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes popover-inner {
+  0% {
+    opacity: 0;
+    bottom: 25%;
+    transform: scale(0.05) rotate(30deg) rotateX(90deg); }
+  50% {
+    transform: rotate(-10deg) rotateX(-2deg); }
+  70% {
+    transform: rotate(3deg); }
+  100% {
+    opacity: 1;
+    bottom: 100%;
+    transform: scale(1); } }
+
+@keyframes popover-overlay {
   0% {
     opacity: 0; }
   100% {

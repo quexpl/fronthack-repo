@@ -62,7 +62,12 @@ gulp.task('styleguide:generate', function() {
         sideNav: true,
         rootPath: paths.styleguide.output,
         overviewPath: 'README.md',
-        commonClass: 'body'
+        commonClass: 'body',
+        extraHead: [
+          '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>',
+          '<script src="/js/components/popover.js"></script>',
+        ],
+        disableEncapsulation: true
       }))
     .pipe(gulp.dest(paths.styleguide.output));
 });
