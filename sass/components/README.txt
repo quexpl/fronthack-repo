@@ -1,2 +1,2 @@
 This folder is for all BootSMACSS components.
-Treat !EXAMPLE.SCSS file as guideline while creating new component.
+Copy and rename !EXAMPLE.SASS file to create new component.
