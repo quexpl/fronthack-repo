@@ -3059,12 +3059,16 @@ input[type="submit"] {
   font-size: 12px;
   white-space: normal; }
 
+.layout--footer {
+  margin-top: 40px;
+  background-color: #d8d8d8; }
+
 @media (max-width: 47em) {
-  .layout--4 {
+  .composition--4 {
     background-color: #57c2f0; } }
 
 @media (min-width: 48em) {
-  .layout--4:before {
+  .composition--4:before {
     content: '';
     position: fixed;
     top: 0;
@@ -3074,64 +3078,60 @@ input[type="submit"] {
     z-index: -100;
     right: 0; } }
 
-.layout--4 .layout__header-wrapper {
+.composition--4 .composition__header-wrapper {
   background: url("../images/jpg/header.jpg") center no-repeat;
   background-position: top;
   background-size: cover;
   padding: 0px 0 20px;
   color: #fff; }
-  .layout--4 .layout__header-wrapper h1,
-  .layout--4 .layout__header-wrapper h2 {
+  .composition--4 .composition__header-wrapper h1,
+  .composition--4 .composition__header-wrapper h2 {
     color: #fff;
     margin-bottom: 5px; }
-  .layout--4 .layout__header-wrapper h2 {
+  .composition--4 .composition__header-wrapper h2 {
     font-size: 48px;
     text-transform: none; }
-  .layout--4 .layout__header-wrapper p {
+  .composition--4 .composition__header-wrapper p {
     margin-bottom: 26px;
     text-align: left; }
 
-.layout--4 .layout__content-wrapper {
+.composition--4 .composition__content-wrapper {
   background-color: #fff; }
-  .layout--4 .layout__content-wrapper .layout__content {
+  .composition--4 .composition__content-wrapper .composition__content {
     padding-top: 40px;
     padding-bottom: 20px; }
     @media (min-width: 48em) {
-      .layout--4 .layout__content-wrapper .layout__content {
+      .composition--4 .composition__content-wrapper .composition__content {
         padding-right: 40px;
         padding-bottom: 75px; } }
     @media (min-width: 64em) {
-      .layout--4 .layout__content-wrapper .layout__content {
+      .composition--4 .composition__content-wrapper .composition__content {
         padding-right: 115px; } }
-    .layout--4 .layout__content-wrapper .layout__content section {
+    .composition--4 .composition__content-wrapper .composition__content section {
       margin-bottom: 40px; }
       @media (min-width: 48em) {
-        .layout--4 .layout__content-wrapper .layout__content section {
+        .composition--4 .composition__content-wrapper .composition__content section {
           margin-bottom: 80px; } }
 
-.layout--4 .layout__sidebar-left {
+.composition--4 .composition__sidebar-left {
   padding-top: 20px; }
 
-.layout--4 .layout__sidebar-right {
+.composition--4 .composition__sidebar-right {
   padding-top: 40px;
   padding-bottom: 75px; }
-  .layout--4 .layout__sidebar-right section {
+  .composition--4 .composition__sidebar-right section {
     margin-bottom: 40px; }
     @media (min-width: 48em) {
-      .layout--4 .layout__sidebar-right section {
+      .composition--4 .composition__sidebar-right section {
         margin-bottom: 80px; } }
 
-.layout--4 .layout__header-wrapper .middle-align {
+.composition--4 .composition__header-wrapper .middle-align {
   width: 100%; }
 
-.layout--4 .layout__header-wrapper .btn-default {
+.composition--4 .composition__header-wrapper .btn-default {
   color: #fff;
   border-color: #fff;
   margin: 0 100px; }
 
-.front .layout--4 .layout__header-wrapper {
+.front .composition--4 .composition__header-wrapper {
   padding: 50px 0 40px; }
-
-.section--footer {
-  margin-top: 40px;
-  background-color: #d8d8d8; }
