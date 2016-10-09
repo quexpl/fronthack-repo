@@ -31,12 +31,6 @@ a a.pseudo-class-visited {
   color: #26435d;
 }
 
-.bookmark__link.pseudo-class-hover,
-.bookmark__link.pseudo-class-visited {
-  color: #fff;
-  text-decoration: none;
-}
-
 .btn.pseudo-class-hover,
 button.pseudo-class-hover,
 input[type="button"].pseudo-class-hover,
@@ -74,22 +68,6 @@ input[type="submit"].pseudo-class-hover {
   text-decoration: underline;
 }
 
-.section--header .nav-horizontal .nav-horizontal__item.pseudo-class-last-of-type {
-  padding: 0;
-  margin: 0;
-  border-right: 0;
-}
-
-.section--header .nav-horizontal .nav-horizontal__link.pseudo-class-hover,
-.section--header .nav-horizontal .nav-horizontal__link.pseudo-class-focus {
-  color: #396ea2;
-}
-
-.section--header__breadcrumb .breadcrumb li > a.pseudo-class-hover,
-.section--header__breadcrumb .breadcrumb li > a.pseudo-class-focus {
-  color: #fff;
-}
-
 .listing__item.pseudo-class-last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -99,44 +77,6 @@ input[type="submit"].pseudo-class-hover {
   text-decoration: none;
   border-top: 2px solid #4193a9;
   padding-top: 8px;
-}
-
-.nav-sectiontitles .dropdown .dropdown-menu .nav-sectiontitles__link.pseudo-class-hover {
-  background: none;
-}
-
-.nav-sectiontitles .dropdown .dropdown-menu .nav-sectiontitles__item.pseudo-class-hover {
-  background-color: #4193a9;
-  font-weight: 400;
-}
-
-.nav-sectiontitles .dropdown .dropdown-menu .nav-sectiontitles__item.pseudo-class-hover .nav-sectiontitles__link {
-  color: #fff;
-}
-
-.nav-sectiontitles .dropdown .dropdown-menu .dropdown > .dropdown-menu .nav-sectiontitles__item.pseudo-class-hover {
-  background-color: #4193a9;
-}
-
-.nav-sectiontitles .dropdown .dropdown-menu .dropdown.pseudo-class-hover > .dropdown-menu {
-  display: block;
-}
-
-.nav-sectiontitles .nav-sectiontitles__item.pseudo-class-last-child .dropdown-menu .dropdown > .dropdown-menu {
-  left: -100%;
-}
-
-.nav-tiles .nav-tiles__link.pseudo-class-hover,
-.nav-tiles .nav-tiles__link.pseudo-class-focus {
-  text-decoration: none;
-  background-color: #398093;
-}
-
-.nav-tiles .nav-tiles__link.pseudo-class-hover .nav-tiles__icon-wrapper,
-.nav-tiles .nav-tiles__link.pseudo-class-focus .nav-tiles__icon-wrapper {
-  background-color: #44bbee;
-  border: 0 #4193a9 solid;
-  border-radius: 50%;
 }
 
 .nav-vertical__link.pseudo-class-hover {
