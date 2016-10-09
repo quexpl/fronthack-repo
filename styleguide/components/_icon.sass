@@ -144,18 +144,11 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   // Better Font Rendering
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  // To small icons fix.
-  font-size: 200%
-  display: inline-block
-  width: 0.5em
-  height: 0
-  line-height: 0
-  vertical-align: text-bottom
-  position: relative
+  margin: 0 0.1em
   &:before
-    position: absolute
-    left: -0.25em
-    bottom: 0.33em
+    // To small icons fix.
+    display: inline-block
+    transform: scale(2)
 
 
 // Modifiers

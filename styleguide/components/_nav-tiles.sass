@@ -30,18 +30,16 @@
 .nav-tiles__icon-wrapper
   float: left
   width: 40px
-  height: 40px
+  height: 30px
   margin: 5px 20px 5px 0
+  padding-top: 10px
   position: relative
   display: inline-block
   +circle($brand-primary-light)
-  .icon
-    position: absolute
-    margin: -17px
-    top: 50%
-    left: 50%
-    color: $gray-base
-    +icon-size(35px)
+  color: #fff
+  text-align: center
+  font-size: $font-size-base * 2
+
 
 .nav-tiles__item
   &:not(:last-child)
@@ -85,11 +83,8 @@
 +breakpoint(desktop)
   .nav-tiles__icon-wrapper
     width: 50px
-    height: 50px
+    height: 40px
     margin: 10px 0
-    .icon
-      margin: -19.5px
-      +icon-size(40px)
   .nav-tiles .nav-tiles__item
     vertical-align: middle
     .nav-tiles__link
