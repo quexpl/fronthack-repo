@@ -73,10 +73,8 @@ input[type="submit"].pseudo-class-hover {
   border-bottom: none;
 }
 
-.nav-horizontal--activeoverlined .nav-horizontal__link.pseudo-class-hover {
-  text-decoration: none;
-  border-top: 2px solid #4193a9;
-  padding-top: 8px;
+.nav-horizontal__link.pseudo-class-hover {
+  color: #4193a9;
 }
 
 .nav-vertical__link.pseudo-class-hover {
@@ -85,6 +83,13 @@ input[type="submit"].pseudo-class-hover {
   background-color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.social-links__link.pseudo-class-hover {
+  color: #4193a9;
+  background-color: transparent;
+  border: 1px #4193a9 solid;
+  border-radius: 50%;
 }
 
 .switch__input.pseudo-class-checked + label:before {

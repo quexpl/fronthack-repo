@@ -1,11 +1,8 @@
 // Notification counter
 //
-// Put it inside the icon component to create count of notifications like is on facebook. Bottom left by default.
+// Put it inside the icon component to display for example information, that user has three new messages.
 //
 // Markup: html/notification-counter.html
-//
-// default                          - Default style
-// .notification-counter--top-right - Top right
 //
 // Styleguide 2.15
 
@@ -14,7 +11,9 @@
 // --------------------------------------------------
 .notification-counter
   +circle
-  font-size: $font-size-base * 0.666
+  font-size: 10px
+  font-weight: $font-weight-bold
+  font-family: $font-family-base
   width: 15px
   height: 15px
   line-height: 15px
@@ -22,13 +21,10 @@
   text-align: center
   display: block
   position: absolute
-  bottom: 10%
-  left: 5%
+  bottom: -33%
+  left: -33%
 
-// Modifiers
+// Elements
 // --------------------------------------------------
-.notification-counter--top-right
-  bottom: auto
-  left: auto
-  top: 10%
-  right: 5%
+.notification-counter__wrapper
+  position: relative

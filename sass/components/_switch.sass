@@ -21,6 +21,8 @@
   float: left
   margin-right: 10px
 .switch__label
+  display: inline-block
+  margin: 0
   cursor: pointer
   width: 60px
   height: 30px
@@ -51,14 +53,13 @@
     font-size: 10px
     text-align: center
     line-height: 27px
-    letter-spacing: -2px
     text-indent: -1px
     color: $gray-lighter
 
 // States
 // --------------------------------------------------
 .switch__input
-  display: none
+  display: none !important
   &:checked
     & + label:before
       // Coloured background.
