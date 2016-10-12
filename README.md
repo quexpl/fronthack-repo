@@ -1,4 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/bandanaman/bootsmacss.png?label=ready&title=Ready)](https://waffle.io/bandanaman/bootsmacss)
+
+**Huge change** - Bootsmacss is now standalone framework! We resigned from depending on [Bootstrap](http://getbootstrap.com/)! As a results file strucute become more clean, and SASS structure is more consistent. You can still use the [Bootstrap version](https://github.com/bandanaman/bootsmacss/tree/bootstrap), but it is not supported anymore.
+
 Bootsmacss
 =========
 
@@ -17,7 +20,7 @@ Bootsmacss
 * **[Mustache](https://mustache.github.io/)** - to render static html prototypes as a result of graphic project's implementation that can be shown to client, tested and implemented later to CMS, or deployed to production server
 * **[KSS Styleguide](http://warpspire.com/kss/)** - to render styleguide for your components easly
 * **[Autoprefixer](https://github.com/postcss/autoprefixer)** - adds vendor prefixes to your CSS3 rules
-* **Additional usefull stuff** - Extra components, mixins, helper classes, etc.
+* **Additional usefull stuff** - Extra components, mixins, helper classes, etc. Some of them you may know from Bootstrap
 
 ## Realizations
 Here are the examples of sites we created using BootSMACSS and Drupal:
