@@ -1,0 +1,79 @@
+// composition 4
+//
+// Page composition with fullwidth header and isolated right sidebar.
+//
+// Markup: html/composition--4.html
+//
+// Styleguide 3.composition.4
+
+
+// Component
+// --------------------------------------------------
+.composition--4
+  +twoface-background()
+
+// Elements
+// --------------------------------------------------
+.composition--4
+  .composition__header-wrapper
+    background: url('../images/jpg/header.jpg') center no-repeat
+    background-position: top
+    background-size: cover
+    padding: 0px 0 20px
+    color: #fff
+    h1,
+    h2
+      color: #fff
+      margin-bottom: 5px
+    h2
+      font-size: $font-size-h1
+      text-transform: none
+    p
+      margin-bottom: $line-height-computed
+      text-align: left
+
+  .composition__content-wrapper
+    background-color: #fff
+
+    .composition__content
+      padding-top: 40px
+      padding-bottom: 20px
+      +breakpoint(tablet)
+        padding-right: 40px
+        padding-bottom: 75px
+      +breakpoint(desktop)
+        padding-right: 115px
+
+      section
+        margin-bottom: 40px
+        +breakpoint(tablet)
+          margin-bottom: 80px
+
+  .composition__sidebar-left
+    padding-top: 20px
+
+  .composition__sidebar-right
+    padding-top: 40px
+    padding-bottom: 75px
+
+    section
+      margin-bottom: 40px
+      +breakpoint(tablet)
+        margin-bottom: 80px
+
+// Dependencies
+// --------------------------------------------------
+.composition--4 .composition__header-wrapper
+  .middle-align
+    width: 100%
+
+  .btn-default
+    color: #fff
+    border-color: #fff
+    margin: 0 100px
+
+// Theme
+// --------------------------------------------------
+.front
+  .composition--4 .composition__header-wrapper
+    padding: 50px 0 40px

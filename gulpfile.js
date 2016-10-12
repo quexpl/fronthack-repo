@@ -1,9 +1,9 @@
 // Gather used gulp plugins
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer');
     styleguide = require('sc5-styleguide'),
     livereload = require('gulp-livereload');
     mustache = require('gulp-mustache');
@@ -11,65 +11,66 @@ var gulp = require('gulp'),
 
 // Set paths
 var paths = {
-  sass: ['sass/**/*.+(scss|sass)'],
-  sassStyleguide: [
-    'sass/**/*.+(scss|sass)',
-    '!sass/_*.+(scss|sass)'
-  ],
-  html: ['sass/**/*.html'],
-  mustache: [
-    'html-prototype-sandbox/*.html',
-    'html-prototype-sandbox/**/*.mustache'
-  ],
-  styleguide: 'styleguide',
-  scripts: {
-    base:       'js',
-    components: 'js/components/**/*.js'
+  sass: {
+    input: 'sass/app.sass',
+    allfiles: 'sass/**/*.+(scss|sass)',
+    output: 'css'
+  },
+  mustache: {
+    input: './html-workspace/*.html',
+    output: './html-preview'
+  },
+  styleguide: {
+    sass: [
+      'sass/**/*.+(scss|sass)',
+      '!sass/_*.+(scss|sass)'
+    ],
+    html: 'sass/**/*.html',
+    output: 'styleguide',
   }
 };
 
-// TODO: contat scripts and add them to styleguide
-gulp.task('scripts', function(){
-  return gulp.src(paths.scripts.components)
-    .pipe(concat('bootsmacss.js'))
-    .pipe(gulp.dest('js'));
-});
-
-
 // Define SASS compiling task
 gulp.task('sass', function () {
-  gulp.src('sass/app.sass')
+  gulp.src(paths.sass.input)
     .pipe(sass(
       {outputStyle: 'compressed'}
     ).on('error', sass.logError))
     .pipe(rename('style.css'))
-    .pipe(gulp.dest('css'))
+    .pipe(autoprefixer({
+      browsers: ['last 10 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest(paths.sass.output))
     .pipe(livereload());
 });
 
-
 // Define Mustache compiling task
 gulp.task('mustache', function() {
-  return gulp.src("./html-prototype-sandbox/*.html")
+  return gulp.src(paths.mustache.input)
     .pipe(mustache())
-    .pipe(gulp.dest("./html-prototype"));
+    .pipe(gulp.dest(paths.mustache.output));
 });
-
 
 // Define rendering styleguide task
 // https://github.com/SC5/sc5-styleguide#build-options
 gulp.task('styleguide:generate', function() {
-  return gulp.src(paths.sassStyleguide)
+  return gulp.src(paths.styleguide.sass)
     .pipe(styleguide.generate({
         title: 'Bootsmacss styleguide',
         server: true,
         sideNav: true,
-        rootPath: paths.styleguide,
+        rootPath: paths.styleguide.output,
         appRoot: '/bootsmacss/styleguide',
         overviewPath: 'README.md',
-        commonClass: 'body'
+        commonClass: 'body',
+        extraHead: [
+          '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>',
+          '<script src="/js/components/popover.js"></script>',
+        ],
+        disableEncapsulation: true
       }))
-    .pipe(gulp.dest(paths.styleguide));
+    .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide:applystyles', function() {
   return gulp.src('sass/app.sass')
@@ -77,23 +78,35 @@ gulp.task('styleguide:applystyles', function() {
       errLogToConsole: true
     }))
     .pipe(styleguide.applyStyles())
-    .pipe(gulp.dest(paths.styleguide));
+    .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 // Define copying images for styleguide task
 gulp.task('images', function() {
   gulp.src(['images/**'])
-    .pipe(gulp.dest(paths.styleguide + '/images'));
+    .pipe(gulp.dest(paths.styleguide.output + '/images'));
 });
 // Define copying javascript for styleguide task
 gulp.task('js', function() {
   gulp.src(['js/components/**'])
-    .pipe(gulp.dest(paths.styleguide + '/js/components'));
+    .pipe(gulp.dest(paths.styleguide.output + '/js/components'));
 });
 
 
 // Listen folders for changes and apply defined tasks
-gulp.task('default', ['styleguide', 'sass', 'images', 'js', 'mustache'], function() {
+gulp.task('default', [
+    'styleguide',
+    'sass',
+    'images',
+    'js',
+    'mustache'
+  ], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html, paths.mustache], ['styleguide', 'sass', 'images', 'js', 'mustache']);
+  gulp.watch([paths.sass.allfiles, paths.styleguide.html, paths.mustache.input], [
+    'styleguide',
+    'sass',
+    'images',
+    'js',
+    'mustache'
+  ]);
 });

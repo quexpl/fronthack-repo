@@ -4,7 +4,7 @@
 //
 // Markup: html/switch.html
 //
-// Styleguide 4.26
+// Styleguide 2.26
 
 
 // Component
@@ -21,6 +21,8 @@
   float: left
   margin-right: 10px
 .switch__label
+  display: inline-block
+  margin: 0
   cursor: pointer
   width: 60px
   height: 30px
@@ -35,7 +37,7 @@
     background: $gray-lighter
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5)
     transition: all 0.4s ease-in-out
-    +border-radius(15px)
+    border-radius: 15px
   &:after
     // Dot.
     background: #fff
@@ -45,24 +47,23 @@
     position: absolute
     transition: all 0.3s ease-in-out
     width: 30px
-    +border-radius(50%)
+    border-radius: 50%
     // Inside dot.
     content: '|||'
     font-size: 10px
     text-align: center
     line-height: 27px
-    letter-spacing: -2px
     text-indent: -1px
     color: $gray-lighter
 
 // States
 // --------------------------------------------------
 .switch__input
-  display: none
+  display: none !important
   &:checked
     & + label:before
       // Coloured background.
-      background: $brand-success
+      background: $green
       opacity: 1
     & + label:after
       // Dot.

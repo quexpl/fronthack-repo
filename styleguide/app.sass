@@ -1,15 +1,20 @@
+// CSS reset
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
+
 // Font declarations
 @import "base/fontfaces"
 
-// Flexbox grid
+// Core variables, mixins and utilities
+@import "variables"
+@import "mixins"
+@import "helper-classes"
+@import "responsive-utilities"
+
+// Flexbox Grid
 @import "../node_modules/flexboxgrid/dist/flexboxgrid"
 
-// Bootstrap
-@import "bootstrap"
-
-// Importing mixins
-@import "mixins"
-
+// Formhack forms theming framework
+@import "formhack"
 
 // Base
 //
@@ -18,90 +23,52 @@
 // Styleguide 1
 @import "base/body"
 @import "base/form"
-@import "base/helper_classes"
-@import "base/responsive-utilities"
 @import "base/blockquote"
 @import "base/headings"
 @import "base/link"
 @import "base/list"
-@import "base/label"
 @import "base/paragraph"
-
-
-// Bootstrap
-//
-// Bootstrap components overrides
-//
-// Styleguide 2
-@import "bootstrap/alert"
-@import "bootstrap/breadcrumb"
-@import "bootstrap/buttons"
-@import "bootstrap/carousel"
-@import "bootstrap/jumbotron"
-@import "bootstrap/label"
-@import "bootstrap/list-inline"
-@import "bootstrap/modal"
-@import "bootstrap/nav-pills"
-@import "bootstrap/nav-tabs"
-@import "bootstrap/navbar"
-@import "bootstrap/pagination"
-@import "bootstrap/panel"
-@import "bootstrap/table"
-
-// Layouts
-//
-// Layouts and page composition related elements
-//
-// Styleguide 3
-@import "layouts/layout"
-@import "layouts/layout--1"
-@import "layouts/layout--2"
-@import "layouts/layout--3"
-@import "layouts/layout--4"
-@import "layouts/layout--5"
-@import "layouts/layout--6"
-@import "layouts/layout--7"
-
-// Sections
-@import "layouts/sections/section--footer"
 
 // Components
 //
 // Web components that are not provided by Bootstrap. The clue of Bootsmacss
 //
-// Styleguide 4
+// Styleguide 2
 @import "components/block"
-@import "components/bookmark"
+@import "components/btn"
 @import "components/cloudlet"
 @import "components/counter"
-@import "components/ec-header"
 @import "components/featured"
 @import "components/field"
-@import "components/file"
 @import "components/icon"
-@import "components/infobox"
-@import "components/input-inner-addon"
 @import "components/listing"
 @import "components/live"
 @import "components/logo"
-@import "components/middle-align"
 @import "components/nav-horizontal"
-@import "components/nav-sectiontitles"
 @import "components/nav-subway"
-@import "components/nav-tiles"
 @import "components/nav-vertical"
-@import "components/news-carousel"
 @import "components/notification-counter"
 @import "components/ornament"
 @import "components/page-title"
+@import "components/popover"
 @import "components/ribbon"
 @import "components/slogan"
 @import "components/social-links"
 @import "components/switch"
 @import "components/timeline"
-@import "components/title-more"
 
-// styleguide:ignore:start
-// Hacks
-@import "drupal-hacks"
-// styleguide:ignore:end
+// Layout
+//
+// Composition and page layout related elements
+//
+// Styleguide 3
+@import "layout/layout--footer"
+
+//Compositions
+@import "layout/compositions/composition--1"
+@import "layout/compositions/composition--2"
+@import "layout/compositions/composition--3"
+@import "layout/compositions/composition--4"
+@import "layout/compositions/composition--5"
+@import "layout/compositions/composition--6"
+@import "layout/compositions/composition--7"

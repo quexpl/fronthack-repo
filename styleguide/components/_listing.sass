@@ -10,11 +10,8 @@
 // .listing--no-separators         - Removes separator between every listing item
 // .listing--column-second-above   - Listing where second column is always above the main listing item content
 // .listing--column-sec-above-md   - Listing where second column is above the main listing item content on tablet and desktop devices
-// .listing--2-col-layout          - Listing items in 2 collumn layout
-// .listing--3-col-layout          - Listing items in 3 collumn layout
-// .listing--4-col-layout          - Listing items in 4 collumn layout
 //
-// Styleguide 4.10
+// Styleguide 2.10
 
 $listing-media-width: 160px
 
@@ -73,28 +70,12 @@ $listing-media-width: 160px
   overflow: hidden
 
 
-.listing__icon
-  color: $brand-primary
-  font-size: $font-size-large
-  position: relative
-  top: 2px
-
-
 +breakpoint(phone)
   .listing__item-column-second
     float: left
     margin-right: 30px
     max-width: $listing-media-width
     overflow: hidden
-
-    .listing__item-media-icon
-      width: 40px
-      height: 40px
-      background-color: $gray-lightest
-      text-align: center
-      .icon
-        +icon-size(40px)
-        margin-top: -6px
 
 // Modifiers
 // --------------------------------------------------
@@ -117,39 +98,10 @@ $listing-media-width: 160px
   .listing__item:nth-of-type(even)
     background-color: $gray-lightest
 
-
 .listing--no-separators
   .listing__item
     border-bottom: none
     padding-bottom: 0
-
-
-.listing--2-col-layout,
-.listing--3-col-layout,
-.listing--4-col-layout
-  +make-row()
-  .listing__item
-    border: none
-    padding-bottom: 0
-  .listing__item-column-main
-    border-bottom: 1px $gray-lighter solid
-    padding-bottom: 40px
-  .listing__item-title
-    min-height: 60px
-  p
-    padding: 0
-
-.listing--2-col-layout
-  .listing__item
-    +make-md-column(6)
-
-.listing--3-col-layout
-  .listing__item
-    +make-md-column(4)
-
-.listing--4-col-layout
-  .listing__item
-    +make-md-column(3)
 
 
 // Numbered listing
@@ -158,7 +110,7 @@ $listing-media-width: 160px
 //
 // Markup: html/listing-numbered.html
 //
-// Styleguide 4.10.2
+// Styleguide 2.10.2
 
 
 // Component
@@ -226,13 +178,12 @@ $listing-media-width: 160px
 //
 // Markup: html/listing-notifications.html
 //
-// Styleguide 4.10.3
+// Styleguide 2.10.3
 
 // Component
 // --------------------------------------------------
 .listing--notifications
   .listing__item
-    +middle-align()
     padding: 5px 10px
     width: 100%
     &:after

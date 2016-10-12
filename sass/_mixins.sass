@@ -1,4 +1,29 @@
-// Custom mixins
+//
+// Mixins
+// --------------------------------------------------
+
+// Responsive utilities
+//
+// More easily include all the states for responsive-utilities.sass.
+// [converter] $parent hack
+=responsive-visibility($parent)
+  #{$parent}
+    display: block !important
+
+  table#{$parent}
+    display: table !important
+  tr#{$parent}
+    display: table-row !important
+  th#{$parent},
+  td#{$parent}
+    display: table-cell !important
+
+
+// [converter] $parent hack
+=responsive-invisibility($parent)
+  #{$parent}
+    display: none !important
+
 
 // Breakpoints
 =breakpoint($min: null, $max: null)
@@ -39,99 +64,67 @@
       @content
 
 
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+=clearfix
+  clear: both
+  position: relative
+
+
+// Helper mixins
+//
+// Mixins that are including CSS that is often used.
+
+// Center-align a block level element
+=center-block()
+  display: block
+  margin-left: auto
+  margin-right: auto
+
 // Circle
 =circle($background-color: $brand-primary, $border-width: 0, $border-color: $brand-primary)
   background-color: $background-color
   border: $border-width $border-color solid
-  +border-radius(50%)
+  border-radius: 50%
 
+// Button color setter
+=btn-color($color, $border-color: null, $background-color: transparent)
+  color: $color
+  background-color: $background-color !important
+  @if $border-color
+    border-color: $border-color
+  @else
+    border-color: $color
 
-// Placeholder color
+// Input placeholder color
 =placeholder($color)
-  &::-webkit-input-placeholder
-    color: $color
-  &:-moz-placeholder
-    color: $color
   &::-moz-placeholder
     color: $color
+    opacity: 1
   &:-ms-input-placeholder
     color: $color
+  &::-webkit-input-placeholder
+    color: $color
 
+// Comma separated children
+=comma-separated()
+  & > *:not(:last-of-type)::after
+    content: ', '
 
-// CSS3 Border radius
-=border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  border-radius: $radius
-
-// CSS3 Box shadow (http://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
-=shadow($color, $blur, $horizontal: 0, $vertical: 0, $spread: 0, $inset: "")
-  -webkit-box-shadow: $horizontal $vertical $blur $spread $color #{$inset}
-  -moz-box-shadow: $horizontal $vertical $blur $spread $color #{$inset}
-  box-shadow: $horizontal $vertical $blur $spread $color #{$inset}
-
-// CSS3 Rotate to given degrees (http://www.w3schools.com/cssref/css3_pr_transform-origin.asp)
-=rotate($angle, $origin: 50% 50% 0)
-  -webkit-backface-visibility: hidden
-  -webkit-transform: translateX(-100%) rotate(#{$angle}deg)
-  -webkit-transform-origin: $origin
-  -moz-transform: translateX(-100%) rotate(#{$angle}deg)
-  -moz-transform-origin: $origin
-  -o-transform: translateX(-100%) rotate(#{$angle}deg)
-  -o-transform-origin: $origin
-  transform: translateX(-100%) rotate(#{$angle}deg)
-  transform-origin: $origin
-
-
-// WAAT icon size
-=icon-size($size)
-  font-size: $size
-  &::before
-    bottom: $size / 4.5
-
-
-// Use no-gutters mixin with make-row mixin to achieve grid without gutters.
-=no-gutters
-  margin-right: 0
-  margin-left: 0
-  & > [class^="col-"],
-  & > [class*=" col-"],
-  & > *
-    padding-right: 0 !important
-    padding-left: 0 !important
-
-
-// Reset element placed inside container back to full browser width.
-=full-width
-  margin-left: -$grid-gutter-width / 2
-  margin-right: -$grid-gutter-width / 2
-  +breakpoint(tablet)
-    margin-left: -100%
-    margin-right: -100%
-
-  & > *
-    margin-left: auto !important
-    margin-right: auto !important
-    @extend .container-fluid
-
-
-// Full cover background image.
-=bg-cover($image, $position: top)
-  background: url($image) center no-repeat
-  background-position: $position
-  background-size: cover
-
-// Set of rows where content of all collums is vertically centered.
-=middle-align
-  display: table
-  & > *
-    display: table-row
-    & > *
-      display: table-cell
-      vertical-align: middle
-      &:not(:last-child)
-        padding-right: 30px
-
+// Set display of all childrens of the given element to inline.
+=inline()
+  *
+    display: inline !important
 
 // Colours half of a site background with specified color
 =twoface-background($bg: $brand-primary-light, $side: "right")
@@ -151,14 +144,13 @@
       @else
         left: 0
 
-
-// Add triangle arrow to element with pseudoclasses.
+// Add triangular arrow to element by pseudoclasses.
 =arrow($border-color: $gray-light, $bg-color: white, $side: "left", $direction: "in", $size: 25px, $distance: 50px)
   position: relative
   &:before
-    z-index: $z-index-2
+    z-index: 11
   &:after
-    z-index: $z-index-1
+    z-index: 10
   &:before,
   &:after
     content: ''
@@ -231,13 +223,13 @@
         border-bottom: $size + 1 solid $border-color
     @else if $direction == "out"
       &:before
-        right: $distance
+        left: $distance
         bottom: -$size + 1
         border-right: $size solid transparent
         border-left: $size solid transparent
         border-top: $size solid $bg-color
       &:after
-        right: $distance - 1
+        left: $distance - 1
         bottom: -$size - 1
         border-right: $size + 1 solid transparent
         border-left: $size + 1 solid transparent

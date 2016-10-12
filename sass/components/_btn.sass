@@ -1,0 +1,99 @@
+// Button
+//
+// Button in various<i class="icon icon--circle-ok"></i>versions.
+//
+// Markup: html/btn.html
+//
+// default        - Default
+// .btn--md       - Medium button
+// .btn--lg       - Large button
+// .btn--circle   - Circular button
+// .btn--block    - Block button
+// .btn--light    - light style
+// .btn--primary  - Primary style
+// .btn--link     - Link style
+// .btn--disabled - Disabled style
+//
+//
+// Styleguide 2.30
+
+
+// Component
+// --------------------------------------------------
+.btn
+  background: transparent
+  padding: 7px 20px 9px
+  text-transform: uppercase
+  font-family: $font-family-base
+  font-weight: $font-weight-bold
+  font-size: $font-size-base
+  letter-spacing: 0.05em
+  border: 2px solid
+  border-radius: 20px
+  white-space: nowrap
+  cursor: pointer
+  +btn-color($text-color)
+  &:hover
+    transition: color 250ms, border-color 250ms, background 250ms
+    +btn-color(#fff, $text-color, $text-color)
+
+button,
+input[type="button"],
+input[type="submit"]
+  @extend .btn
+  margin-top: 30px
+
+
+// Modifiers
+// --------------------------------------------------
+.btn--block
+  width: 100%
+  display: block
+  max-width: none
+  text-align: center
+
+.btn--md
+  padding: 11px 25px
+  border-radius: 30px
+
+.btn--lg
+  padding: 15px 25px
+  border-radius: 30px
+
+.btn--circle
+  width: 48px
+  height: 48px
+  line-height: 48px
+  padding: 0
+  margin: -14px 0
+  display: inline-block
+  text-align: center
+  border-radius: 50%
+  +btn-color($text-color, #fff, #fff)
+  &:hover
+    +btn-color(#fff, $gray-base, $gray-base)
+
+.btn--light
+  +btn-color(#fff, #fff)
+  &:hover
+    +btn-color($text-color, #fff, #fff)
+    font-weight: $font-weight-bold
+
+.btn--primary
+  +btn-color(#fff, $brand-primary, $brand-primary)
+  &:hover
+    +btn-color($brand-primary)
+    font-weight: $font-weight-bold
+
+.btn--link
+  border: none
+  padding-left: 0
+  padding-right: 0
+  +btn-color($brand-primary, $brand-primary)
+  &:hover
+    +btn-color($brand-primary)
+    text-decoration: underline
+
+.btn--disabled
+  pointer-events: none
+  opacity: 0.2

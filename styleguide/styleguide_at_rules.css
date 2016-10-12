@@ -1,31 +1,37 @@
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url("../images/fonts/glyphicons-halflings-regular.eot");
-  src: url("../images/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../images/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../images/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../images/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../images/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
-
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-
-  to {
-    background-position: 0 0;
-  }
-}
-
-@keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-
-  to {
-    background-position: 0 0;
-  }
-}
-
-@font-face {
   font-family: 'WAAT Icons';
   src: url("../images/fonts/waat-icons.eot");
   src: url("../images/fonts/waat-icons.eot?#iefix") format("embedded-opentype"), url("../images/fonts/waat-icons.woff") format("woff"), url("../images/fonts/waat-icons.ttf") format("truetype"), url("../images/fonts/waat-icons.svg#icomoon") format("svg");
+}
+
+@keyframes popover-inner {
+  0% {
+    opacity: 0;
+    bottom: 25%;
+    transform: scale(0.05) rotate(30deg) rotateX(-90deg);
+  }
+
+  50% {
+    transform: rotate(-10deg) rotateX(-2deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 100%;
+    transform: scale(1);
+  }
+}
+
+@keyframes popover-overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

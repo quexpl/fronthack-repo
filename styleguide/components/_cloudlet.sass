@@ -7,8 +7,10 @@
 // default              - Default style
 // .cloudlet--fullwidth - Becomes 100% width
 //
-// Styleguide 4.27
-
+// sg-wrapper:
+// <div class="cloudlet-demo"><sg-wrapper-content/></div>
+//
+// Styleguide 2.27
 
 // Component
 // --------------------------------------------------
@@ -16,7 +18,8 @@
   background-color: $gray-lightest
   position: relative
   margin: 0 20px 20px 0
-  +middle-align
+  padding: 15px 25px
+  border-right: 1px #fff solid
   &:before
     content: ''
     display: block
@@ -29,34 +32,7 @@
     border-left: 20px solid $gray-lightest
 
 
-// Elements
+// Demo wrapper
 // --------------------------------------------------
-.cloudlet__col
-  padding: 15px 25px
-  &:not(:last-of-type)
-    border-right: 1px #fff solid
-  h3
-    margin: 0
-
-
-// Dependencies
-// --------------------------------------------------
-.cloudlet .icon
-  margin-left: -15px
-  margin-right: -20px
-  color: $brand-primary-light
-  +icon-size($font-size-base * 4)
-
-
-// States
-// --------------------------------------------------
-.cloudlet--is-active
-  border-left: 5px solid $brand-primary
-  margin-left: -5px
-
-
-// Modifiers
-// --------------------------------------------------
-.cloudlet--fullwidth
-  width: 100%
-  box-sizing: content-box
+.cloudlet-demo
+  margin-top: 30px

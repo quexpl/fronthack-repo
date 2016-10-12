@@ -5,53 +5,21 @@
 //
 // Styleguide 1.3
 
-// Text inputs
-//
-// Various types of inputs
-//
-// Markup: html/input-text.html
-//
-// Styleguide 1.3.2
-
-// Checkbox
-//
-// Default checkbox input
-//
-// Markup: html/checkbox.html
-//
-// Styleguide 1.3.3
-
-// Radio
-//
-// Default radio select
-//
-// Markup: html/radio.html
-//
-// Styleguide 1.3.4
-
-// Validation states
-//
-// Markup: html/validation-states.html
-//
-// Styleguide 1.3.5
-
-// styleguide:ignore:start
-form .error
-  @extend .has-error
-
 label
-  font-weight: $font-weight
-
-.checkbox
-  font-size: $font-size-small
-
-.input-group-addon
-  padding: 0
-
-.form-actions.form-wrapper
-  text-align: center
-
-.form-submit
-  height: 42px
   text-transform: uppercase
-// styleguide:ignore:end
+  margin: 20px 0 7px
+  letter-spacing: 0.05em
+
+input,
+textarea
+  margin: 0 0 10px
+  font-size: 15px
+  font-family: $font-family-serif
+  +placeholder($gray-light)
+
+input,
+textarea,
+select,
+option,
+button
+  transition: border-color 250ms

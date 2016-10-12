@@ -1,61 +1,25 @@
-// Nav
-//
-// Styleguide 4.13
-
 // Horizontal navigation
 //
-// Inline navigation. Prepared also to use with icons.
+// Inline navigation used for example for footer links
 //
 // Markup: html/nav-horizontal.html
 //
-// default                    - Default style
-// .nav-horizontal--condensed - Condensed
-//
-// Styleguide 4.13.1
+// Styleguide 2.13
+
 
 // Component
 // --------------------------------------------------
 .nav-horizontal
-  margin: 0
+  text-transform: uppercase
+  text-align: center
+  margin: 20px 0
   font-size: $font-size-small
-  margin: 15px 0
+  letter-spacing: 0.1em
 
 // Elements
 // --------------------------------------------------
-.nav-horizontal .nav-horizontal__item
-  padding: 0 15px
-  display: inline
-
 .nav-horizontal__link
-  color: $brand-primary-dark
   display: inline-block
-  text-align: center
-
-// Modifiers
-// --------------------------------------------------
-.nav-horizontal--condensed
-  .nav-horizontal__item
-    padding: 0 3px
-    font-size: $font-size-xsmall
-    &:not(:last-child)
-      border-right: 1px solid $gray-base
-
-.nav-horizontal--activeoverlined
-  text-align: left
-  text-transform: uppercase
-  padding-left: 0
-  margin-left: -15px
-  font-size: $font-size-large
-  .nav-horizontal__item
-    &.is-active,
-    &.active,
-    &.active-trail
-      & > a
-        border-top: 2px solid $brand-primary
-        padding-top: 8px
-  .nav-horizontal__link
-    color: $text-color
-    &:hover
-      text-decoration: none
-      border-top: 2px solid $brand-primary
-      padding-top: 8px
+  margin: 15px 30px
+  &:hover
+    color: $brand-primary

@@ -1,0 +1,119 @@
+// Popover
+//
+// A tooltip overlay switched by .is-open class.
+//
+// Markup: html/popover.html
+//
+// sg-wrapper:
+// <div class="popover-demo"><sg-wrapper-content/></div>
+//
+// default        - Default positioned to right
+// .popover--left - Positioned to left
+//
+// Styleguide 2.29
+
+$popover-width: 230px
+
+// Component
+// --------------------------------------------------
+.popover
+  position: relative
+  display: inline-block
+
+// Elements
+// --------------------------------------------------
+.popover__inner
+  position: absolute !important
+  bottom: 100%
+  left: 50%
+  width: $popover-width
+  margin: 0 0 40px -35px
+  padding: 20px
+  box-sizing: border-box
+  display: none
+  background-color: #fff
+  border-radius: 7px
+  text-align: left
+  text-transform: none
+  line-height: $line-height-computed
+  color: $text-color
+  z-index: 101
+  box-shadow: $gray-lighter 2px 0 0
+  +arrow($gray-lighter, #fff, "bottom", "out", 15px, 20px)
+
+.popover__title
+  font-size: 18px
+  font-weight: $headings-font-weight
+  margin-bottom: 12px
+
+.popover__overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: none
+  z-index: 100
+  background-color: transparentize($gray-base, 0.8)
+
+// Modifiers
+// --------------------------------------------------
+.popover--left
+  .popover__inner
+    margin-left: -$popover-width+35px
+    &::before
+      left: auto
+      right: 20px
+    &::after
+      left: auto
+      right: 19px
+
+
+// States
+// --------------------------------------------------
+.popover.is-open
+  .popover__overlay
+    display: block
+    animation:
+      name: popover-overlay
+      duration: 500ms
+      timing-function: ease-in-out
+      iteration-count: 1
+      fill-mode: forwards
+  .popover__inner
+    display: block
+    transform-origin: bottom left
+    animation:
+      name: popover-inner
+      duration: 500ms
+      timing-function: ease-in-out
+      iteration-count: 1
+      fill-mode: forwards
+
+@keyframes popover-inner
+  0%
+    opacity: 0
+    bottom: 25%
+    transform: scale(0.05) rotate(30deg) rotateX(-90deg)
+  50%
+    transform: rotate(-10deg) rotateX(-2deg)
+  70%
+    transform: rotate(3deg)
+  100%
+    opacity: 1
+    bottom: 100%
+    transform: scale(1)
+
+
+@keyframes popover-overlay
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+// Demo wrapper
+// --------------------------------------------------
+.popover-demo
+  margin: 150px 0 20px
+  text-align: center
