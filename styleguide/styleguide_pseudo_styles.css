@@ -68,7 +68,7 @@ input[type="submit"].pseudo-class-hover {
   text-decoration: underline;
 }
 
-.listing__item.pseudo-class-last-child {
+.listing-item.pseudo-class-last-child {
   padding-bottom: 0;
   border-bottom: none;
 }
