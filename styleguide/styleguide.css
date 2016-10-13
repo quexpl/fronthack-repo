@@ -1978,18 +1978,17 @@ input[type="submit"] {
 
 .logo {
   display: block;
-  width: 172px;
-  height: 118px;
+  width: 300px;
+  height: 80px;
   background: url("../images/logo.png") no-repeat;
   background-size: 100%; }
   @media (min-width: 48em) {
     .logo {
-      width: 172px;
-      height: 118px; } }
+      width: 300px;
+      height: 80px; } }
 
 .nav-horizontal {
   text-transform: uppercase;
-  text-align: center;
   margin: 20px 0;
   font-size: 14px;
   letter-spacing: 0.1em; }
@@ -2400,8 +2399,16 @@ input[type="submit"] {
   font-size: 12px;
   white-space: normal; }
 
+.layout--header {
+  background-color: #d8d8d8; }
+
+.layout--content {
+  background-color: #f5f6f8;
+  padding: 40px 20px; }
+
 .layout--footer {
-  margin-top: 40px;
+  margin-top: 80px;
+  padding: 60px 0;
   background-color: #d8d8d8; }
 
 @media (max-width: 47em) {
