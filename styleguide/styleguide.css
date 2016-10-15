@@ -2075,9 +2075,6 @@ input[type="submit"] {
 .ornament--orange:before {
   background-color: #e75404; }
 
-.ornament.page-title {
-  margin-top: 0; }
-
 .page-title {
   text-transform: uppercase;
   margin-bottom: 60px; }
@@ -2393,11 +2390,6 @@ input[type="submit"] {
 
 .timeline__item--now .timeline__text:before {
   background-color: #ffd429; }
-
-.timeline__legend .label-default {
-  background-color: #f5f6f8;
-  font-size: 12px;
-  white-space: normal; }
 
 .layout--header {
   background-color: #d8d8d8; }
