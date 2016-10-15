@@ -1987,6 +1987,67 @@ input[type="submit"] {
       width: 300px;
       height: 80px; } }
 
+.modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(16, 28, 39, 0.2); }
+
+.modal__inner {
+  display: none;
+  position: fixed;
+  top: 30%;
+  width: 400px;
+  box-shadow: 0 5px 10px 0 #3d6a93;
+  z-index: 101; }
+
+.modal__title {
+  background-color: #4193a9;
+  padding: 10px 30px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500; }
+
+.modal__content {
+  background-color: #fff;
+  padding: 30px;
+  font-weight: 500; }
+
+.modal.is-open .modal__overlay {
+  display: block;
+  animation-name: modal-overlay;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.modal.is-open .modal__inner {
+  display: block;
+  animation-name: modal-inner;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.modal-demo {
+  margin: 150px 0; }
+
+@keyframes modal-overlay {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modal-inner {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .nav-horizontal {
   text-transform: uppercase;
   margin: 20px 0;
@@ -2131,12 +2192,12 @@ input[type="submit"] {
   margin-bottom: 12px; }
 
 .popover__overlay {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: none;
   z-index: 100;
   background-color: rgba(16, 28, 39, 0.2); }
 

@@ -4,6 +4,26 @@
   src: url("../images/fonts/waat-icons.eot?#iefix") format("embedded-opentype"), url("../images/fonts/waat-icons.woff") format("woff"), url("../images/fonts/waat-icons.ttf") format("truetype"), url("../images/fonts/waat-icons.svg#icomoon") format("svg");
 }
 
+@keyframes modal-overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-inner {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes popover-inner {
   0% {
     opacity: 0;

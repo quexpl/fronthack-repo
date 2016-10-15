@@ -66,6 +66,7 @@ gulp.task('styleguide:generate', function() {
         extraHead: [
           '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>',
           '<script src="/js/components/popover.js"></script>',
+          '<script src="/js/components/modal.js"></script>',
         ],
         disableEncapsulation: true
       }))

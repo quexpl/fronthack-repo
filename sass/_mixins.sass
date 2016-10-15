@@ -106,6 +106,16 @@
   @else
     border-color: $color
 
+// Full page overlay
+=overlay()
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 100
+  background-color: transparentize($gray-base, 0.8)
+
 // Input placeholder color
 =placeholder($color)
   &::-moz-placeholder
