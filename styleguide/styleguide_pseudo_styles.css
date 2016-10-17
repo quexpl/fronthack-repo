@@ -34,38 +34,50 @@ a a.pseudo-class-visited {
 .btn.pseudo-class-hover,
 button.pseudo-class-hover,
 input[type="button"].pseudo-class-hover,
-input[type="submit"].pseudo-class-hover {
+input[type="submit"].pseudo-class-hover,
+.btn.pseudo-class-focus,
+button.pseudo-class-focus,
+input[type="button"].pseudo-class-focus,
+input[type="submit"].pseudo-class-focus {
   transition: color 250ms, border-color 250ms, background 250ms;
   color: #fff;
   background-color: #101c27 !important;
   border-color: #101c27;
 }
 
-.btn--circle.pseudo-class-hover {
+.btn--circle.pseudo-class-hover,
+.btn--circle.pseudo-class-focus {
   color: #fff;
   background-color: #101c27 !important;
   border-color: #101c27;
 }
 
-.btn--light.pseudo-class-hover {
+.btn--light.pseudo-class-hover,
+.btn--light.pseudo-class-focus {
   color: #101c27;
   background-color: #fff !important;
   border-color: #fff;
   font-weight: 500;
 }
 
-.btn--primary.pseudo-class-hover {
+.btn--primary.pseudo-class-hover,
+.btn--primary.pseudo-class-focus {
   color: #4193a9;
   background-color: transparent !important;
   border-color: #4193a9;
   font-weight: 500;
 }
 
-.btn--link.pseudo-class-hover {
+.btn--link.pseudo-class-hover,
+.btn--link.pseudo-class-focus {
   color: #4193a9;
   background-color: transparent !important;
   border-color: #4193a9;
   text-decoration: underline;
+}
+
+.dropdown__link.pseudo-class-hover {
+  background-color: #d8d8d8;
 }
 
 .listing-item.pseudo-class-last-child {

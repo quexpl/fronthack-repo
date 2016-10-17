@@ -34,7 +34,7 @@
   white-space: nowrap
   cursor: pointer
   +btn-color($text-color)
-  &:hover
+  &:hover, &:focus
     transition: color 250ms, border-color 250ms, background 250ms
     +btn-color(#fff, $text-color, $text-color)
 
@@ -73,18 +73,18 @@ input[type="submit"]
   text-align: center
   border-radius: 50%
   +btn-color($text-color, #fff, #fff)
-  &:hover
+  &:hover, &:focus
     +btn-color(#fff, $gray-base, $gray-base)
 
 .btn--light
   +btn-color(#fff, #fff)
-  &:hover
+  &:hover, &:focus
     +btn-color($text-color, #fff, #fff)
     font-weight: $font-weight-bold
 
 .btn--primary
   +btn-color(#fff, $brand-primary, $brand-primary)
-  &:hover
+  &:hover, &:focus
     +btn-color($brand-primary)
     font-weight: $font-weight-bold
 
@@ -93,7 +93,7 @@ input[type="submit"]
   padding-left: 0
   padding-right: 0
   +btn-color($brand-primary, $brand-primary)
-  &:hover
+  &:hover, &:focus
     +btn-color($brand-primary)
     text-decoration: underline
 
