@@ -14,7 +14,7 @@
 
 $popover-width: 230px
 
-// Component
+// Block
 // --------------------------------------------------
 .popover
   position: relative
@@ -47,14 +47,9 @@ $popover-width: 230px
   margin-bottom: 12px
 
 .popover__overlay
-  position: fixed
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
   display: none
-  z-index: 100
-  background-color: transparentize($gray-base, 0.8)
+  +overlay
+
 
 // Modifiers
 // --------------------------------------------------
