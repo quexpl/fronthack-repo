@@ -1,13 +1,13 @@
-[![Stories in Ready](https://badge.waffle.io/bandanaman/bootsmacss.png?label=ready&title=Ready)](https://waffle.io/bandanaman/bootsmacss)
+[![Stories in Ready](https://badge.waffle.io/frontcraft/bootsmacss.png?label=ready&title=Ready)](https://waffle.io/frontcraft/bootsmacss)
 
-**Huge change** - Bootsmacss is now standalone framework! We resigned from depending on [Bootstrap](http://getbootstrap.com/)! As a results file strucute become more clean, and SASS structure is more consistent. You can still use the [Bootstrap version](https://github.com/bandanaman/bootsmacss/tree/bootstrap), but it is not supported anymore.
+**Huge change** - Bootsmacss is now standalone framework! We resigned from depending on [Bootstrap](http://getbootstrap.com/)! As a results file strucute become more clean, and SASS structure is more consistent. You can still use the [Bootstrap version](https://github.com/frontcraft/bootsmacss/tree/bootstrap), but it is not supported anymore.
 
 Bootsmacss
 =========
 
 **Bootsmacss is a fusion of technologies that will raise your workflow to new level. Make your markup and styles scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
 
-[View Bootsmacss styleguide demo](http://bandanaman.github.io/bootsmacss/styleguide/)
+[View Bootsmacss styleguide demo](http://frontcraft.github.io/bootsmacss/styleguide/)
 
 ## Technologies included
 
@@ -32,7 +32,7 @@ Here are the examples of sites we created using BootSMACSS and Drupal:
 
 ### How to work with BootSMACSS?
 
-You will find a tutorial in [BootSMACSS wiki pages](https://github.com/bandanaman/bootsmacss/wiki/1.-Installation).
+You will find a tutorial in [BootSMACSS wiki pages](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation).
 
 ### Creators
 
