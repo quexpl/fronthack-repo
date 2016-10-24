@@ -1135,6 +1135,38 @@ blockquote {
   blockquote p:last-child {
     margin-bottom: 0; }
 
+.color {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500; }
+
+.color--gray-base {
+  background-color: #101c27; }
+
+.color--gray-light {
+  background-color: #d8d8d8; }
+
+.color--gray-lighter {
+  background-color: #f5f6f8;
+  color: #101c27; }
+
+.color--gray-lightest {
+  background-color: #fafafa;
+  color: #101c27; }
+
+.color--almost-white {
+  background-color: #fdfdfd;
+  color: #101c27; }
+
+.color--brand-primary {
+  background-color: #4193a9; }
+
+.color--brand-primary-light {
+  background-color: #57c2f0; }
+
 label {
   text-transform: uppercase;
   margin: 20px 0 7px;
