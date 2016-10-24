@@ -2,7 +2,7 @@
 //
 // Markup: html/list.html
 //
-// Styleguide 1.2.5
+// Styleguide 1.2.4
 
 $listing-items-padding: $line-height-computed/6
 
@@ -20,7 +20,6 @@ ol:not([class])
 ul:not([class])
   padding-left: 0
   li:not([class])
-    list-style: none
     position: relative
     padding-left: 30px
     &:before
@@ -32,6 +31,8 @@ ul:not([class])
       left: 0
     ul li:before
         content: "\25E6"
+li
+  list-style: none
 
 //Ordered list
 ol:not([class])

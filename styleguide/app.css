@@ -1122,6 +1122,19 @@ body {
 img {
   vertical-align: bottom; }
 
+blockquote {
+  font-size: 16px;
+  font-style: italic;
+  border-left: 5px solid #f5f6f8;
+  margin: 0 0 20px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  text-align: justify; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
 label {
   text-transform: uppercase;
   margin: 20px 0 7px;
@@ -1149,17 +1162,6 @@ select,
 option,
 button {
   transition: border-color 250ms; }
-
-blockquote {
-  font-size: 16px;
-  font-style: italic;
-  border-left: 5px solid #f5f6f8;
-  margin: 0 0 20px;
-  padding: 12px 24px;
-  position: relative;
-  overflow: hidden;
-  clear: both;
-  text-align: justify; }
 
 h1, .h1,
 h2, .h2,
@@ -1218,7 +1220,6 @@ ol:not([class]) {
 ul:not([class]) {
   padding-left: 0; }
   ul:not([class]) li:not([class]) {
-    list-style: none;
     position: relative;
     padding-left: 30px; }
     ul:not([class]) li:not([class]):before {
@@ -1230,6 +1231,9 @@ ul:not([class]) {
       left: 0; }
     ul:not([class]) li:not([class]) ul li:before {
       content: "\25E6"; }
+
+li {
+  list-style: none; }
 
 ol:not([class]) {
   -webkit-padding-start: 30px; }
@@ -1546,7 +1550,7 @@ input[type="submit"] {
   display: table;
   width: 100%;
   padding-left: 0;
-  margin-bottom: 26px; }
+  margin: 0 0 26px; }
 
 .featured__item {
   display: table-row;
@@ -1559,11 +1563,13 @@ input[type="submit"] {
   display: table-cell;
   padding: 15px 20px; }
 
-.featured__icon {
+.featured__icon-wrapper {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  line-height: 30px; }
 
-.featured__circle {
+.featured__icon {
+  color: #fff;
   width: 30px;
   height: 30px;
   float: right;
@@ -1571,8 +1577,6 @@ input[type="submit"] {
   background-color: #4193a9;
   border: 0 #4193a9 solid;
   border-radius: 50%; }
-  .featured__circle .icon {
-    color: #fff; }
 
 .field__label {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
