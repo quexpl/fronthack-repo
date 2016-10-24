@@ -1264,7 +1264,7 @@ ul:not([class]) {
     ul:not([class]) li:not([class]) ul li:before {
       content: "\25E6"; }
 
-li {
+ul li {
   list-style: none; }
 
 ol:not([class]) {
