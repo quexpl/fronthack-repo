@@ -24,6 +24,10 @@ input[type="reset"].pseudo-class-focus {
   color: inherit;
 }
 
+blockquote p.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
 a.pseudo-class-hover,
 a.pseudo-class-active,
 a.pseudo-class-focus,

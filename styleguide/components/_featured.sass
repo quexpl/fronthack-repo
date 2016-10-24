@@ -1,7 +1,6 @@
 // Featured
 //
-// List of featured items. Good for pricing plans and point by point
-// descriptions.
+// List of featured items for pricing plans and point by point descriptions.
 //
 // Markup: html/featured.html
 //
@@ -13,7 +12,7 @@
   display: table
   width: 100%
   padding-left: 0
-  margin-bottom: $line-height-computed
+  margin: 0 0 $line-height-computed
 
 // Elements
 // --------------------------------------------------
@@ -29,15 +28,15 @@
   display: table-cell
   padding: 15px 20px
 
-.featured__icon
+.featured__icon-wrapper
   display: table-cell
   vertical-align: middle
+  line-height: 30px
 
-.featured__circle
+.featured__icon
+  color: #fff
   width: 30px
   height: 30px
   float: right
   text-align: center
   +circle($brand-primary)
-  .icon
-    color: #fff
