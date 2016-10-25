@@ -2,15 +2,15 @@
   "name": "bootmacss",
   "version": "0.1.0",
   "devDependencies": {
-    "flexboxgrid": "~6.3.1",
+    "flexboxgrid-sass": "^8.0.5",
     "gulp": "~3.9.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-livereload": "~3.8.1",
+    "gulp-mustache": "~2.2.0",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "~2.1.1",
     "gulp-watch": "~4.3.5",
-    "sc5-styleguide": "~0.3.41",
-    "gulp-livereload": "~3.8.1",
-    "gulp-mustache": "~2.2.0"
+    "sc5-styleguide": "~0.3.41"
   },
   "engines": {
     "node": ">=0.10.0"

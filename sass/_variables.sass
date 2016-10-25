@@ -72,38 +72,14 @@ $headings-font-weight: 400
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
-// Max page width
-$max-page-width:       1000px
-$max-page-width-front: 1310px
-
 // Extra small screen / phone
-//** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  24em
-//** Deprecated `$screen-xs-min` as of v3.2.0
-$screen-xs-min:              $screen-xs
-//** Deprecated `$screen-phone` as of v3.0.1
-$screen-phone:               $screen-xs-min
-
+$screen-xs-min:              0
 // Small screen / tablet
-//** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  48em
-$screen-sm-min:              $screen-sm
-//** Deprecated `$screen-tablet` as of v3.0.1
-$screen-tablet:              $screen-sm-min
-
+$screen-sm-min:              48em
 // Medium screen / desktop
-//** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  64em
-$screen-md-min:              $screen-md
-//** Deprecated `$screen-desktop` as of v3.0.1
-$screen-desktop:             $screen-md-min
-
+$screen-md-min:              62em
 // Large screen / wide desktop
-//** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  75em
-$screen-lg-min:              $screen-lg
-//** Deprecated `$screen-lg-desktop` as of v3.0.1
-$screen-lg-desktop:          $screen-lg-min
+$screen-lg-min:              75em
 
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1)
@@ -111,9 +87,22 @@ $screen-sm-max:              ($screen-md-min - 1)
 $screen-md-max:              ($screen-lg-min - 1)
 
 
+//== Flexbox variable overrides
+//
+//## https://github.com/hugeinc/flexboxgrid-sass#use
+
+// Set the gutter between columns.
+$gutter-width: 1rem
+// Set a margin for the container sides.
+$outer-margin: 1.5rem
+// Apply breakpoints configuration to Flexbox
+$breakpoints: sm $screen-sm-min 46rem, md $screen-md-min 61rem, lg $screen-lg-min 71rem
+$flexboxgrid-max-width: 1000px
+
+
 //== FormHack variable overrides
 //
-//## Define the maximum width of `.container` for different screen sizes.
+//## http://formhack.io/
 
 // Font
 $fh-font-family: inherit

@@ -11,28 +11,28 @@ Bootsmacss
 
 ## Technologies included
 
-* **[Flexbox Grid](http://flexboxgrid.com/)** - a grid system based on the flex display property.
-* **[FormHack](http://formhack.io/)** - Minimalist form reset
 * **[SMACSS](https://smacss.com/)** - modular stylesheet approach that splits everything into components
-* **[SASS](http://sass-lang.com/)** - keeps your stylesheets's syntax clean and tidy
-* **[BEM](http://getbem.com/)** - stylish structure for each SASS component
+* **[Sass](http://sass-lang.com/)** - keeps your stylesheets's syntax clean and tidy
+* **[Flexbox Grid Sass](http://hugeinc.github.io/flexboxgrid-sass/)** - Sass version of grid system based on the flex display property.
+* **[FormHack](http://formhack.io/)** - Minimalist form reset written i Sass
+* **[BEM](http://getbem.com/)** - stylish structure for each component
 * **[GULP](http://gulpjs.com/)** - to automate various tasks and compile your work on file save
 * **[Mustache](https://mustache.github.io/)** - to render static html prototypes as a result of graphic project's implementation that can be shown to client, tested and implemented later to CMS, or deployed to production server
 * **[KSS Styleguide](http://warpspire.com/kss/)** - to render styleguide for your components easly
 * **[Autoprefixer](https://github.com/postcss/autoprefixer)** - adds vendor prefixes to your CSS3 rules
 * **Additional usefull stuff** - Extra components, mixins, helper classes, etc. Some of them you may know from Bootstrap
 
+## How to use?
+
+Read a tutorial in [Bootsmacss wiki pages](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation).
+
 ## Realizations
-Here are the examples of sites we created using BootSMACSS and Drupal:
+Here are the examples of sites we created using Bootsmacss:
 
 * [eurekanetwork.org](http://eurekanetwork.org/) - EUREKA Network
 * [eurostars-eureka.eu](http://eurostars-eureka.eu/) - Eurostars joint programme
 * [smartcities-infosystem.eu](http://smartcities-infosystem.eu/) - Smart Cities Information System
 * [een.ec.europa.eu](http://een.ec.europa.eu/) - Enterprise Europe Network
-
-### How to work with BootSMACSS?
-
-You will find a tutorial in [BootSMACSS wiki pages](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation).
 
 ### Creators
 
