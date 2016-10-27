@@ -5,7 +5,7 @@ Bootsmacss
 
 **Bootsmacss is a fusion of trending frontend technologies that will raise your workflow to the new level. Make your HTML markup and stylesheets scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
 
-[View Bootsmacss styleguide demo](http://frontcraft.github.io/bootsmacss/styleguide/)
+[View styleguide demo](http://frontcraft.github.io/bootsmacss/styleguide/)
 
 ## Technologies included
 
@@ -22,11 +22,11 @@ Bootsmacss
 
 ## How to use?
 
-Read a tutorial in [Bootsmacss wiki pages](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation).
+Learn about how to start, suggested workflow and best practices - [Read a tutorial](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation). 
 
 ## Realizations
 
-Bootsmacss helped to deliver frontend for European Comission projects and technical companies. Here is a couple of examples:
+Bootsmacss is helping to deliver frontend for European Comission projects and technical companies for two years. Here is a couple of examples:
 
 * [smarter-together.eu](http://smarter-together.eu)
 * [mvp-space.com](http://mvp-space.com)
@@ -38,9 +38,9 @@ Bootsmacss helped to deliver frontend for European Comission projects and techni
 * [ec.europa.eu/eurostat/cros](https://ec.europa.eu/eurostat/cros)
 * [eurekanetwork.org](http://eurekanetwork.org)
 
-### Creators
+### Created by
 
 * Michal Kokocinski
 * Kris Gunciarz
 
-Development Supported by [WAAT Ltd](http://waat.eu/)
+Development Supported by [WAAT Ltd](http://waat.eu)
