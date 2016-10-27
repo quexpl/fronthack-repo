@@ -1,11 +1,9 @@
-[![Stories in Ready](https://badge.waffle.io/frontcraft/bootsmacss.png?label=ready&title=Ready)](https://waffle.io/frontcraft/bootsmacss)
-
 **Huge change** - Bootsmacss is now standalone framework! We resigned from depending on [Bootstrap](http://getbootstrap.com/)! As a results file strucute become more clean, and SASS structure is more consistent. You can still use the [Bootstrap version](https://github.com/frontcraft/bootsmacss/tree/bootstrap), but it is not supported anymore.
 
 Bootsmacss
 =========
 
-**Bootsmacss is a fusion of technologies that will raise your workflow to new level. Make your markup and styles scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
+**Bootsmacss is a fusion of trending frontend technologies that will raise your workflow to the new level. Make your HTML markup and stylesheets scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
 
 [View Bootsmacss styleguide demo](http://frontcraft.github.io/bootsmacss/styleguide/)
 
@@ -27,12 +25,18 @@ Bootsmacss
 Read a tutorial in [Bootsmacss wiki pages](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation).
 
 ## Realizations
-Here are the examples of sites we created using Bootsmacss:
 
-* [eurekanetwork.org](http://eurekanetwork.org/) - EUREKA Network
-* [eurostars-eureka.eu](http://eurostars-eureka.eu/) - Eurostars joint programme
-* [smartcities-infosystem.eu](http://smartcities-infosystem.eu/) - Smart Cities Information System
-* [een.ec.europa.eu](http://een.ec.europa.eu/) - Enterprise Europe Network
+Bootsmacss helped to deliver frontend for European Comission projects and technical companies. Here is a couple of examples:
+
+* [smarter-together.eu](http://smarter-together.eu)
+* [mvp-space.com](http://mvp-space.com)
+* [waat.eu](http://waat.eu)
+* [smartcre.waat.eu](http://smartcre.waat.eu)
+* [ec.europa.eu/eures/droppin](https://ec.europa.eu/eures/droppin)
+* [smartcities-infosystem.eu](http://smartcities-infosystem.eu)
+* [een.ec.europa.eu](http://een.ec.europa.eu)
+* [ec.europa.eu/eurostat/cros](https://ec.europa.eu/eurostat/cros)
+* [eurekanetwork.org](http://eurekanetwork.org)
 
 ### Creators
 
