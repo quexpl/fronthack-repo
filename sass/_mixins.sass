@@ -40,8 +40,6 @@
     $min-width: $screen-sm-min
   @else if $min == xs or $min == phone
     $min-width: $screen-xs-min
-  @else if $min == xxs or $min == sm-phone
-    $min-width: $screen-xxs-min
 
   // Interpret also max value if defined.
   @if $max
@@ -51,8 +49,6 @@
       $max-width: $screen-sm-max
     @else if $max == xs or $max == phone
       $max-width: $screen-xs-max
-    @else if $max == xxs or $max == sm-phone
-      $max-width: $screen-xxs-max
 
     // Render min and max breakpoint if both are defined
     @media (min-width: $min-width) and (max-width: $max-width)
