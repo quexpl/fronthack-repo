@@ -3828,7 +3828,9 @@ input[type="submit"] {
 
 .layout--content {
   background-color: #f5f6f8;
-  padding: 40px 20px; }
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box; }
 
 .layout--footer {
   margin-top: 80px;
