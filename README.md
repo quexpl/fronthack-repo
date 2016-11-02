@@ -1,9 +1,9 @@
-**Huge change** - Bootsmacss is now standalone framework! We resigned from depending on [Bootstrap](http://getbootstrap.com/)! As a results file strucute become more clean, and SASS structure is more consistent. You can still use the [Bootstrap version](https://github.com/frontcraft/bootsmacss/tree/bootstrap), but it is not supported anymore.
+**Huge change** - Bootsmacss is now standalone framework. We resigned from depending on [Bootstrap](http://getbootstrap.com/)! As a results file structure become more clean and SASS structure is more consistent. You can still use the [Bootstrap version](https://github.com/frontcraft/bootsmacss/tree/bootstrap), but it is not supported anymore.
 
 Bootsmacss
 =========
 
-**Bootsmacss is a fusion of trending frontend technologies that will raise your workflow to the new level. Make your HTML markup and stylesheets scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
+**Bootsmacss is a fusion of trending frontend technologies that will raise your workflow to the new level. Start with Bootsmacss and make your HTML markup and stylesheets scalable and easy to maintain**, does not matter if you are working on a web app, huge CMS implementation or a small website.
 
 [View styleguide demo](http://frontcraft.github.io/bootsmacss/styleguide/)
 
