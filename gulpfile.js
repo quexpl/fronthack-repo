@@ -18,6 +18,7 @@ var paths = {
   },
   mustache: {
     input: './html-workspace/*.html',
+    allfiles: './html-workspace/**/*.{html,mustache}',
     output: './html-preview'
   },
   styleguide: {
@@ -104,7 +105,7 @@ gulp.task('default', [
     'mustache'
   ], function() {
   livereload.listen();
-  gulp.watch([paths.sass.allfiles, paths.styleguide.html, paths.mustache.input], [
+  gulp.watch([paths.sass.allfiles, paths.styleguide.html, paths.mustache.allfiles], [
     'styleguide',
     'sass',
     'images',
