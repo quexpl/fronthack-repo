@@ -2554,6 +2554,58 @@ dl {
   .paragraph strong, p strong {
     font-weight: 700; }
 
+.accordion__input {
+  position: absolute;
+  opacity: 0; }
+
+.accordion__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  background: #d8d8d8;
+  color: white;
+  padding: 3px 40px 3px 10px;
+  border-bottom: 1px solid white;
+  overflow: hidden; }
+  .accordion__label::after {
+    content: '+';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    padding: 3px 0;
+    text-align: center; }
+  .accordion__label:checked {
+    content: '-'; }
+
+.accordion__content {
+  height: 0;
+  opacity: 0;
+  transition: 500ms opacity ease-in-out; }
+
+#accordion-toggle-1:checked ~ #accordion-content-1,
+#accordion-toggle-2:checked ~ #accordion-content-2,
+#accordion-toggle-3:checked ~ #accordion-content-3,
+#accordion-toggle-4:checked ~ #accordion-content-4,
+#accordion-toggle-4:checked ~ #accordion-content-5,
+#accordion-toggle-4:checked ~ #accordion-content-6,
+#accordion-toggle-4:checked ~ #accordion-content-7 {
+  height: auto;
+  opacity: 1;
+  padding: 20px 10px 0; }
+
+#accordion-toggle-1:checked ~ [for=accordion-toggle-1]::after,
+#accordion-toggle-2:checked ~ [for=accordion-toggle-2]::after,
+#accordion-toggle-3:checked ~ [for=accordion-toggle-3]::after,
+#accordion-toggle-4:checked ~ [for=accordion-toggle-4]::after,
+#accordion-toggle-4:checked ~ [for=accordion-toggle-5]::after,
+#accordion-toggle-4:checked ~ [for=accordion-toggle-6]::after,
+#accordion-toggle-4:checked ~ [for=accordion-toggle-7]::after {
+  content: '-'; }
+
 .block__title {
   position: relative;
   padding-bottom: 40px;
