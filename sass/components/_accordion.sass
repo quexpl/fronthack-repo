@@ -23,11 +23,10 @@
   position: relative
   display: block
   cursor: pointer
-  margin: 0
+  margin: 0 0 1px
   background: $gray-light
   color: white
   padding: 3px 40px 3px 10px
-  border-bottom: 1px solid white
   overflow: hidden
   &::after
     content: '+'
@@ -62,12 +61,6 @@
   padding: 20px 10px 0
 
 // Change symbol on label.
-#accordion-toggle-1:checked ~ [for=accordion-toggle-1],
-#accordion-toggle-2:checked ~ [for=accordion-toggle-2],
-#accordion-toggle-3:checked ~ [for=accordion-toggle-3],
-#accordion-toggle-4:checked ~ [for=accordion-toggle-4],
-#accordion-toggle-4:checked ~ [for=accordion-toggle-5],
-#accordion-toggle-4:checked ~ [for=accordion-toggle-6],
-#accordion-toggle-4:checked ~ [for=accordion-toggle-7]
+.accordion__input:checked + .accordion__label
   &::after
     content: '-'
