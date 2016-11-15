@@ -104,6 +104,20 @@ input[type="submit"].pseudo-class-focus {
   background-color: #d8d8d8;
 }
 
+.dropdown__input.pseudo-class-focus ~ .dropdown__inner {
+  display: block;
+  transform-origin: top center;
+  animation-name: dropdown-inner;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.dropdown__inner.pseudo-class-hover {
+  display: block !important;
+}
+
 .listing-item.pseudo-class-last-child {
   padding-bottom: 0;
   border-bottom: none;
