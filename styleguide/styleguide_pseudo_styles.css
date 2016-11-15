@@ -35,6 +35,26 @@ a a.pseudo-class-visited {
   color: #26435d;
 }
 
+.accordion__label.pseudo-class-checked {
+  content: '-';
+}
+
+#accordion-toggle-1.pseudo-class-checked ~ #accordion-content-1,
+#accordion-toggle-2.pseudo-class-checked ~ #accordion-content-2,
+#accordion-toggle-3.pseudo-class-checked ~ #accordion-content-3,
+#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-4,
+#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-5,
+#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-6,
+#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-7 {
+  height: auto;
+  opacity: 1;
+  padding: 20px 10px 0;
+}
+
+.accordion__input.pseudo-class-checked + .accordion__label::after {
+  content: '-';
+}
+
 .btn.pseudo-class-hover,
 button.pseudo-class-hover,
 input[type="button"].pseudo-class-hover,
@@ -84,6 +104,20 @@ input[type="submit"].pseudo-class-focus {
   background-color: #d8d8d8;
 }
 
+.dropdown__input.pseudo-class-focus ~ .dropdown__inner {
+  display: block;
+  transform-origin: top center;
+  animation-name: dropdown-inner;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.dropdown__inner.pseudo-class-hover {
+  display: block !important;
+}
+
 .listing-item.pseudo-class-last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -115,6 +149,21 @@ input[type="submit"].pseudo-class-focus {
 
 .switch__input.pseudo-class-checked + label:after {
   left: 29px;
+}
+
+#tabs-toggle-1.pseudo-class-checked ~ #tabs-content-1,
+#tabs-toggle-2.pseudo-class-checked ~ #tabs-content-2,
+#tabs-toggle-3.pseudo-class-checked ~ #tabs-content-3,
+#tabs-toggle-4.pseudo-class-checked ~ #tabs-content-4,
+#tabs-toggle-5.pseudo-class-checked ~ #tabs-content-5,
+#tabs-toggle-6.pseudo-class-checked ~ #tabs-content-6,
+#tabs-toggle-7.pseudo-class-checked ~ #tabs-content-7 {
+  opacity: 1;
+  display: block;
+}
+
+.tabs__input.pseudo-class-checked + .tabs__label {
+  background-color: #d8d8d8;
 }
 
 .timeline__description p.pseudo-class-last-child {

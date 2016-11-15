@@ -1,6 +1,6 @@
 // Dropdown
 //
-// Dropdown menu switched by .is-open class.
+// Dropdown menu switched by pure CSS. No jQuery.
 //
 // Markup: html/dropdown.html
 //
@@ -19,6 +19,11 @@ $dropdown-max-width: 230px
 
 // Elements
 // --------------------------------------------------
+.dropdown__input
+  // Visually hide checkbox button
+  position: absolute
+  opacity: 0
+
 .dropdown__inner
   position: absolute !important
   top: 100%
@@ -38,10 +43,6 @@ $dropdown-max-width: 230px
   border: 1px solid $gray-light
   box-shadow: $gray-light 0 0 5px
 
-.dropdown__overlay
-  display: none
-  +overlay(false)
-
 .dropdown__link
   display: block
   margin: 0 -20px
@@ -52,19 +53,19 @@ $dropdown-max-width: 230px
 
 // States
 // --------------------------------------------------
-.dropdown.is-open
-  .dropdown__overlay
-    display: block
-  .dropdown__inner
-    display: block
-    transform-origin: top center
-    animation:
-      name: dropdown-inner
-      duration: 300ms
-      timing-function: ease-in-out
-      iteration-count: 1
-      fill-mode: forwards
+.dropdown__input:focus ~ .dropdown__inner
+  display: block
+  transform-origin: top center
+  animation:
+    name: dropdown-inner
+    duration: 300ms
+    timing-function: ease-in-out
+    iteration-count: 1
+    fill-mode: forwards
 
+// Prevent breaking links functionality.
+.dropdown__inner:hover
+  display: block !important
 
 @keyframes dropdown-inner
   0%

@@ -1,0 +1,66 @@
+// Accordion
+//
+// Accordion switched by pure CSS basing on radio inputs, inspired by
+// http://youmightnotneedjs.com/#tabs. Works with up to 7 elements.
+//
+// Markup: html/accordion.html
+//
+// Styleguide 2.33
+
+
+// Block
+// --------------------------------------------------
+// .accordion
+
+// Elements
+// --------------------------------------------------
+.accordion__input
+  // Visually hide radio buttons
+  position: absolute
+  opacity: 0
+
+.accordion__label
+  position: relative
+  display: block
+  cursor: pointer
+  margin: 0 0 1px
+  background: $gray-light
+  color: white
+  padding: 3px 40px 3px 10px
+  overflow: hidden
+  &::after
+    content: '+'
+    position: absolute
+    display: block
+    top: 0
+    right: 0
+    height: 100%
+    width: 30px
+    padding: 3px 0
+    text-align: center
+  &:checked
+    content: '-'
+
+.accordion__content
+  height: 0
+  opacity: 0
+  transition: 500ms opacity ease-in-out
+
+// States
+// --------------------------------------------------
+// Open content when clicking label.
+#accordion-toggle-1:checked ~ #accordion-content-1,
+#accordion-toggle-2:checked ~ #accordion-content-2,
+#accordion-toggle-3:checked ~ #accordion-content-3,
+#accordion-toggle-4:checked ~ #accordion-content-4,
+#accordion-toggle-4:checked ~ #accordion-content-5,
+#accordion-toggle-4:checked ~ #accordion-content-6,
+#accordion-toggle-4:checked ~ #accordion-content-7
+  height: auto
+  opacity: 1
+  padding: 20px 10px 0
+
+// Change symbol on label.
+.accordion__input:checked + .accordion__label
+  &::after
+    content: '-'
