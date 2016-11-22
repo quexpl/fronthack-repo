@@ -3395,13 +3395,13 @@ input[type="submit"] {
 
 .logo {
   display: block;
-  width: 300px;
-  height: 80px;
-  background: url("../images/logo.png") no-repeat;
+  width: 120px;
+  height: 40px;
+  background: url("http://placehold.it/240x80px") no-repeat;
   background-size: 100%; }
   @media (min-width: 48em) {
     .logo {
-      width: 300px;
+      width: 240px;
       height: 80px; } }
 
 .modal__input {
