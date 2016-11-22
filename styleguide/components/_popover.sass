@@ -1,6 +1,6 @@
 // Popover
 //
-// A tooltip overlay switched by .is-open class.
+// A tooltip with darken overlay switched by pure CSS.
 //
 // Markup: html/popover.html
 //
@@ -88,6 +88,12 @@ $popover-width: 230px
     timing-function: ease-in-out
     iteration-count: 1
     fill-mode: forwards
+
+// Prevent breaking links functionality.
+.popover__inner:hover
+  &,
+  & + .popover__overlay
+    display: block !important
 
 
 @keyframes popover-overlay

@@ -3648,6 +3648,10 @@ input[type="submit"] {
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
+.popover__inner:hover,
+.popover__inner:hover + .popover__overlay {
+  display: block !important; }
+
 @keyframes popover-overlay {
   0% {
     opacity: 0; }

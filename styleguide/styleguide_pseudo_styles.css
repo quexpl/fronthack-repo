@@ -154,6 +154,11 @@ input[type="submit"].pseudo-class-focus {
   animation-fill-mode: forwards;
 }
 
+.popover__inner.pseudo-class-hover,
+.popover__inner.pseudo-class-hover + .popover__overlay {
+  display: block !important;
+}
+
 .social-links__link.pseudo-class-hover {
   color: #4193a9;
   background-color: transparent;
