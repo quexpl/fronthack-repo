@@ -2433,14 +2433,12 @@ blockquote {
 
 label {
   text-transform: uppercase;
-  margin: 20px 0 7px;
-  letter-spacing: 0.05em; }
+  margin: 20px 0 7px; }
 
 input,
 textarea {
   margin: 0 0 10px;
-  font-size: 15px;
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif; }
+  font-size: 15px; }
   input::-moz-placeholder,
   textarea::-moz-placeholder {
     color: #d8d8d8;
@@ -3563,12 +3561,16 @@ input[type="submit"] {
   position: relative;
   display: inline-block; }
 
+.popover__input {
+  position: absolute;
+  opacity: 0; }
+
 .popover__inner {
   position: absolute !important;
   bottom: 100%;
   left: 50%;
   width: 230px;
-  margin: 0 0 40px -35px;
+  margin: 0 0 25px -35px;
   padding: 20px;
   box-sizing: border-box;
   display: none;
@@ -3629,7 +3631,7 @@ input[type="submit"] {
     left: auto;
     right: 19px; }
 
-.popover.is-open .popover__overlay {
+.popover__input:focus ~ .popover__overlay {
   display: block;
   animation-name: popover-overlay;
   animation-duration: 500ms;
@@ -3637,7 +3639,7 @@ input[type="submit"] {
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
-.popover.is-open .popover__inner {
+.popover__input:focus ~ .popover__inner {
   display: block;
   transform-origin: bottom left;
   animation-name: popover-inner;
@@ -3645,6 +3647,12 @@ input[type="submit"] {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
+
+@keyframes popover-overlay {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes popover-inner {
   0% {
@@ -3654,17 +3662,11 @@ input[type="submit"] {
   50% {
     transform: rotate(-10deg) rotateX(-2deg); }
   70% {
-    transform: rotate(3deg); }
+    transform: rotate(3deg);
+    bottom: 100%; }
   100% {
     opacity: 1;
-    bottom: 100%;
     transform: scale(1); } }
-
-@keyframes popover-overlay {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .popover-demo {
   margin: 150px 0 20px;

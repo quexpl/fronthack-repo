@@ -135,6 +135,25 @@ input[type="submit"].pseudo-class-focus {
   font-weight: 500;
 }
 
+.popover__input.pseudo-class-focus ~ .popover__overlay {
+  display: block;
+  animation-name: popover-overlay;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.popover__input.pseudo-class-focus ~ .popover__inner {
+  display: block;
+  transform-origin: bottom left;
+  animation-name: popover-inner;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .social-links__link.pseudo-class-hover {
   color: #4193a9;
   background-color: transparent;
