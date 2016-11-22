@@ -3404,15 +3404,9 @@ input[type="submit"] {
       width: 300px;
       height: 80px; } }
 
-.modal__overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(16, 28, 39, 0.2); }
+.modal__input {
+  position: absolute;
+  opacity: 0; }
 
 .modal__inner {
   display: none;
@@ -3434,21 +3428,35 @@ input[type="submit"] {
   padding: 30px;
   font-weight: 500; }
 
-.modal.is-open .modal__overlay {
+.modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(16, 28, 39, 0.2); }
+
+.modal__input:focus ~ .modal__inner {
   display: block;
-  animation-name: modal-overlay;
-  animation-duration: 500ms;
+  animation-name: modal-inner;
+  animation-duration: 250ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
-.modal.is-open .modal__inner {
+.modal__input:focus ~ .modal__overlay {
   display: block;
-  animation-name: modal-inner;
-  animation-duration: 500ms;
+  animation-name: modal-overlay;
+  animation-duration: 250ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
+
+.modal__inner:hover,
+.modal__inner:hover + .modal__overlay {
+  display: block !important; }
 
 .modal-demo {
   margin: 150px 0; }

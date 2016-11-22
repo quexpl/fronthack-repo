@@ -123,6 +123,29 @@ input[type="submit"].pseudo-class-focus {
   border-bottom: none;
 }
 
+.modal__input.pseudo-class-focus ~ .modal__inner {
+  display: block;
+  animation-name: modal-inner;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.modal__input.pseudo-class-focus ~ .modal__overlay {
+  display: block;
+  animation-name: modal-overlay;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.modal__inner.pseudo-class-hover,
+.modal__inner.pseudo-class-hover + .modal__overlay {
+  display: block !important;
+}
+
 .nav-horizontal__link.pseudo-class-hover {
   color: #4193a9;
 }
