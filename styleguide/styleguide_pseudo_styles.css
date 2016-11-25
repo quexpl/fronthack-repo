@@ -158,6 +158,10 @@ input[type="submit"].pseudo-class-focus {
   font-weight: 500;
 }
 
+.pagination__item.pseudo-class-hover {
+  background-color: #f5f6f8;
+}
+
 .popover__input.pseudo-class-focus ~ .popover__overlay {
   display: block;
   animation-name: popover-overlay;

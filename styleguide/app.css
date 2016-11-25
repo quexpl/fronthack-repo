@@ -2952,8 +2952,7 @@ input[type="submit"] {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  position: relative;
-  margin: 0 0.1em; }
+  position: relative; }
   .icon:before {
     display: inline-block;
     transform: scale(2); }
@@ -3564,6 +3563,32 @@ input[type="submit"] {
 .page-title {
   text-transform: uppercase;
   margin-bottom: 60px; }
+
+.pagination {
+  text-align: center;
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 0; }
+  .pagination div {
+    pointer-events: none; }
+
+.pagination__item {
+  display: inline-block;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  min-width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #d8d8d8; }
+  .pagination__item:hover {
+    background-color: #f5f6f8; }
+
+.pagination__item--active {
+  background: #4193a9;
+  border-color: #4193a9;
+  color: #fff; }
 
 .popover {
   position: relative;
