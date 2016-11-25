@@ -16,6 +16,8 @@
 
 .sg.sg-section-header {
   border-radius: 0 !important; }
+  .sg.sg-section-header h1 .sg-reference-number {
+    display: none !important; }
 
 li a span.sg-ref {
   display: none !important; }
