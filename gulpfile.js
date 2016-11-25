@@ -73,7 +73,10 @@ gulp.task('styleguide:generate', function() {
     .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide:applystyles', function() {
-  return gulp.src('sass/app.sass')
+  return gulp.src([
+      'sass/app.sass',
+      'sass/styleguide-overrides.sass'
+    ])
     .pipe(sass({
       errLogToConsole: true
     }))

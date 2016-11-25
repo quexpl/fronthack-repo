@@ -3457,9 +3457,6 @@ input[type="submit"] {
 .modal__inner:hover + .modal__overlay {
   display: block !important; }
 
-.modal-demo {
-  margin: 150px 0; }
-
 @keyframes modal-overlay {
   0% {
     opacity: 0; }
@@ -4050,3 +4047,24 @@ input[type="submit"] {
 
 .front .composition--4 .composition__header-wrapper {
   padding: 50px 0 40px; }
+.sg.sg-header .sg-title h1 {
+  font-weight: 500 !important; }
+
+.sg.sg-header .sg.side-nav-search .sg.sg-search-field {
+  border-radius: 0 !important;
+  margin-top: 15px !important; }
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section li {
+  background-color: #f8f8f8;
+  margin: 0 30px 2px 0 !important; }
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a {
+  padding-left: 20px !important; }
+  .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a:hover:before, .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.active:before {
+    left: -5px !important; }
+
+.sg.sg-section-header {
+  border-radius: 0 !important; }
+
+li a span.sg-ref {
+  display: none !important; }

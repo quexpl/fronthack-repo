@@ -3457,9 +3457,6 @@ input[type="submit"] {
 .modal__inner:hover + .modal__overlay {
   display: block !important; }
 
-.modal-demo {
-  margin: 150px 0; }
-
 @keyframes modal-overlay {
   0% {
     opacity: 0; }

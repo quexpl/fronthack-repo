@@ -228,4 +228,6 @@ input[type="submit"].pseudo-class-focus {
 .timeline__item.pseudo-class-last-of-type .timeline__description {
   border: none;
   padding: 0;
+}.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.pseudo-class-hover:before {
+  left: -5px !important;
 }
