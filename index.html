@@ -8,117 +8,131 @@
     <meta name="description" content="Bootsmacss home page">
 
     <link rel="stylesheet" href="css/style.css">
-
+    <style>
+      .typed-cursor{
+          opacity: 1;
+          -webkit-animation: blink 0.7s infinite;
+          -moz-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite;
+      }
+      @keyframes blink{
+          0% { opacity:1; }
+          50% { opacity:0; }
+          100% { opacity:1; }
+      }
+      @-webkit-keyframes blink{
+          0% { opacity:1; }
+          50% { opacity:0; }
+          100% { opacity:1; }
+      }
+      @-moz-keyframes blink{
+          0% { opacity:1; }
+          50% { opacity:0; }
+          100% { opacity:1; }
+      }
+    </style>
   </head>
 
   <body>
 
     <section class="layout--landing">
       <div class="wrapper container-fluid">
-        <h1>Bootsmacss</h1>
-        <p>The starterkit with tools to prepare scalable HTML and styles for your frontend</p>
+        <h1>Bootsmacss is<br />a <span class="type-js"></span></h1>
+        <p>to convert designs into <strong>HTML</strong> and <strong>stylesheets</strong> for your projects</p>
         <br />
-        <a href="https://github.com/frontcraft/bootsmacss/wiki/1.-Installation" class="btn btn--primary btn--lg" target="_blank">
-          <i class="icon icon--download"></i> Download and set up
+        <a href="https://github.com/frontcraft/bootsmacss" class="btn btn--primary btn--lg">
+          View on GitHub
         </a>
         <br />
         <br />
-        <a href="https://github.com/frontcraft/bootsmacss">GitHub Project</a>
+        <a href="styleguide"> Browse components</a>
         &nbsp;&nbsp;·&nbsp;&nbsp;
-        <a href="styleguide">Styleguide</a>
+        <a href="https://github.com/frontcraft/bootsmacss/wiki/1.-Installation" target="_blank">
+          Download and set up
+        </a>
       </div>
     </section>
 
     <section class="layout--content">
       <div class="wrapper container-fluid">
         <div class="text-center">
-          <p>Bootsmacss is a miminalistic starterkit with basic <strong>web components</strong> and <strong>combination of trending technologies</strong> that will raise your workflow to the new level. Start with Bootsmacss and make your HTML markup and stylesheets scalable and easy to maintain, does not matter if you are working on a web app, huge CMS implementation or a small website.</p>
-          <br /><br /><br />
+          <p>Bootsmacs proposes you a rules of writing things and file separation to aviod chaos, but has been constructed to have in mind full control over the style properties and markup. It combines various trending technologies and approaches together, providing everything what is needed to deliver code that is scalable and easy to maintain, does not matter if it is a web app, huge CMS implementation or a small website.</p>
+          <br /><br />
         </div>
 
-        <h2>Technologies combined together at your service</h2>
-
-        <ul class="featured">
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="https://smacss.com/">SMACSS</a></strong> - modular stylesheet approach that splits everything into components</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+        <h2 class="text-center">Features</h2>
+        <br />
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Pure CSS components</h3>
+              All typical jQuery use cases for basic interactions replaced with pure CSS techinques. All components are very basic and boilerplate.
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="http://sass-lang.com/">Sass</a></strong> - keeps your stylesheets's syntax clean and tidy</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Written in Sass</h3>
+              With power of variables, mixins and nesting inside CSS and clean syntax.
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="http://gulpjs.com/">Gulp.js</a></strong> - to automate your work and compile it on file save</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>SMACSS and BEM</h3>
+              <p>Separating files according so SMACCS methodology and using BEM naming convention makes your styles scallable and easy to maintains.
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="http://hugeinc.github.io/flexboxgrid-sass/">Flexbox Grid Sass</a></strong> - Sass version of grid system based on the flex display property.</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Flexbox grid</h3>
+              The most flexible grid system based on flex property.
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="http://formhack.io/">FormHack</a></strong> - Minimalist form reset written i Sass</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Built in form reset</h3>
+              Fully hackable and configurable styles for the forms.</p>
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="http://getbem.com/">BEM</a></strong> - stylish structure for each component</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Built in helpers</h3>
+              Helper classes and usefull mixins to minimize the effort. Some of them you may know from Bootstrap
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="https://mustache.github.io/">Mustache</a></strong> - to render static html prototypes as a result of graphic project's implementation that can be shown to client, tested and implemented later to CMS, or deployed to production server</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Gulp</h3>
+              < automation tool onboard to compile and preview your work in browser on file save.
             </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="http://warpspire.com/kss/">KSS Styleguide</a></strong> - styleguide driven development? No problem</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
-            </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong> - adds vendor prefixes to your CSS3 rules</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
-            </div>
-          </li>
-          <li class="featured__item">
-            <div class="featured__text"><strong>Additional usefull stuff</strong> - Extra components, mixins, helper classes, etc. Some of them you may know from Bootstrap</div>
-            <div class="featured__icon-wrapper">
-              <span class="featured__icon icon icon--ok"></span>
-            </div>
-          </li>
-        </ul>
-
-        <div class="text-center">
-          <br />
-          <h2>See it in action</h2>
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <a href="html-preview/index.html" class="btn btn--block btn--primary">View example</a>
-              <p>Preview basic example project</p>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <a href="styleguide" class="btn btn--block btn--primary">Browse styleguide</a>
-              <p>Browse automatically rendered styleguide based on SC5 technology</p>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">
+              <h3>Styleguide rendering</h3>
+              With KSS docummenting syntax you can render styleguide for your interface components.
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+    <script>
+      $(function(){
+          $(".type-js").typed({
+            strings: [
+              "starterkit",
+              "framework",
+              "web components library",
+              "workflow",
+              "set of best practices",
+            ],
+            typeSpeed: 75,
+            startDelay: 250,
+            loop: true,
+            backDelay: 1000,
+          });
+      });
+    </script>
   </body>
 </html>
