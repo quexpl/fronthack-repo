@@ -3587,6 +3587,58 @@ input[type="submit"] {
   border-color: #4193a9;
   color: #fff; }
 
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+  perspective-origin-x: 100%; }
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  z-index: 2; }
+
+.parallax__baselayer,
+.parallax__backlayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%; }
+
+.parallax__baselayer {
+  transform: translateZ(0);
+  opacity: 0.9;
+  height: 100vh; }
+
+.parallax__backlayer {
+  transform: translateZ(-300px) scale(2.01); }
+
+.parallax--debug .parallax__group {
+  transform: translate3d(700px, 0, -800px) rotateY(30deg); }
+
+.parallax--debug .parallax__baselayer,
+.parallax--debug .parallax__backlayer {
+  border: 5px solid #101c27; }
+
+.parallax__group--with-backlayer {
+  z-index: 1; }
+
+.parallax_demo-title {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  font-size: 60px;
+  font-weight: bold; }
+
+.parallax__demo-solid {
+  background-color: #4193a9; }
+
 .popover {
   position: relative;
   display: inline-block; }
