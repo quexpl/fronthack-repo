@@ -123,6 +123,29 @@ input[type="submit"].pseudo-class-focus {
   border-bottom: none;
 }
 
+.modal__input.pseudo-class-focus ~ .modal__inner {
+  display: block;
+  animation-name: modal-inner;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.modal__input.pseudo-class-focus ~ .modal__overlay {
+  display: block;
+  animation-name: modal-overlay;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.modal__inner.pseudo-class-hover,
+.modal__inner.pseudo-class-hover + .modal__overlay {
+  display: block !important;
+}
+
 .nav-horizontal__link.pseudo-class-hover {
   color: #4193a9;
 }
@@ -133,6 +156,34 @@ input[type="submit"].pseudo-class-focus {
   background-color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.pagination__item.pseudo-class-hover {
+  background-color: #f5f6f8;
+}
+
+.popover__input.pseudo-class-focus ~ .popover__overlay {
+  display: block;
+  animation-name: popover-overlay;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.popover__input.pseudo-class-focus ~ .popover__inner {
+  display: block;
+  transform-origin: bottom left;
+  animation-name: popover-inner;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.popover__inner.pseudo-class-hover,
+.popover__inner.pseudo-class-hover + .popover__overlay {
+  display: block !important;
 }
 
 .social-links__link.pseudo-class-hover {
@@ -177,4 +228,6 @@ input[type="submit"].pseudo-class-focus {
 .timeline__item.pseudo-class-last-of-type .timeline__description {
   border: none;
   padding: 0;
+}.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.pseudo-class-hover:before {
+  left: -5px !important;
 }

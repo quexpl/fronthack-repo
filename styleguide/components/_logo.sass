@@ -1,14 +1,15 @@
 // Logo
 //
-// Placeholder for logo.
+// Component to display site's logo in page header for example. Can be different
+// size on mobile devices.
 //
 // Markup: html/logo.html
 //
-// Styleguide 2.11
+// Styleguide 2.logo
 
-$logo-width-mobile: 300px
-$logo-width-desktop: 300px
-$logo-height-mobile: 80px
+$logo-width-mobile: 120px
+$logo-width-desktop: 240px
+$logo-height-mobile: 40px
 $logo-height-desktop: 80px
 
 // Block
@@ -17,7 +18,7 @@ $logo-height-desktop: 80px
   display: block
   width: $logo-width-mobile
   height: $logo-height-mobile
-  background: url("../images/logo.png") no-repeat
+  background: url("http://placehold.it/240x80px") no-repeat
   background-size: 100%
   +breakpoint(tablet)
     width: $logo-width-desktop

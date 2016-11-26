@@ -67,15 +67,16 @@ gulp.task('styleguide:generate', function() {
         commonClass: 'body',
         extraHead: [
           '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>',
-          '<script src="/bootsmacss/styleguide/js/components/popover.js"></script>',
-          '<script src="/bootsmacss/styleguide/js/components/modal.js"></script>',
         ],
         disableEncapsulation: true
       }))
     .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide:applystyles', function() {
-  return gulp.src('sass/app.sass')
+  return gulp.src([
+      'sass/app.sass',
+      'sass/styleguide-overrides.sass'
+    ])
     .pipe(sass({
       errLogToConsole: true
     }))

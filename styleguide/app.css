@@ -2433,14 +2433,12 @@ blockquote {
 
 label {
   text-transform: uppercase;
-  margin: 20px 0 7px;
-  letter-spacing: 0.05em; }
+  margin: 20px 0 7px; }
 
 input,
 textarea {
   margin: 0 0 10px;
-  font-size: 15px;
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif; }
+  font-size: 15px; }
   input::-moz-placeholder,
   textarea::-moz-placeholder {
     color: #d8d8d8;
@@ -2954,8 +2952,7 @@ input[type="submit"] {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  position: relative;
-  margin: 0 0.1em; }
+  position: relative; }
   .icon:before {
     display: inline-block;
     transform: scale(2); }
@@ -3397,24 +3394,18 @@ input[type="submit"] {
 
 .logo {
   display: block;
-  width: 300px;
-  height: 80px;
-  background: url("../images/logo.png") no-repeat;
+  width: 120px;
+  height: 40px;
+  background: url("http://placehold.it/240x80px") no-repeat;
   background-size: 100%; }
   @media (min-width: 48em) {
     .logo {
-      width: 300px;
+      width: 240px;
       height: 80px; } }
 
-.modal__overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(16, 28, 39, 0.2); }
+.modal__input {
+  position: absolute;
+  opacity: 0; }
 
 .modal__inner {
   display: none;
@@ -3436,24 +3427,35 @@ input[type="submit"] {
   padding: 30px;
   font-weight: 500; }
 
-.modal.is-open .modal__overlay {
-  display: block;
-  animation-name: modal-overlay;
-  animation-duration: 500ms;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+.modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(16, 28, 39, 0.2); }
 
-.modal.is-open .modal__inner {
+.modal__input:focus ~ .modal__inner {
   display: block;
   animation-name: modal-inner;
-  animation-duration: 500ms;
+  animation-duration: 250ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
-.modal-demo {
-  margin: 150px 0; }
+.modal__input:focus ~ .modal__overlay {
+  display: block;
+  animation-name: modal-overlay;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.modal__inner:hover,
+.modal__inner:hover + .modal__overlay {
+  display: block !important; }
 
 @keyframes modal-overlay {
   0% {
@@ -3559,16 +3561,98 @@ input[type="submit"] {
   text-transform: uppercase;
   margin-bottom: 60px; }
 
+.pagination {
+  text-align: center;
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 0; }
+  .pagination div {
+    pointer-events: none; }
+
+.pagination__item {
+  display: inline-block;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  min-width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #d8d8d8; }
+  .pagination__item:hover {
+    background-color: #f5f6f8; }
+
+.pagination__item--active {
+  background: #4193a9;
+  border-color: #4193a9;
+  color: #fff; }
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+  perspective-origin-x: 100%; }
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  z-index: 2; }
+
+.parallax__baselayer,
+.parallax__backlayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%; }
+
+.parallax__baselayer {
+  transform: translateZ(0);
+  opacity: 0.9;
+  height: 100vh; }
+
+.parallax__backlayer {
+  transform: translateZ(-300px) scale(2.01); }
+
+.parallax--debug .parallax__group {
+  transform: translate3d(700px, 0, -800px) rotateY(30deg); }
+
+.parallax--debug .parallax__baselayer,
+.parallax--debug .parallax__backlayer {
+  border: 5px solid #101c27; }
+
+.parallax__group--with-backlayer {
+  z-index: 1; }
+
+.parallax_demo-title {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  font-size: 60px;
+  font-weight: bold; }
+
+.parallax__demo-solid {
+  background-color: #4193a9; }
+
 .popover {
   position: relative;
   display: inline-block; }
+
+.popover__input {
+  position: absolute;
+  opacity: 0; }
 
 .popover__inner {
   position: absolute !important;
   bottom: 100%;
   left: 50%;
   width: 230px;
-  margin: 0 0 40px -35px;
+  margin: 0 0 25px -35px;
   padding: 20px;
   box-sizing: border-box;
   display: none;
@@ -3629,7 +3713,7 @@ input[type="submit"] {
     left: auto;
     right: 19px; }
 
-.popover.is-open .popover__overlay {
+.popover__input:focus ~ .popover__overlay {
   display: block;
   animation-name: popover-overlay;
   animation-duration: 500ms;
@@ -3637,7 +3721,7 @@ input[type="submit"] {
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
-.popover.is-open .popover__inner {
+.popover__input:focus ~ .popover__inner {
   display: block;
   transform-origin: bottom left;
   animation-name: popover-inner;
@@ -3645,6 +3729,16 @@ input[type="submit"] {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
+
+.popover__inner:hover,
+.popover__inner:hover + .popover__overlay {
+  display: block !important; }
+
+@keyframes popover-overlay {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes popover-inner {
   0% {
@@ -3654,17 +3748,11 @@ input[type="submit"] {
   50% {
     transform: rotate(-10deg) rotateX(-2deg); }
   70% {
-    transform: rotate(3deg); }
+    transform: rotate(3deg);
+    bottom: 100%; }
   100% {
     opacity: 1;
-    bottom: 100%;
     transform: scale(1); } }
-
-@keyframes popover-overlay {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .popover-demo {
   margin: 150px 0 20px;

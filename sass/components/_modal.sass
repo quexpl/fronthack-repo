@@ -1,14 +1,10 @@
 // Modal
 //
-// Animated modal popup with darkened overlay. Clicking on the "X" icon or
-// the overlay dismisses the window.
+// Animated modal popup with darkened overlay switched by pure CSS.
 //
 // Markup: html/modal.html
 //
-// sg-wrapper:
-// <div class="modal-demo"><sg-wrapper-content/></div>
-//
-// Styleguide 2.31
+// Styleguide 2.modal
 
 $modal-width: 400px
 
@@ -18,9 +14,10 @@ $modal-width: 400px
 
 // Elements
 // --------------------------------------------------
-.modal__overlay
-  display: none
-  +overlay
+.modal__input
+  // Visually hide checkbox button
+  position: absolute
+  opacity: 0
 
 .modal__inner
   display: none
@@ -42,32 +39,35 @@ $modal-width: 400px
   padding: 30px
   font-weight: $font-weight-bold
 
+.modal__overlay
+  display: none
+  +overlay
+
 
 // States
 // --------------------------------------------------
-.modal.is-open
-  .modal__overlay
-    display: block
-    animation:
-      name: modal-overlay
-      duration: 500ms
-      timing-function: ease-in-out
-      iteration-count: 1
-      fill-mode: forwards
-  .modal__inner
-    display: block
-    animation:
-      name: modal-inner
-      duration: 500ms
-      timing-function: ease-in-out
-      iteration-count: 1
-      fill-mode: forwards
+.modal__input:focus ~ .modal__inner
+  display: block
+  animation:
+    name: modal-inner
+    duration: 250ms
+    timing-function: ease-in-out
+    iteration-count: 1
+    fill-mode: forwards
+.modal__input:focus ~ .modal__overlay
+  display: block
+  animation:
+    name: modal-overlay
+    duration: 250ms
+    timing-function: ease-in-out
+    iteration-count: 1
+    fill-mode: forwards
 
-
-// Demo wrapper
-// --------------------------------------------------
-.modal-demo
-  margin: 150px 0
+// Prevent closing element when clicking inside.
+.modal__inner:hover
+  &,
+  & + .modal__overlay
+    display: block !important
 
 
 @keyframes modal-overlay

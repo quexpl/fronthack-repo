@@ -1,0 +1,33 @@
+//
+// SC5 Styleguide visual imporvements introduced by Frontcraft
+// -----------------------------------------------------------
+
+// Top bar
+.sg.sg-header
+  .sg-title h1
+    font-weight: 500 !important
+  .sg.side-nav-search .sg.sg-search-field
+    border-radius: 0 !important
+    margin-top: 15px !important
+
+// Sidebar navigation
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section
+  li
+    background-color: #f8f8f8
+    margin: 0 30px 2px 0 !important
+  & > li > a
+    padding-left: 20px !important
+    &:hover:before,
+    &.active:before
+      left: -5px !important
+      .sg.sg-wrapper .sg.sg-side-nav .sg-nav-subsection li a
+
+// Main content
+.sg.sg-section-header
+  border-radius: 0 !important
+  h1 .sg-reference-number
+    display: none !important
+
+// Hide component mashinname on menus
+li a span.sg-ref
+  display: none !important
