@@ -65,8 +65,6 @@ gulp.task('styleguide:generate', function() {
         overviewPath: 'README.md',
         commonClass: 'body',
         extraHead: [
-          '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">',
-          '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css">',
           '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>',
           '<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>',
           '<script src="/js/components/owl-carousel.js"></script>',

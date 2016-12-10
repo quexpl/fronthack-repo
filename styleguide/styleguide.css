@@ -3557,6 +3557,57 @@ input[type="submit"] {
 .ornament--orange:before {
   background-color: #e75404; }
 
+.owl-carousel {
+  position: relative; }
+
+.owl-nav {
+  position: absolute;
+  margin: -15px 0;
+  top: 50%;
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  color: #fff;
+  text-shadow: 0 0 3px #101c27; }
+
+.owl-prev,
+.owl-next {
+  width: 30px;
+  line-height: 30px; }
+  .owl-prev:hover,
+  .owl-next:hover {
+    transform: scale(1.1); }
+
+.owl-prev {
+  float: left; }
+
+.owl-next {
+  float: right; }
+
+.owl-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center; }
+
+.owl-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 6px;
+  box-shadow: 0 0 3px #101c27;
+  background-color: transparent;
+  border: 2px #fff solid;
+  border-radius: 50%; }
+  .owl-dot:hover {
+    transform: scale(1.3); }
+
+.owl-dot.active {
+  background-color: #fff; }
+
 .page-title {
   text-transform: uppercase;
   margin-bottom: 60px; }

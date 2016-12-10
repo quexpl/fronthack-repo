@@ -6,7 +6,6 @@
 
 <!-- Load stylesheets -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css">
 <!-- Load OWL Carousel library (after jQuery) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
 <!-- Initiate OWL Carousel script -->
@@ -15,6 +14,10 @@
     loop: true,
     items: 1,
     autoPlay: true,
-    nav: true
+    nav: true,
+    navText: [
+      "<i class='icon icon--arrow-left'>",
+      "<i class='icon icon--arrow-right'>"
+    ]
   });
 </script>

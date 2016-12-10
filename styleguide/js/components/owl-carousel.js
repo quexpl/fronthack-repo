@@ -3,6 +3,10 @@ $(window).bind("styleguide:onRendered", function(e) {
     loop: true,
     items: 1,
     autoPlay: true,
-    nav: true
+    nav: true,
+    navText: [
+      "<i class='icon icon--arrow-left'>",
+      "<i class='icon icon--arrow-right'>"
+    ]
   });
 });
