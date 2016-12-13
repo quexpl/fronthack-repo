@@ -1,31 +1,11 @@
-input.pseudo-class-focus,
-textarea.pseudo-class-focus,
-select.pseudo-class-focus,
-option.pseudo-class-focus,
-button.pseudo-class-focus {
-  background-color: gainsboro;
-  border-color: #c8c8c8;
-}
-
-input[type="checkbox"].pseudo-class-focus,
-input[type="radio"].pseudo-class-focus {
-  outline: #c8c8c8 solid 2px;
-}
-
-button.pseudo-class-hover,
-input[type="button"].pseudo-class-hover,
-input[type="submit"].pseudo-class-hover,
-input[type="reset"].pseudo-class-hover,
-button.pseudo-class-focus,
-input[type="button"].pseudo-class-focus,
-input[type="submit"].pseudo-class-focus,
-input[type="reset"].pseudo-class-focus {
-  background-color: #c8c8c8;
-  color: inherit;
-}
-
 blockquote p.pseudo-class-last-child {
   margin-bottom: 0;
+}
+
+.form__input.pseudo-class-focus {
+  border: 2px solid #4193a9;
+  box-shadow: none;
+  outline-width: 0;
 }
 
 a.pseudo-class-hover,

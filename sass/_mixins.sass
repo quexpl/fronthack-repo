@@ -129,6 +129,13 @@
   &::-webkit-input-placeholder
     color: $color
 
+// Define maximum rows of text in the element
+=max-rows($rows)
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: $rows
+  -webkit-box-orient: vertical
+
 // Comma separated children
 =comma-separated()
   & > *:not(:last-of-type)::after
