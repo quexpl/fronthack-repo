@@ -2305,6 +2305,8 @@ blockquote {
     color: #d8d8d8; }
   .form__input::-webkit-input-placeholder {
     color: #d8d8d8; }
+  .form__input[type=file] {
+    line-height: 18px; }
 
 textarea.form__input {
   height: auto; }
@@ -2312,11 +2314,14 @@ textarea.form__input {
 select.form__input {
   -webkit-appearance: none;
   padding-right: 30px;
-  cursor: pointer;
-  background-image: linear-gradient(45deg, transparent 50%, #101c27 50%), linear-gradient(135deg, #101c27 50%, transparent 50%);
-  background-position: calc(100% - 15px) 18px, calc(100% - 10px) 18px;
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat; }
+  cursor: pointer; }
+  select.form__input:not([multiple]) {
+    background-image: linear-gradient(45deg, transparent 50%, #101c27 50%), linear-gradient(135deg, #101c27 50%, transparent 50%);
+    background-position: calc(100% - 15px) 18px, calc(100% - 10px) 18px;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat; }
+  select.form__input[multiple] {
+    height: auto; }
 
 .form__actions {
   margin-top: 90px; }
@@ -2599,8 +2604,8 @@ input[type="submit"] {
     text-decoration: underline; }
 
 .btn--disabled {
-  pointer-events: none;
-  opacity: 0.2; }
+  opacity: 0.15;
+  cursor: not-allowed; }
 
 .cloudlet {
   background-color: #fafafa;

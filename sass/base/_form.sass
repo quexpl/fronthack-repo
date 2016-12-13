@@ -14,6 +14,7 @@ $form-item-bg: $gray-lighter
 // --------------------------------------------------
 .form
 
+
 // Elements
 // --------------------------------------------------
 .form__item
@@ -25,12 +26,14 @@ $form-item-bg: $gray-lighter
   *[class^="col-"] > &
     min-width: auto
 
+
 .form__label
   display: block
   margin: 0
   font-size: $font-size-small
   text-transform: none
   font-weight: $font-weight-bold
+
 
 .form__help
   position: absolute
@@ -41,9 +44,11 @@ $form-item-bg: $gray-lighter
   line-height: $font-size-xsmall * 1.5
   color: lighten($text-color, 10%)
 
+
 .form__checkbox,
 .form__radio
   display: block
+
 
 .form__input
   width: 100%
@@ -58,6 +63,8 @@ $form-item-bg: $gray-lighter
   transition: all 200ms ease-in
   background-color: $form-item-bg
   +placeholder($gray-light)
+  &[type=file]
+    line-height: $form-item-height * 0.45
 textarea.form__input
   height: auto
 select.form__input
@@ -65,11 +72,15 @@ select.form__input
   padding-right: 30px
   cursor: pointer
   // Custom caret:
-  background:
-    image: linear-gradient(45deg, transparent 50%, $text-color 50%), linear-gradient(135deg, $text-color 50%, transparent 50%)
-    position: calc(100% - 15px) $form-item-height/2-2px, calc(100% - 10px) $form-item-height/2-2px
-    size: 5px 5px, 5px 5px
-    repeat: no-repeat
+  &:not([multiple])
+    background:
+      image: linear-gradient(45deg, transparent 50%, $text-color 50%), linear-gradient(135deg, $text-color 50%, transparent 50%)
+      position: calc(100% - 15px) $form-item-height/2-2px, calc(100% - 10px) $form-item-height/2-2px
+      size: 5px 5px, 5px 5px
+      repeat: no-repeat
+  &[multiple]
+    height: auto
+
 
 .form__actions
   margin-top: $form-item-margin * 3
