@@ -82,6 +82,14 @@ select.form__input
     height: auto
 
 
+.form__addon
+  position: absolute
+  top: $line-height-computed
+  right: $form-item-height / 3
+  font-size: $form-item-font-size * 0.7
+  line-height: $form-item-height
+
+
 .form__actions
   margin-top: $form-item-margin * 3
   button,
@@ -106,3 +114,23 @@ select.form__input
   border: 2px solid $brand-primary
   box-shadow: none
   outline-width: 0
+
+
+.form__item.is-success
+  .form__label,
+  .form__addon,
+  .form__help
+    color: darken($green, 5%)
+  .form__input:not(:focus)
+    border-color: lighten($green, 10%)
+    // background-color: lighten($green, 53%)
+
+
+.form__item.has-error
+  .form__label,
+  .form__addon,
+  .form__help
+    color: darken($red, 15%)
+  .form__input:not(:focus)
+    border-color: lighten($red, 15%)
+    background-color: lighten($red, 53%)
