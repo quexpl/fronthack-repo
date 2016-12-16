@@ -120,17 +120,20 @@ select.form__input
 .form__item.is-success
   .form__label,
   .form__addon,
-  .form__help
+  .form__help,
+  .form__checkbox,
+  .form__radio
     color: darken($green, 5%)
   .form__input:not(:focus)
     border-color: lighten($green, 10%)
-    // background-color: lighten($green, 53%)
 
 
 .form__item.has-error
   .form__label,
   .form__addon,
-  .form__help
+  .form__help,
+  .form__checkbox,
+  .form__radio
     color: darken($red, 15%)
   .form__input:not(:focus)
     border-color: lighten($red, 15%)
@@ -169,7 +172,7 @@ select.form__input
 // Styleguide 1.3.3
 
 
-// Form states
+// Validation states
 //
 // Input states to communicate error or success. Contains styles also for help
 // text and inside addon.

@@ -2352,7 +2352,9 @@ select.form__input {
 
 .form__item.is-success .form__label,
 .form__item.is-success .form__addon,
-.form__item.is-success .form__help {
+.form__item.is-success .form__help,
+.form__item.is-success .form__checkbox,
+.form__item.is-success .form__radio {
   color: #008d45; }
 
 .form__item.is-success .form__input:not(:focus) {
@@ -2360,7 +2362,9 @@ select.form__input {
 
 .form__item.has-error .form__label,
 .form__item.has-error .form__addon,
-.form__item.has-error .form__help {
+.form__item.has-error .form__help,
+.form__item.has-error .form__checkbox,
+.form__item.has-error .form__radio {
   color: #990025; }
 
 .form__item.has-error .form__input:not(:focus) {
