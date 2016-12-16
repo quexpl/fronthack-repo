@@ -2263,7 +2263,8 @@ blockquote {
   position: relative;
   width: 300px;
   overflow: visible; }
-  *[class^="col-"] > .form__item {
+  *[class^="col-"] > .form__item,
+  *[class^="col-"] > .box > .form__item {
     min-width: auto; }
 
 .form__label {
@@ -2273,18 +2274,12 @@ blockquote {
   text-transform: none;
   font-weight: 500; }
 
-.form__help {
-  position: absolute;
-  top: 100%;
-  display: block;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  color: #1f364b; }
-
-.form__checkbox,
-.form__radio {
-  display: block; }
+.form__actions {
+  margin-top: 90px; }
+  .form__actions button,
+  .form__actions input[type="button"],
+  .form__actions input[type="submit"] {
+    margin: 0; }
 
 .form__input {
   width: 100%;
@@ -2323,19 +2318,25 @@ select.form__input {
   select.form__input[multiple] {
     height: auto; }
 
+.form__checkbox,
+.form__radio {
+  display: block; }
+
+.form__help {
+  position: absolute;
+  top: 100%;
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1f364b; }
+
 .form__addon {
   position: absolute;
   top: 26px;
   right: 13.33333px;
   font-size: 11.2px;
   line-height: 40px; }
-
-.form__actions {
-  margin-top: 90px; }
-  .form__actions button,
-  .form__actions input[type="button"],
-  .form__actions input[type="submit"] {
-    margin: 0; }
 
 .form__item--inline {
   width: 100%; }
