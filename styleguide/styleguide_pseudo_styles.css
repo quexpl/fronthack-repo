@@ -204,19 +204,6 @@ input[type="submit"].pseudo-class-focus {
 
 .tabs__input.pseudo-class-checked + .tabs__label {
   background-color: #d8d8d8;
-}
-
-.timeline__description p.pseudo-class-last-child {
-  margin: 0;
-}
-
-.timeline__item.pseudo-class-last-of-type .timeline__text {
-  border: none;
-}
-
-.timeline__item.pseudo-class-last-of-type .timeline__description {
-  border: none;
-  padding: 0;
 }.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.pseudo-class-hover:before {
   left: -5px !important;
 }
