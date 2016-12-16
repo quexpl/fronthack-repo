@@ -1,7 +1,7 @@
 #!/bin/bash
-# In case when you decide to not use styleguide on the project, run
-# ./purge_styleguide.sh command in the root of the bootsmacss directory to remove
-# styleguide and all it's generating stuff.
+# Run this script in the root of the bootsmacss director if you decide to not
+# use a styleguide. It removes all it's stuff from file epository.
+# WARNING: Before you do that, make sure that gulpfile was not modified.
 
 echo "Removing styleguide files"
 rm -rf ./styleguide
