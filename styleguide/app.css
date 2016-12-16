@@ -3723,6 +3723,27 @@ input[type="submit"] {
   margin: 150px 0 20px;
   text-align: center; }
 
+.rating__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #f5f6f8; }
+  .rating__dot + .rating__dot {
+    margin-left: 10px; }
+
+.rating--1 .rating__dot:nth-last-of-type(3) {
+  background-color: #4193a9; }
+
+.rating--2 .rating__dot:nth-last-of-type(3),
+.rating--2 .rating__dot:nth-last-of-type(2) {
+  background-color: #4193a9; }
+
+.rating--3 .rating__dot:nth-last-of-type(3),
+.rating--3 .rating__dot:nth-last-of-type(2),
+.rating--3 .rating__dot:nth-last-of-type(1) {
+  background-color: #4193a9; }
+
 .ribbon {
   position: absolute;
   bottom: 20px;
