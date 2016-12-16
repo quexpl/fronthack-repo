@@ -67,6 +67,8 @@ gulp.task('styleguide:generate', function() {
         commonClass: 'body',
         extraHead: [
           '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>',
+          '<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>',
+          '<script src="/js/components/owl-carousel.js"></script>',
         ],
         disableEncapsulation: true
       }))

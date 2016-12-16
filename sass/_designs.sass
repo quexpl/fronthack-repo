@@ -1,0 +1,46 @@
+//
+// Designs display on page  - pixel perfect tests
+// --------------------------------------------------
+
+
+// Displays designs on the prototype ass full page overlay.
+// Uncomment importing of this file in app.sass to compare prepared markup and
+// stylesheets with the graphical designs. With this simple tool you can perform
+// pixel-perfect tests.
+//
+// Store designs in `designs`folder in jpg/png extensions and paste its
+// URL into modifiers there.
+//
+// Add following code at the end of the comparing html file
+// (ex. html-prototypes-sandbox/index.html):
+// <div class="designs designs--name"></div>
+
+$designs-width: 1280px
+
+
+// Component
+// --------------------------------------------------
+.designs
+  position: absolute
+  top: 13px
+  left: 50%
+  height: 9999px
+  width: $designs-width
+  margin: 0 (-$designs-width/2)
+  background-position: top
+  background-size: contain
+  background-repeat: no-repeat
+  z-index: -100
+
+header,
+main,
+*[class^="layout"],
+*[class*=" layout"],
+footer
+  opacity: 0.8
+
+// Modifiers
+// --------------------------------------------------
+// Create there a modifier for each page.
+.designs--index
+  background-image: url('../designs/index.jpg')
