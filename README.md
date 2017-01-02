@@ -1,11 +1,11 @@
-### Visit homepage - [frontcraft.github.io/bootsmacss](http://frontcraft.github.io/bootsmacss/)
+### Homepage - [frontcraft.github.io/bootsmacss](http://frontcraft.github.io/bootsmacss/)
 
 
 ### How to use?
 
-Learn about how to set up new project, suggested workflow and best practices - [Read a tutorial](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation).
+Learn about how to set up new project, suggested workflow and best practices - **[Read a tutorial](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation)**
 
-### Quickstart
+#### Quickstart
 
 ```
 # Global system dependencies
