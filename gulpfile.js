@@ -58,7 +58,7 @@ gulp.task('mustache', function() {
 gulp.task('styleguide:generate', function() {
   return gulp.src(paths.styleguide.sass)
     .pipe(styleguide.generate({
-        title: 'Bootsmacss styleguide',
+        title: 'Fronthack styleguide',
         server: true,
         sideNav: true,
         rootPath: paths.styleguide.output,

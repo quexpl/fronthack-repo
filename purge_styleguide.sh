@@ -1,5 +1,5 @@
 #!/bin/bash
-# Run this script in the root of the bootsmacss director if you decide to not
+# Run this script in the root of the fronthack directory if you decide to not
 # use a styleguide. It removes all it's stuff from file epository.
 # WARNING: Before you do that, make sure that gulpfile was not modified.
 
