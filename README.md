@@ -1,9 +1,9 @@
-### Homepage - [frontcraft.github.io/bootsmacss](http://frontcraft.github.io/bootsmacss/)
+### Homepage - [frontcraft.github.io/fronthack](http://frontcraft.github.io/fronthack/)
 
 
 ### How to use?
 
-Learn about how to set up new project, suggested workflow and best practices - **[Read a tutorial](https://github.com/frontcraft/bootsmacss/wiki/1.-Installation)**
+Learn about how to set up new project, suggested workflow and best practices - **[Read a tutorial](https://github.com/frontcraft/fronthack/wiki/1.-Installation)**
 
 #### Quickstart
 
@@ -12,9 +12,9 @@ Learn about how to set up new project, suggested workflow and best practices - *
 brew update
 brew install node
 npm install --global gulp
-# Particular project
-git clone https://github.com/frontcraft/bootsmacss.git
-cd bootsmacss
+# Set up new project
+git clone https://github.com/frontcraft/fronthack.git
+cd fronthack
 npm install
 gulp
 ```
