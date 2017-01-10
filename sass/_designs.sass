@@ -20,27 +20,42 @@ $designs-width: 1280px
 
 // Component
 // --------------------------------------------------
-.designs
-  position: absolute
-  top: 13px
-  left: 50%
-  height: 9999px
-  width: $designs-width
-  margin: 0 (-$designs-width/2)
-  background-position: top
-  background-size: contain
-  background-repeat: no-repeat
-  z-index: -100
+.design-toggler
+  position: fixed
+  bottom: 0
+  right: 0
+  padding: 7px
+  text-align: center
+  background-color: $gray-base
+  border-top-left-radius: 7px
+  z-index: 1000
 
-header,
-main,
-*[class^="layout"],
-*[class*=" layout"],
-footer
-  opacity: 0.8
+// Affect the page only if 'show-designs' body class is present.
+// This class is toggled by .design-toggler checkbox at the right-bottom corner
+// of the page. See js/design-toggler.js.
+.show-designs
+  .designs
+    position: absolute
+    top: 13px
+    left: 50%
+    height: 9999px
+    width: $designs-width
+    margin: 0 (-$designs-width/2)
+    background-position: top
+    background-size: contain
+    background-repeat: no-repeat
+    z-index: -100
+  header,
+  main,
+  *[class^="layout"],
+  *[class*=" layout"],
+  footer
+    opacity: 0.8
 
-// Modifiers
-// --------------------------------------------------
-// Create there a modifier for each page.
-.designs--index
-  background-image: url('../designs/index.jpg')
+
+  // Page Modifiers
+  // --------------------------------------------------
+  // Create a modifier for each html page.
+  // Stay consistent to html file name to avoid chaos.
+  .designs--index
+    background-image: url('../designs/index.jpg')

@@ -3996,6 +3996,38 @@ input[type="submit"] {
   margin-top: 80px;
   padding: 60px 0;
   background-color: #d8d8d8; }
+
+.design-toggler {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 7px;
+  text-align: center;
+  background-color: #101c27;
+  border-top-left-radius: 7px;
+  z-index: 1000; }
+
+.show-designs .designs {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  height: 9999px;
+  width: 1280px;
+  margin: 0 -640px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -100; }
+
+.show-designs header,
+.show-designs main,
+.show-designs *[class^="layout"],
+.show-designs *[class*=" layout"],
+.show-designs footer {
+  opacity: 0.8; }
+
+.show-designs .designs--index {
+  background-image: url("../designs/index.jpg"); }
 .sg.sg-header .sg-title h1 {
   font-weight: 500 !important; }
 
