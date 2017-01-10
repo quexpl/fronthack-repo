@@ -23,9 +23,9 @@ a a.pseudo-class-visited {
 #accordion-toggle-2.pseudo-class-checked ~ #accordion-content-2,
 #accordion-toggle-3.pseudo-class-checked ~ #accordion-content-3,
 #accordion-toggle-4.pseudo-class-checked ~ #accordion-content-4,
-#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-5,
-#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-6,
-#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-7 {
+#accordion-toggle-5.pseudo-class-checked ~ #accordion-content-5,
+#accordion-toggle-6.pseudo-class-checked ~ #accordion-content-6,
+#accordion-toggle-7.pseudo-class-checked ~ #accordion-content-7 {
   height: auto;
   opacity: 1;
   padding: 20px 10px 0;

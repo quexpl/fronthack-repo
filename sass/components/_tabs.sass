@@ -50,14 +50,11 @@
 
 // States
 // --------------------------------------------------
-// Open content when clicking label.
-#tabs-toggle-1:checked ~ #tabs-content-1,
-#tabs-toggle-2:checked ~ #tabs-content-2,
-#tabs-toggle-3:checked ~ #tabs-content-3,
-#tabs-toggle-4:checked ~ #tabs-content-4,
-#tabs-toggle-5:checked ~ #tabs-content-5,
-#tabs-toggle-6:checked ~ #tabs-content-6,
-#tabs-toggle-7:checked ~ #tabs-content-7
+// Open content when clicking label (jQuery mimic)
+$foo : ''
+@for $i from 1 through 7
+  $foo : $foo + '#tabs-toggle-' + $i + ':checked ~ #tabs-content-' + $i + ','
+#{$foo}
   opacity: 1
   display: block
 
