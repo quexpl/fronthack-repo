@@ -6,8 +6,8 @@
 
 
 read -p "Type machine name of new component: "  name
-read -p "Type it's short description:" descr
-read -p "Do you want to include also it's example html file? [Y/n]"  html
+read -p "Type it's short description: " descr
+read -p "Do you want to include also html file with example markup? [Y/n]"  html
 
 
 echo ""
