@@ -51,6 +51,7 @@
 // .icon--diamond - .icon--diamond
 // .icon--doc - .icon--doc
 // .icon--doc-ok - .icon--doc-ok
+// .icon--doc-edit - .icon--doc-edit
 // .icon--docs - .icon--docs
 // .icon--doc-search - .icon--doc-search
 // .icon--drop - .icon--drop
@@ -64,7 +65,6 @@
 // .icon--eu - .icon--eu
 // .icon--europe - .icon--europe
 // .icon--eye - .icon--eye
-// .icon--fill-doc - .icon--fill-doc
 // .icon--flag - .icon--flag
 // .icon--flag-slat - .icon--flag-slat
 // .icon--glasses - .icon--glasses
@@ -162,10 +162,6 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   font-variant: normal
   text-transform: none
   position: relative
-  &:before
-    // To small icons fix.
-    display: inline-block
-    transform: scale(2)
 
 
 // Modifiers
@@ -237,10 +233,10 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e672"
 
 .icon--arrows:before
-  content: "\e648"
+  content: "\e64b"
 
 .icon--at:before
-  content: "\e900"
+  content: "\e88f"
 
 .icon--bell:before
   content: "\e61a"
@@ -252,13 +248,13 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e70f"
 
 .icon--books:before
-  content: "\e64b"
+  content: "\e648"
 
 .icon--book-bookmark:before
-  content: "\e64c"
+  content: "\e647"
 
 .icon--bookmark:before
-  content: "\e64d"
+  content: "\e649"
 
 .icon--buildings:before
   content: "\e627"
@@ -270,7 +266,7 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e61b"
 
 .icon--calendar-check:before
-  content: "\e649"
+  content: "\e64c"
 
 .icon--cam:before
   content: "\e79d"
@@ -300,13 +296,16 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e884"
 
 .icon--diamond:before
-  content: "\e6f4"
+  content: "\e7e7"
 
 .icon--doc:before
-  content: "\e7e7"
+  content: "\e6f4"
 
 .icon--doc-ok:before
   content: "\e6f7"
+
+.icon--doc-edit:before
+  content: "\e62d"
 
 .icon--docs:before
   content: "\e604"
@@ -339,16 +338,13 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e637"
 
 .icon--eu:before
-  content: "\e64a"
+  content: "\e64d"
 
 .icon--europe:before
   content: "\e62f"
 
 .icon--eye:before
   content: "\e7ab"
-
-.icon--fill-doc:before
-  content: "\e62d"
 
 .icon--flag:before
   content: "\e67e"
@@ -372,13 +368,13 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e692"
 
 .icon--helpdesk:before
-  content: "\e647"
+  content: "\e64a"
 
 .icon--indicator:before
   content: "\e69b"
 
 .icon--info:before
-  content: "\e905"
+  content: "\e891"
 
 .icon--in:before
   content: "\e664"
@@ -477,10 +473,10 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e61f"
 
 .icon--social-flickr:before
-  content: "\e904"
+  content: "\e88c"
 
 .icon--social-gplus:before
-  content: "\e903"
+  content: "\e88e"
 
 .icon--social-linkedin:before
   content: "\e623"
@@ -489,7 +485,7 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
   content: "\e61e"
 
 .icon--social-youtube:before
-  content: "\e902"
+  content: "\e88d"
 
 .icon--stack:before
   content: "\e7c6"
@@ -556,34 +552,34 @@ $waat-icons-font-path: "../images/fonts/waat-icons"
 
 // File mime icons:
 .icon--mime-default:before
-  content: "\e63c"
+  content: "\e645"
 
 .icon--mime-doc:before
-  content: "\e63d"
+  content: "\e63f"
 
 .icon--mime-exe:before
-  content: "\e643"
+  content: "\e644"
 
 .icon--mime-gif:before
-  content: "\e887"
+  content: "\e886"
 
 .icon--mime-jpg:before
-  content: "\e644"
+  content: "\e642"
 
 .icon--mime-pdf:before
   content: "\e641"
 
 .icon--mime-png:before
-  content: "\e642"
+  content: "\e643"
 
 .icon--mime-ppt:before
-  content: "\e886"
+  content: "\e887"
 
 .icon--mime-rar:before
-  content: "\e63f"
-
-.icon--mime-xls:before
   content: "\e63e"
 
-.icon--mime-zip:before
+.icon--mime-xls:before
   content: "\e640"
+
+.icon--mime-zip:before
+  content: "\e63d"

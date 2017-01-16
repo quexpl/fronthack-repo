@@ -4,16 +4,15 @@
 //
 // Markup: html/btn.html
 //
-// .btn--xs       - Extremly small button
+// .btn--xs       - Extreme small button
 // .btn--sm       - Small button
 // default        - Default
 // .btn--lg       - Large button
-// .btn--circle   - Circular button
-// .btn--block    - Block button
-// .btn--light    - light style
-// .btn--primary  - Primary style
+// .btn--block    - 100% container width button
+// .btn--primary  - Primary color style
+// .btn--light    - light white style
 // .btn--link     - Link style
-// .btn--disabled - Disabled style
+// .btn--disabled - Decreased opacity and cmouse ursor change
 //
 //
 // Styleguide 2.btn
@@ -65,19 +64,6 @@ input[type="submit"]
 .btn--lg
   padding: 15px 35px
   border-radius: 30px
-
-.btn--circle
-  width: 48px
-  height: 48px
-  line-height: 48px
-  padding: 0
-  margin: -14px 0
-  display: inline-block
-  text-align: center
-  border-radius: 50%
-  +btn-color($text-color, #fff, #fff)
-  &:hover, &:focus
-    +btn-color(#fff, $gray-base, $gray-base)
 
 .btn--light
   +btn-color(#fff, #fff)

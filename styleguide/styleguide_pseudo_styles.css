@@ -49,13 +49,6 @@ input[type="submit"].pseudo-class-focus {
   border-color: #101c27;
 }
 
-.btn--circle.pseudo-class-hover,
-.btn--circle.pseudo-class-focus {
-  color: #fff;
-  background-color: #101c27 !important;
-  border-color: #101c27;
-}
-
 .btn--light.pseudo-class-hover,
 .btn--light.pseudo-class-focus {
   color: #101c27;
