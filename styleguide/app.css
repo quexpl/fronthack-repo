@@ -38,6 +38,12 @@
 .inline * {
   display: inline !important; }
 
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 60px; }
+  .table-responsive table {
+    margin-bottom: 0; }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -2466,6 +2472,32 @@ dl {
   .paragraph strong, p strong {
     font-weight: 700; }
 
+table {
+  border-spacing: 0;
+  margin-bottom: 60px; }
+  table caption {
+    text-align: left;
+    padding: 5px 0;
+    border-top: 1px solid #101c27;
+    border-bottom: 1px solid #101c27;
+    margin-bottom: 25px; }
+    table caption dl {
+      margin: 0; }
+  table thead,
+  table tbody {
+    font-size: 12px; }
+  table th,
+  table td {
+    padding: 4px 10px 4px 5px;
+    vertical-align: top; }
+  table thead th {
+    background-color: #101c27;
+    color: #fff;
+    text-align: left; }
+  table tr:not(:last-child) th,
+  table tr:not(:last-child) td {
+    border-bottom: 1px solid #101c27; }
+
 .accordion__input {
   position: absolute;
   opacity: 0; }
@@ -2718,6 +2750,63 @@ input[type="submit"] {
 
 .counter--open.counter.is-big .counter__left {
   display: none; }
+
+.donut-chart {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: #fafafa linear-gradient(to right, #fafafa 50%, #d8d8d8 50%);
+  color: #d8d8d8;
+  border-radius: 50%;
+  position: relative; }
+  .donut-chart::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: inherit;
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 100% 100% 0 / 50%;
+    transform: rotate(0);
+    transform-origin: 0 50%;
+    animation: 50s donut-chart-spin infinite linear, 100s donut-chart-background infinite step-end;
+    animation-play-state: paused;
+    animation-delay: inherit; }
+  .donut-chart::after {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%; }
+
+@keyframes donut-chart-spin {
+  to {
+    transform: rotate(180deg); } }
+
+@keyframes donut-chart-background {
+  50% {
+    background-color: currentColor; } }
+
+.donut-chart__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+  color: #101c27; }
 
 .dropdown {
   position: relative;
@@ -3766,6 +3855,22 @@ input[type="submit"] {
 
 .popover-demo {
   margin: 150px 0 20px;
+  text-align: center; }
+
+.progress-bar {
+  height: 30px;
+  background-color: #fafafa;
+  position: relative; }
+
+.progress-bar__meter {
+  height: 100%;
+  background-color: #4193a9; }
+
+.progress-bar__label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  line-height: 30px;
   text-align: center; }
 
 .rating__dot {
