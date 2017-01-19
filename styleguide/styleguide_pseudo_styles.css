@@ -2,6 +2,15 @@ blockquote p.pseudo-class-last-child {
   margin-bottom: 0;
 }
 
+.form__item--fancy .form__checkbox input.pseudo-class-checked {
+  background-color: #00a651;
+}
+
+.form__item--fancy .form__checkbox input.pseudo-class-checked::after {
+  left: auto;
+  right: 0;
+}
+
 .form__input.pseudo-class-focus {
   border: 2px solid #4193a9;
   box-shadow: none;
@@ -173,15 +182,6 @@ input[type="submit"].pseudo-class-focus {
   background-color: transparent;
   border: 1px #4193a9 solid;
   border-radius: 50%;
-}
-
-.switch__input.pseudo-class-checked + label:before {
-  background: #00a651;
-  opacity: 1;
-}
-
-.switch__input.pseudo-class-checked + label:after {
-  left: 29px;
 }
 
 #tabs-toggle-1.pseudo-class-checked ~ #tabs-content-1,
