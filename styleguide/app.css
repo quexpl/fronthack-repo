@@ -2389,6 +2389,20 @@ select.form__input {
   box-shadow: none;
   outline-width: 0; }
 
+*[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed; }
+
+input[disabled],
+textarea[disabled],
+select[disabled],
+*[disabled] input,
+*[disabled] textarea,
+*[disabled] select,
+*[disabled] .form__checkbox,
+*[disabled] .form__radio {
+  pointer-events: none; }
+
 .form__item.is-success .form__label,
 .form__item.is-success .form__addon,
 .form__item.is-success .form__help,

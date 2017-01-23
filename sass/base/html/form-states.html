@@ -8,17 +8,7 @@
   </div>
 
   <div class="form__item is-success">
-    <span class="form__label">Checkboxes with success</span>
-    <label class="form__checkbox">
-      <input type="checkbox" name="checkbox1" value="option1"> Option 1
-    </label>
-    <label class="form__checkbox">
-      <input type="checkbox" name="checkbox2" value="option2"> Option 2
-    </label>
-  </div>
-
-  <div class="form__item is-success">
-    <span class="form__label">Radios with success</span>
+    <span class="form__label">Options with success</span>
     <label class="form__radio">
       <input type="radio" name="radio" value="option1"> Option 1
     </label>
@@ -35,17 +25,23 @@
   </div>
 
   <div class="form__item has-error">
-    <span class="form__label">Checkboxes with error</span>
-    <label class="form__checkbox">
-      <input type="checkbox" name="checkbox1" value="option1"> Option 1
+    <span class="form__label">Radios with error</span>
+    <label class="form__radio">
+      <input type="radio" name="radio" value="option1"> Option 1
     </label>
-    <label class="form__checkbox">
-      <input type="checkbox" name="checkbox2" value="option2"> Option 2
+    <label class="form__radio">
+      <input type="radio" name="radio" value="option2"> Option 2
     </label>
   </div>
 
-  <div class="form__item has-error">
-    <span class="form__label">Radios with error</span>
+  <div class="form__item" disabled>
+    <label class="form__label" for="textInput">Disabled input</label>
+    <input class="form__input" name="textInput" type="text">
+    <span class="form__help">Help text</span>
+  </div>
+
+  <div class="form__item" disabled>
+    <span class="form__label">Disabled options</span>
     <label class="form__radio">
       <input type="radio" name="radio" value="option1"> Option 1
     </label>
