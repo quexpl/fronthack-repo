@@ -1,28 +1,43 @@
 ### Homepage - [frontcraft.github.io/fronthack](http://frontcraft.github.io/fronthack/)
 
+## Getting started
 
-### How to use?
+### 1. You need [Gulp](http://gulpjs.com/) installed, which is a _Node.js_ package.
 
-Learn about how to set up new project, suggested workflow and best practices - **[Read a tutorial](https://github.com/frontcraft/fronthack/wiki/1.-Installation)**
-
-#### Quickstart
-
+Using Mac? Do that with homebrew
 ```
-# Global system dependencies
 brew update
 brew install node
 npm install --global gulp
-# Set up new project
-git clone https://github.com/frontcraft/fronthack.git
-cd fronthack
-npm install
-gulp
+```
+
+Using Ubuntu?
+```
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+npm install --global gulp
 ```
 
 
-### Created by
+### 2. Download or clone
 
-* Michal Kokocinski
-* Kris Gunciarz
+**[Use download link](https://github.com/frontcraft/fronthack/archive/master.zip)**
+or paste that at a Terminal prompt:
+```
+git clone --depth=1 https://github.com/frontcraft/fronthack.git
+cd fronthack
+rm -rf .git
+```
+
+
+### 3. Install project dependencies
+
+While being in fronthack folder, run this in terminal:
+```
+npm install
+```
+Now you should learn [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/2.-How-to-work-with-Fronthack).
+
+----------
 
 Development Supported by [WAAT Ltd](http://waat.eu)
