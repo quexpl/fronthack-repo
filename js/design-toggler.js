@@ -8,14 +8,14 @@ if (designsContainer != null) {
   checkbox.innerHTML = '<input type="checkbox" id="toggler" onclick="toggleDesigns();"' + checked +' title="Toggle design overlay">';
   designsContainer.parentNode.insertBefore(checkbox, designsContainer.nextSibling);
 }
-// Toggle designs
+toggleDesigns();
+
+// Apply or not apply designs
 function toggleDesigns() {
   if (document.getElementById('toggler').checked) {
-    // designsContainer.classList.add("hidden");
     document.body.classList.add("show-designs");
     sessionStorage.setItem('showDesigns', true);
   } else {
-    // designsContainer.classList.remove("hidden");
     document.body.classList.remove("show-designs");
     sessionStorage.removeItem('showDesigns', false);
   }
