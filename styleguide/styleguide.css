@@ -2264,6 +2264,9 @@ blockquote {
 .color--brand-primary-light {
   background-color: #57c2f0; }
 
+.form {
+  margin: 0; }
+
 .form__item {
   margin: 0 0 30px;
   position: relative;
@@ -2634,6 +2637,25 @@ input[type="submit"] {
     background-color: #101c27 !important;
     border-color: #101c27; }
 
+.btn + .btn, button + .btn,
+input[type="button"] + .btn,
+input[type="submit"] + .btn, .btn + button, button + button,
+input[type="button"] + button,
+input[type="submit"] + button, .btn +
+input[type="button"], button +
+input[type="button"],
+input[type="button"] +
+input[type="button"],
+input[type="submit"] +
+input[type="button"], .btn +
+input[type="submit"], button +
+input[type="submit"],
+input[type="button"] +
+input[type="submit"],
+input[type="submit"] +
+input[type="submit"] {
+  margin-left: 15px; }
+
 button,
 input[type="button"],
 input[type="submit"] {
@@ -2862,6 +2884,9 @@ input[type="submit"] {
 .dropdown__input {
   position: absolute;
   opacity: 0; }
+
+.dropdown__label {
+  cursor: pointer; }
 
 .dropdown__inner {
   position: absolute !important;
@@ -3501,6 +3526,9 @@ input[type="submit"] {
 .modal__input {
   position: absolute;
   opacity: 0; }
+
+.modal__label {
+  cursor: pointer; }
 
 .modal__inner {
   display: none;

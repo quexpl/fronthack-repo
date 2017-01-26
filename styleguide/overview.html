@@ -1,20 +1,27 @@
 <h3 class="sg" name="homepage---frontcraft.github.io/fronthack">Homepage - <a href="http://frontcraft.github.io/fronthack/" class="sg">frontcraft.github.io/fronthack</a></h3>
-<h3 class="sg" name="how-to-use?">How to use?</h3>
-<p class="sg">Learn about how to set up new project, suggested workflow and best practices - <strong><a href="https://github.com/frontcraft/fronthack/wiki/1.-Installation" class="sg">Read a tutorial</a></strong></p>
-<h4 class="sg" name="quickstart">Quickstart</h4>
-<div hljs=""># Global system dependencies
-brew update
+<h2 class="sg" name="getting-started">Getting started</h2>
+<h3 class="sg" name="1.-you-need-gulp-installed,-which-is-a-node.js-package.">1. You need <a href="http://gulpjs.com/" class="sg">Gulp</a> installed, which is a <em>Node.js</em> package.</h3>
+<p class="sg">Using Mac? Do that with homebrew</p>
+<div hljs="">brew update
 brew install node
 npm install --global gulp
-# Set up new project
-git clone https://github.com/frontcraft/fronthack.git
-cd fronthack
-npm install
-gulp
 </div>
-<h3 class="sg" name="created-by">Created by</h3>
-<ul>
-<li class="sg">Michal Kokocinski</li>
-<li class="sg">Kris Gunciarz</li>
-</ul>
+<p class="sg">Using Ubuntu?</p>
+<div hljs="">sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+npm install --global gulp
+</div>
+<h3 class="sg" name="2.-download-or-clone">2. Download or clone</h3>
+<p class="sg"><strong><a href="https://github.com/frontcraft/fronthack/archive/master.zip" class="sg">Use download link</a></strong>
+or paste that at a Terminal prompt:</p>
+<div hljs="">git clone --depth=1 https://github.com/frontcraft/fronthack.git
+cd fronthack
+rm -rf .git
+</div>
+<h3 class="sg" name="3.-install-project-dependencies">3. Install project dependencies</h3>
+<p class="sg">While being in fronthack folder, run this in terminal:</p>
+<div hljs="">npm install
+</div>
+<p class="sg">Now you should learn <a href="https://github.com/frontcraft/fronthack/wiki/2.-How-to-work-with-Fronthack" class="sg">How to work with Fronthack</a>.</p>
+<hr>
 <p class="sg">Development Supported by <a href="http://waat.eu" class="sg">WAAT Ltd</a></p>
