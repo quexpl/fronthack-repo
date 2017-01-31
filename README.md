@@ -15,6 +15,7 @@ Using Ubuntu?
 ```
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
+sudo apt-get install nodejs
 npm install --global gulp
 ```
 
@@ -36,7 +37,7 @@ While being in fronthack folder, run this in terminal:
 ```
 npm install
 ```
-Now you should learn [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/2.-How-to-work-with-Fronthack).
+Now you should learn [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack).
 
 ----------
 
