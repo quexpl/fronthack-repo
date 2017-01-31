@@ -197,6 +197,15 @@ input[type="submit"].pseudo-class-focus {
 
 .tabs__input.pseudo-class-checked + .tabs__label {
   background-color: #d8d8d8;
+}
+
+.timeline__item.pseudo-class-first-of-type {
+  width: 0;
+}
+
+.timeline__item.pseudo-class-first-of-type .timeline__label {
+  width: 40px;
+  margin-left: -20px;
 }.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.pseudo-class-hover:before {
   left: -5px !important;
 }
