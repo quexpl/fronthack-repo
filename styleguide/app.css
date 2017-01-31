@@ -2666,6 +2666,8 @@ input[type="submit"] {
   display: block;
   max-width: none;
   text-align: center; }
+  .btn--block + .btn--block {
+    margin: 25px 0 0; }
 
 .btn--xs {
   padding: 3px 10px 4px; }
@@ -3533,7 +3535,8 @@ input[type="submit"] {
 .modal__inner {
   display: none;
   position: fixed;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   width: 400px;
   box-shadow: 0 5px 10px 0 #3d6a93;
   z-index: 101; }
@@ -4101,7 +4104,7 @@ input[type="submit"] {
   padding: 7px;
   text-align: center;
   background-color: #101c27;
-  border-top-left-radius: 7px;
+  border-top-left-radius: 3px;
   z-index: 1000; }
 
 .show-designs .designs {
