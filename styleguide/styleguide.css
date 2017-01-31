@@ -2522,6 +2522,10 @@ dl {
   .paragraph strong, p strong {
     font-weight: 700; }
 
+pre {
+  background-color: #f5f6f8;
+  padding: 20px; }
+
 table {
   border-spacing: 0;
   margin-bottom: 60px; }
