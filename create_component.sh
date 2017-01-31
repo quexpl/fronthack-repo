@@ -6,11 +6,14 @@
 
 
 read -p "Type machine name of new component: "  name
-read -p "Type it's short description:" descr
-read -p "Do you want to include also it's example html file? [Y/n]"  html
+read -p "Type it's short description: " descr
+read -p "Do you want to include also html file with example markup? [Y/n]"  html
 
 
 echo ""
+echo "---"
+
+
 echo "Creating Sass file for $name"
 sed "s/[Ee]xample/$name/g" sass/components/!EXAMPLE.sass > sass/components/_$name.sass
 sed -i "3,8d" sass/components/_$name.sass
@@ -31,6 +34,8 @@ echo "Adding import to app.sass file"
 sed -i "s/New components/&\n@import \"components\/$name\"/g" sass/app.sass
 
 
-echo ""
-echo "If you use MacOS and sed throws you errors, install gnu-sed instead:"
+echo "---"
+
+
+echo "If you use MacOS and \"sed\" throws you errors, install gnu-sed instead:"
 echo "$ brew install gnu-sed --default-names"

@@ -2,6 +2,15 @@ blockquote p.pseudo-class-last-child {
   margin-bottom: 0;
 }
 
+.form__item--fancy .form__checkbox input.pseudo-class-checked {
+  background-color: #00a651;
+}
+
+.form__item--fancy .form__checkbox input.pseudo-class-checked::after {
+  left: auto;
+  right: 0;
+}
+
 .form__input.pseudo-class-focus {
   border: 2px solid #4193a9;
   box-shadow: none;
@@ -23,9 +32,9 @@ a a.pseudo-class-visited {
 #accordion-toggle-2.pseudo-class-checked ~ #accordion-content-2,
 #accordion-toggle-3.pseudo-class-checked ~ #accordion-content-3,
 #accordion-toggle-4.pseudo-class-checked ~ #accordion-content-4,
-#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-5,
-#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-6,
-#accordion-toggle-4.pseudo-class-checked ~ #accordion-content-7 {
+#accordion-toggle-5.pseudo-class-checked ~ #accordion-content-5,
+#accordion-toggle-6.pseudo-class-checked ~ #accordion-content-6,
+#accordion-toggle-7.pseudo-class-checked ~ #accordion-content-7 {
   height: auto;
   opacity: 1;
   padding: 20px 10px 0;
@@ -44,13 +53,6 @@ button.pseudo-class-focus,
 input[type="button"].pseudo-class-focus,
 input[type="submit"].pseudo-class-focus {
   transition: color 250ms, border-color 250ms, background 250ms;
-  color: #fff;
-  background-color: #101c27 !important;
-  border-color: #101c27;
-}
-
-.btn--circle.pseudo-class-hover,
-.btn--circle.pseudo-class-focus {
   color: #fff;
   background-color: #101c27 !important;
   border-color: #101c27;
@@ -180,15 +182,6 @@ input[type="submit"].pseudo-class-focus {
   background-color: transparent;
   border: 1px #4193a9 solid;
   border-radius: 50%;
-}
-
-.switch__input.pseudo-class-checked + label:before {
-  background: #00a651;
-  opacity: 1;
-}
-
-.switch__input.pseudo-class-checked + label:after {
-  left: 29px;
 }
 
 #tabs-toggle-1.pseudo-class-checked ~ #tabs-content-1,
