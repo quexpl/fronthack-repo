@@ -2587,6 +2587,23 @@ table {
 .accordion__input:checked + .accordion__label::after {
   content: '-'; }
 
+.badge {
+  background-color: #4193a9;
+  border: 0 #4193a9 solid;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: -33%;
+  left: -33%; }
+
 .block__title {
   position: relative;
   padding-bottom: 40px;
@@ -3651,26 +3668,6 @@ input[type="submit"] {
   background-color: #fff;
   text-decoration: none;
   font-weight: 500; }
-
-.notification-counter {
-  background-color: #4193a9;
-  border: 0 #4193a9 solid;
-  border-radius: 50%;
-  font-size: 10px;
-  font-weight: 500;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  color: #fff;
-  text-align: center;
-  display: block;
-  position: absolute;
-  bottom: -33%;
-  left: -33%; }
-
-.notification-counter__wrapper {
-  position: relative; }
 
 .ornament:before {
   content: '';
