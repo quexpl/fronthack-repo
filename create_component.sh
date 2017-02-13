@@ -15,7 +15,8 @@ echo "------------------------------------------------------------"
 
 
 echo "   Creating Sass file for the new $human_name component"
-sed "s/[Ee]xample/$human_name/g" sass/components/!EXAMPLE.sass > sass/components/_$name.sass
+sed "s/Example/$human_name/g" sass/components/!EXAMPLE.sass > sass/components/_$name.sass
+sed -i "s/example/$name/g" sass/components/_$name.sass
 sed -i "3,8d" sass/components/_$name.sass
 sed -i "3i\/\/ $descr" sass/components/_$name.sass
 
