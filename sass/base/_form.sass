@@ -26,7 +26,13 @@ $form-item-bg: $gray-lighter
   // Make form item full collumn width if is is composed in grid layout:
   *[class^="col-"] > &,
   *[class^="col-"] > .box > &
-    min-width: auto
+    width: auto
+// Table form integration
+td, th
+  &.form__item
+    margin: 0
+    padding: 0
+    vertical-align: middle
 
 
 .form__label

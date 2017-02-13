@@ -60,41 +60,30 @@
       @content
 
 
-// Clearfix
-//
-// For modern browsers
-// 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
-// 2. The use of `table` rather than `block` is only necessary if using
-//    `:before` to contain the top-margins of child elements.
-//
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
-
-=clearfix
-  clear: both
-  position: relative
-
-
 // Helper mixins
 //
 // Mixins that are including CSS that is often used.
 
-// Center-align a block level element
-=center()
-  display: block
-  margin-left: auto
-  margin-right: auto
+// Clearfix prevents overflowing of floated elements.
+=clearfix
+  &:after
+    content: ''
+    display: table
+    clear: both
 
-// Center element's content vertically
-=center-vertical()
-  position: relative
-  top: 50%
-  transform: translateY(-50%)
+// Center element hoizontally or vertically
+=center($position: 'horizontal')
+  @if $position == horizontal
+    display: block
+    margin-left: auto
+    margin-right: auto
+  @else if $position == vertical
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
 
 // Circle
-=circle($background-color: $brand-primary, $border-width: 0, $border-color: $brand-primary)
+=circle($background-color: $brand-primary, $border-color: $brand-primary, $border-width: 0)
   background-color: $background-color
   border: $border-width $border-color solid
   border-radius: 50%
@@ -138,7 +127,7 @@
 
 // Comma separated children
 =comma-separated()
-  & > *:not(:last-of-type)::after
+  & + &::before
     content: ', '
 
 // Set display of all childrens of the given element to inline.

@@ -2,9 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,greek,greek-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300&subset=latin,greek);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,greek-ext,greek);
-.clearfix {
-  clear: both;
-  position: relative; }
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .center {
   display: block;
@@ -2210,6 +2211,7 @@ body {
   background-color: #fdfdfd;
   line-height: 26px;
   margin: 0;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2274,7 +2276,12 @@ blockquote {
   overflow: visible; }
   *[class^="col-"] > .form__item,
   *[class^="col-"] > .box > .form__item {
-    min-width: auto; }
+    width: auto; }
+
+td.form__item, th.form__item {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle; }
 
 .form__label {
   display: block;
@@ -2542,7 +2549,7 @@ table {
     font-size: 12px; }
   table th,
   table td {
-    padding: 4px 10px 4px 5px;
+    padding: 10px;
     vertical-align: top; }
   table thead th {
     background-color: #101c27;
@@ -2613,9 +2620,10 @@ table {
   padding-bottom: 40px;
   margin: 0; }
 
-.block__content {
-  clear: both;
-  position: relative; }
+.block__content:after {
+  content: '';
+  display: table;
+  clear: both; }
 
 @media (min-width: 48em) {
   .block--title-md-inline {
@@ -2871,6 +2879,9 @@ input[type="submit"] {
     transform: rotateX(0);
     opacity: 1; } }
 
+.dropdown__nav > .modal {
+  display: block; }
+
 .dropdown-demo {
   margin: 0 0 150px; }
 
@@ -2916,15 +2927,18 @@ input[type="submit"] {
 .field__items {
   font-weight: 500; }
 
-.field--label-inline {
-  clear: both;
-  position: relative; }
-  .field--label-inline .field__label,
-  .field--label-inline .field__items {
-    display: inline-block;
-    float: left; }
-  .field--label-inline .field__label {
-    margin: 2px 5px 0 0; }
+.field--label-inline:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.field--label-inline .field__label,
+.field--label-inline .field__items {
+  display: inline-block;
+  float: left; }
+
+.field--label-inline .field__label {
+  margin: 2px 5px 0 0; }
 
 .field--margin {
   margin-bottom: 20px; }
@@ -3738,6 +3752,9 @@ input[type="submit"] {
 .popover__input {
   position: absolute;
   opacity: 0; }
+
+.popover__label {
+  cursor: pointer; }
 
 .popover__inner {
   position: absolute !important;
