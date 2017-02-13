@@ -272,3 +272,34 @@
         border-top: $size + 1 solid transparent
         border-bottom: $size + 1 solid transparent
         border-right: $size + 1 solid $border-color
+
+// Triangle
+// Will be finally a replcement for arrow mixin
+// Copied from UtilityBelt- https://github.com/dmtintner/UtilityBelt
+=triangle($direction, $size: 8px, $color: #222)
+  content: ''
+  display: block
+  position: absolute
+  height: 0
+  width: 0
+
+  @if $direction == "up"
+    border-bottom: $size solid $color
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    border-top: none
+  @else if $direction == "down"
+    border-top: $size solid $color
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    border-bottom: none
+  @else if $direction == "left"
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+    border-right: $size solid $color
+    border-left: none
+  @else if $direction == "right"
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+    border-left: $size solid $color
+    border-right: none
