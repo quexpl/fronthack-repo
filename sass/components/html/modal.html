@@ -1,10 +1,10 @@
-<div class="modal">
-  <input class="modal__input" id="modal-toggle" type="checkbox" name="modal" />
-  <label class="btn btn--primary modal__label" for="modal-toggle">
+<div class="modal {$modifiers}">
+  <input class="modal__input" id="{$modifiers}" type="checkbox" name="modal" />
+  <label class="btn btn--primary modal__label" for="{$modifiers}">
     Open modal
   </label>
   <div class="modal__inner">
-    <div class="modal__title">Modal title</div>
+    <div class="modal__title">Modal of class {$modifiers}</div>
     <div class="modal__content">
       Modal content
     </div>

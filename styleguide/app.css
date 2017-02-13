@@ -3486,7 +3486,9 @@ input[type="submit"] {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  width: 400px;
+  left: 50%;
+  width: 540px;
+  margin: 0 -270px;
   box-shadow: 0 5px 10px 0 #3d6a93;
   z-index: 101; }
 
@@ -3543,6 +3545,18 @@ input[type="submit"] {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.modal--xs .modal__inner {
+  margin: 0 -150px;
+  width: 300px; }
+
+.modal--sm .modal__inner {
+  margin: 0 -220px;
+  width: 440px; }
+
+.modal--lg .modal__inner {
+  margin: 0 -395px;
+  width: 790px; }
 
 .nav-horizontal {
   text-transform: uppercase;
