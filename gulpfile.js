@@ -85,11 +85,13 @@ gulp.task('styleguide:applystyles', function() {
     .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
+
 // Define copying images for styleguide task
 gulp.task('images', function() {
   gulp.src(['images/**'])
     .pipe(gulp.dest(paths.styleguide.output + '/images'));
 });
+
 // Define copying javascript for styleguide task
 gulp.task('js', function() {
   gulp.src(['js/components/**'])

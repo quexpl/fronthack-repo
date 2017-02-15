@@ -11,7 +11,7 @@
     </a>
   </header>
   <div class="sg sg-section-partial" ng-if="section.modifiers.length || section.description">
-    <p class="sg sg-section-description" ng-bind-html="section.description | unsafe"></p>
+    <div class="sg sg-section-description" ng-bind-html="section.description | unsafe"></div>
     <ul ng-if="section.modifiers.length" class="sg modifier-list">
       <li class="sg-item" ng-repeat="mod in section.modifiers">
         <strong ng-bind-html="mod.name | unsafe"></strong> - <span ng-bind-html="mod.description | unsafe"></span>
@@ -26,7 +26,7 @@
       </a>
     </div>
     <shadow-dom id="section-{{section.reference}}-modifier-{{mod.id}}-render-markup">
-      <div ng-bind-html="mod.renderMarkup | setModifierClass: mod.className | setVariables: variables | addWrapper | unsafe" dynamic-compile></div>
+      <div class="section-markup-wrapper" ng-bind-html="mod.renderMarkup | setModifierClass: mod.className | setVariables: variables | addWrapper | unsafe" dynamic-compile></div>
     </shadow-dom>
   </div>
   <div ng-repeat-end></div>
@@ -40,7 +40,7 @@
     </div>
 
     <shadow-dom id="section-{{section.reference}}-render-markup">
-      <div ng-bind-html="section.renderMarkup | setVariables: variables | addWrapper | unsafe" dynamic-compile></div>
+      <div class="section-markup-wrapper" ng-bind-html="section.renderMarkup | setVariables: variables | addWrapper | unsafe" dynamic-compile></div>
     </shadow-dom>
   </div>
 
@@ -50,7 +50,7 @@
         <i class="fa fa-close"></i>
       </a>
     </div>
-    <pre class="sg" ng-if="section.showCSS"><code hljs source="section.css" class="html"></code></pre>
+    <pre class="sg" ng-if="section.showCSS"><code hljs hljs-language="css" hljs-source="section.css" class="html"></code></pre>
     <a class="sg sg-show-section" ng-hide="section.showCSS" ng-click="section.showCSS = true">Show CSS</a>
   </div>
 
@@ -60,7 +60,7 @@
         <i class="fa fa-close"></i>
       </a>
     </div>
-    <pre class="sg" ng-if="section.showMarkupJade"><code hljs source="section.markupJade" class="css"></code></pre>
+    <pre class="sg" ng-if="section.showMarkupJade"><code hljs hljs-source="section.markupJade" class="css"></code></pre>
     <a class="sg sg-show-section" ng-hide="section.showMarkupJade" ng-click="section.showMarkupJade = true">Show JADE markup</a>
   </div>
 
@@ -70,7 +70,7 @@
         <i class="fa fa-close"></i>
       </a>
     </div>
-    <pre class="sg" ng-if="section.showMarkup"><code hljs source="section.markup" class="css"></code></pre>
+    <pre class="sg" ng-if="section.showMarkup"><div hljs hljs-language="html" hljs-source="section.markup" class="css"></div></pre>
     <a class="sg sg-show-section" ng-hide="section.showMarkup" ng-click="section.showMarkup = true">Show markup</a>
   </div>
 </section>
