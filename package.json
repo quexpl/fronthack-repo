@@ -17,7 +17,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "newcomponent": "./bin/new_component.sh",
+    "purgestyleguide": "./bin/purge_styleguide.sh"
   },
   "main": "gulpfile.js",
   "repository": {

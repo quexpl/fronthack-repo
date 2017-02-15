@@ -1,7 +1,7 @@
 #!/bin/bash
 # Run this script in the root of the fronthack directory if you decide to not
-# use a styleguide. It removes all it's stuff from file epository.
-# WARNING: Before you do that, make sure that gulpfile was not modified.
+# use a styleguide. It removes all it's stuff from the project.
+# WARNING: Before doing that, make sure your gulpfile was not modified.
 
 echo "Removing styleguide files"
 rm -rf ./styleguide
