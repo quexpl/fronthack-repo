@@ -1,6 +1,7 @@
 {
   "name": "fronthack",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "The complete set of tools to convert designs into scallable, modular HTML and CSS",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
     "gulp": "~3.9.0",
@@ -16,10 +17,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f | xargs /bin/rm -f",
-    "dev": "gulp default"
+    "dev": "gulp"
   },
-  "description": "## Getting started",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
@@ -27,14 +26,18 @@
   },
   "keywords": [
     "css",
-    "ui",
     "sass",
-    "scss"
+    "html",
+    "bem",
+    "smacss",
+    "ui",
+    "framework",
+    "styleguide"
   ],
-  "author": "frontcraft",
+  "author": "Michal Kokocinski <michal@kokocinski.me> (http://kokocinski.me)",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/frontcraft/fronthack/issues"
   },
-  "homepage": "https://github.com/frontcraft/fronthack#readme"
+  "homepage": "http://fronthack.com"
 }
