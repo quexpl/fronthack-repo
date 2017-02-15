@@ -1,13 +1,21 @@
 // Modal
 //
-// Animated modal popup with darkened overlay switched by pure CSS.
+// Animated modal popup with darkened overlay switched by pure CSS. Its height
+// is determined by its content.
 //
 // Markup: html/modal.html
 //
+// .modal--xs - Extreme small modal
+// .modal--sm - Small modal
+// default    - Default
+// .modal--lg - Large modal
+//
 // Styleguide 2.modal
 
-$modal-width: 400px
-
+$modal-width-xs: 300px
+$modal-width-sm: 440px
+$modal-width: 540px
+$modal-width-lg: 790px
 // Block
 // --------------------------------------------------
 // .modal
@@ -27,7 +35,9 @@ $modal-width: 400px
   position: fixed
   top: 50%
   transform: translateY(-50%)
+  left: 50%
   width: $modal-width
+  margin: 0 (-$modal-width/2)
   box-shadow: 0 5px 10px 0 lighten($gray-base, 30%)
   z-index: 101
 
@@ -85,3 +95,20 @@ $modal-width: 400px
     opacity: 0
   100%
     opacity: 1
+
+// Modifiers
+// --------------------------------------------------
+.modal--xs
+  .modal__inner
+    margin: 0 (-$modal-width-xs/2)
+    width: $modal-width-xs
+
+.modal--sm
+  .modal__inner
+    margin: 0 (-$modal-width-sm/2)
+    width: $modal-width-sm
+
+.modal--lg
+  .modal__inner
+    margin: 0 (-$modal-width-lg/2)
+    width: $modal-width-lg

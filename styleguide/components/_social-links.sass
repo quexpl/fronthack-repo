@@ -29,7 +29,7 @@ $social-links-color: $brand-primary
   line-height: $social-links-size - 2
   text-align: center
   color: #fff
-  +circle($social-links-color, 1px, $social-links-color)
+  +circle($social-links-color, $social-links-color, 1px)
   &:hover
     color: $social-links-color
-    +circle(transparent, 1px, $social-links-color)
+    +circle(transparent, $social-links-color, 1px)
