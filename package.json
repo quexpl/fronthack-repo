@@ -1,5 +1,5 @@
 {
-  "name": "bootmacss",
+  "name": "fronthack",
   "version": "0.1.0",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
@@ -16,6 +16,25 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f | xargs /bin/rm -f"
-  }
+    "postinstall": "find node_modules/ -name '*.info' -type f | xargs /bin/rm -f",
+    "dev": "gulp default"
+  },
+  "description": "## Getting started",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontcraft/fronthack.git"
+  },
+  "keywords": [
+    "css",
+    "ui",
+    "sass",
+    "scss"
+  ],
+  "author": "frontcraft",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/frontcraft/fronthack/issues"
+  },
+  "homepage": "https://github.com/frontcraft/fronthack#readme"
 }
