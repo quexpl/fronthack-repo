@@ -1,4 +1,4 @@
-### Homepage - [frontcraft.github.io/fronthack](http://frontcraft.github.io/fronthack/)
+### Homepage - [fronthack.com](http://fronthack.com/)
 
 ## Getting started
 
