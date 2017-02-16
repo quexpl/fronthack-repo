@@ -9,18 +9,14 @@ If you have not already done so, [click here for help](https://nodejs.org/en/dow
 
 ### 2. Download or clone
 
-**[Use download link](https://github.com/frontcraft/fronthack/archive/master.zip)**
-or paste that at a Terminal prompt:
 ```
-git clone --depth=1 https://github.com/frontcraft/fronthack.git
-cd fronthack
-rm -rf .git
+npm install fronthack
 ```
 
 
 ### 3. Install project dependencies
 
-While being in fronthack folder, download all project dependencies with this command:
+Navigate to fronthack home directory and download all required packages:
 ```
 npm install
 ```
