@@ -24,12 +24,12 @@ npm install
 
 ### 4. Start hacking
 
-To start a gulp-based service which will watch your SASS changes and compile them into CSS run:
+To start a gulp-based service which will watch for your Sass changes and compile them into production ready CSS run:
 
 ```
 npm run dev
 ```
-Now checkout the files inside **sass/** and start hacking!
+Now checkout the files inside **sass/** and start hacking! Craft your HTML markup inside **html-workspace/**
 
 Get more info from our [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack) wiki.
 
