@@ -34,7 +34,8 @@
     "smacss",
     "ui",
     "framework",
-    "styleguide"
+    "styleguide",
+    "gulp"
   ],
   "author": "Michal Kokocinski <michal@kokocinski.me> (http://kokocinski.me)",
   "license": "GPL-2.0",

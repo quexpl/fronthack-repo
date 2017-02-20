@@ -7,7 +7,7 @@
 If you have not already done so, [click here for help](https://nodejs.org/en/download/package-manager/)
 
 
-### 2. Download or clone
+### 2. Download
 
 ```
 npm install fronthack
