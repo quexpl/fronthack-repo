@@ -211,6 +211,4 @@ input[type="submit"].pseudo-class-focus {
 .tooltip.pseudo-class-hover:before,
 .tooltip.pseudo-class-hover:after {
   opacity: 1;
-}.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a.pseudo-class-hover:before {
-  left: -5px !important;
 }
