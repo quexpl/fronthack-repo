@@ -13,6 +13,7 @@
           -webkit-animation: blink 0.7s infinite;
           -moz-animation: blink 0.7s infinite;
           animation: blink 0.7s infinite;
+          color: #00ffac
       }
       @keyframes blink{
           0% { opacity:1; }
@@ -34,12 +35,15 @@
 
   <body>
 
-    <section class="layout--landing">
+    <section class="layout--hero">
       <div class="wrapper container-fluid">
-        <h1>Fronthack is<br />a <span class="type-js"></span></h1>
-        <p>to convert designs into scallable, modular <strong>HTML</strong> and <strong>CSS</strong>.</p>
+        <h1 class="layout--hero__title">
+          Fronthack is<br />
+          <span class="layout--hero__nextline"> a <span class="type-js"></span></span>
+        </h1>
+        <div class="layout--hero__descr">to convert designs into scallable, modular <strong>HTML</strong> and <strong>CSS</strong>.</div>
         <br />
-        <a href="#gettingStarted" class="btn btn--primary btn--lg">
+        <a href="#gettingStarted" class="btn btn--lg">
           Get started
         </a>
         <br />
@@ -210,6 +214,12 @@ $ npm install
         Development supported by <a href="http://waat.eu/" target="_blank">WAAT Ltd</a>
       </div>
     </footer>
+
+    <!-- Dev -->
+    <!-- <div class="designs designs--index"></div>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src="js/design-toggler.js"></script> -->
+    <!-- /Dev -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>

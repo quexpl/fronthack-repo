@@ -4,9 +4,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer');
-    styleguide = require('sc5-styleguide'),
     livereload = require('gulp-livereload');
-    mustache = require('gulp-mustache');
 
 
 // Set paths
@@ -46,22 +44,13 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
-// Define Mustache compiling task
-gulp.task('mustache', function() {
-  return gulp.src(paths.mustache.input)
-    .pipe(mustache())
-    .pipe(gulp.dest(paths.mustache.output));
-});
-
 
 // Listen folders for changes and apply defined tasks
 gulp.task('default', [
-    'sass',
-    'mustache'
+    'sass'
   ], function() {
   livereload.listen();
   gulp.watch([paths.sass.allfiles, paths.styleguide.html, paths.mustache.allfiles], [
-    'sass',
-    'mustache'
+    'sass'
   ]);
 });

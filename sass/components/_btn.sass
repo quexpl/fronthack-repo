@@ -4,17 +4,6 @@
 //
 // Markup: html/btn.html
 //
-// .btn--xs       - Extreme small button
-// .btn--sm       - Small button
-// default        - Default
-// .btn--lg       - Large button
-// .btn--block    - 100% container width button
-// .btn--primary  - Primary color style
-// .btn--light    - light white style
-// .btn--link     - Link style
-// .btn--disabled - Decreased opacity and cmouse ursor change
-//
-//
 // Styleguide 2.btn
 
 
@@ -35,10 +24,10 @@
   width: auto
   height: auto
   box-sizing: border-box
-  +btn-color($text-color)
+  +btn-color($green, $green)
   &:hover, &:focus
     transition: color 250ms, border-color 250ms, background 250ms
-    +btn-color(#fff, $text-color, $text-color)
+    +btn-color(#fff, $green, $green)
 
 .btn + .btn
   margin-left: 15px
@@ -52,45 +41,6 @@ input[type="submit"]
 
 // Modifiers
 // --------------------------------------------------
-.btn--block
-  width: 100%
-  display: block
-  max-width: none
-  text-align: center
-  & + &
-    margin: 25px 0 0
-
-.btn--xs
-  padding: 3px 10px 4px
-
-.btn--sm
-  padding: 7px 20px 9px
-
-.btn--lg
-  padding: 15px 35px
-  border-radius: 30px
-
-.btn--light
-  +btn-color(#fff, #fff)
-  &:hover, &:focus
-    +btn-color($text-color, #fff, #fff)
-    font-weight: $font-weight-bold
-
-.btn--primary
-  +btn-color(#fff, $brand-primary, $brand-primary)
-  &:hover, &:focus
-    +btn-color($brand-primary)
-    font-weight: $font-weight-bold
-
-.btn--link
-  border: none
-  padding-left: 0
-  padding-right: 0
-  +btn-color($brand-primary, $brand-primary)
-  &:hover, &:focus
-    +btn-color($brand-primary)
-    text-decoration: underline
-
 .btn--disabled
   opacity: 0.15
   cursor: not-allowed
