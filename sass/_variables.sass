@@ -7,6 +7,7 @@
 //## Global colors declaration. See base/_colors.sass to edit the stleguide demo.
 
 //** Color declarations
+$gray-dark: #55646b
 $gray-base: #5e5e5e
 $gray-light: #f1f4ee
 $gray-lighter: #f5f6f8
@@ -24,7 +25,7 @@ $brand-primary-dark: $turquoise-dark
 //** Settings for some of the most global styles.
 $body-bg:          #fff
 $text-color:       $gray-base
-$link-color:       $gray-base
+$link-color:       $brand-primary-dark
 $link-hover-color: lighten($link-color, 15%)
 
 
@@ -36,28 +37,26 @@ $font-family-serif: "Roboto Slab", Georgia, "Times New Roman", Times, serif
 $font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif
 $font-family-sans-condensed: "Roboto Condensed", Helvetica, Arial, sans-serif
 $font-family-base: $font-family-sans-serif
-$font-family-paragraphs: $font-family-serif
 
 $font-size-base: 18px
 $font-size-large: 20px
-$font-size-small: 14px
-$font-size-xsmall: 12px
+$font-size-small: 15px
+$font-size-xsmall: 14px
 
 $font-size-h1: 90px
 $font-size-h2: 34px
 $font-size-h3: 18px
 $font-size-h4: 16px
 
-$line-height-computed: 26px
+$line-height-computed: 1.67em
 $paragraphs-margin: $line-height-computed
 
 $font-weight-thin: 200
 $font-weight: 300
-$font-weight-bold: 500
-$font-weight-bold-serif: 700
+$font-weight-bold: 900
 
 $headings-font-family: $font-family-serif
-$headings-font-weight: 400
+$headings-font-weight: $font-weight-bold
 
 
 //== Media queries breakpoints
