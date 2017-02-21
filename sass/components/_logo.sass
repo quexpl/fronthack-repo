@@ -7,19 +7,15 @@
 //
 // Styleguide 2.logo
 
-$logo-width-mobile: 120px
-$logo-width-desktop: 240px
-$logo-height-mobile: 40px
-$logo-height-desktop: 80px
+$logo-width: 48px
+$logo-height: 52px
 
 // Block
 // --------------------------------------------------
 .logo
   display: block
-  width: $logo-width-mobile
-  height: $logo-height-mobile
-  background: url("http://placehold.it/240x80px") no-repeat
-  background-size: 100%
+  margin: 0 auto 30px
+  width: $logo-width
+  height: $logo-height
   +breakpoint(tablet)
-    width: $logo-width-desktop
-    height: $logo-height-desktop
+    margin-bottom: 60px
