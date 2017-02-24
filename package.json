@@ -1,6 +1,6 @@
 {
   "name": "fronthack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The complete set of tools to convert designs into scallable, modular HTML and CSS",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",

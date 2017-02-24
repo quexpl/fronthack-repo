@@ -6,6 +6,8 @@
 echo "Removing styleguide files"
 rm -rf ./styleguide
 rm ./sass/styleguide-overrides.sass
+rm -rf ./sass/base/html
+rm -rf ./sass/components/html
 
 echo "Removing styleguide generation tasks from Gulp"
 sed -i 's/"gulp-watch": "~4.3.11",/"gulp-watch": "~4.3.11"/' package.json
