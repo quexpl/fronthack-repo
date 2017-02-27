@@ -12,22 +12,22 @@ var gulp = require('gulp'),
 // Set paths
 var paths = {
   sass: {
-    input: 'sass/app.sass',
-    allfiles: 'sass/**/*.+(scss|sass)',
-    output: 'css'
+    input: 'src/sass/app.sass',
+    allfiles: 'src/sass/**/*.+(scss|sass)',
+    output: 'dist/css'
   },
   mustache: {
-    input: './html-workspace/*.html',
-    allfiles: './html-workspace/**/*.{html,mustache}',
-    output: './html-preview'
+    input: './src/*.html',
+    allfiles: './src/**/*.{html,mustache}',
+    output: './dist'
   },
   styleguide: {
     sass: [
-      'sass/**/*.+(scss|sass)',
-      '!sass/_*.+(scss|sass)'
+      'src/sass/**/*.+(scss|sass)',
+      'src/!sass/_*.+(scss|sass)'
     ],
-    html: 'sass/**/*.html',
-    output: 'styleguide',
+    html: 'src/sass/**/*.html',
+    output: 'dist/styleguide',
   }
 };
 
@@ -75,8 +75,8 @@ gulp.task('styleguide:generate', function() {
 });
 gulp.task('styleguide:applystyles', function() {
   return gulp.src([
-      'sass/app.sass',
-      'sass/styleguide-overrides.sass'
+      'src/sass/app.sass',
+      'src/sass/styleguide-overrides.sass'
     ])
     .pipe(sass({
       errLogToConsole: true
@@ -88,7 +88,7 @@ gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
 // Define copying images for styleguide task
 gulp.task('images', function() {
-  gulp.src(['images/**'])
+  gulp.src(['dist/images/**'])
     .pipe(gulp.dest(paths.styleguide.output + '/images'));
 });
 

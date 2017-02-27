@@ -1,7 +1,7 @@
 {
   "name": "fronthack",
-  "version": "1.0.3",
-  "description": "The complete set of tools to convert designs into scallable, modular HTML and CSS",
+  "version": "2.0.0",
+  "description": "The complete set of tools to convert designs into scalable, modular HTML and CSS",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
     "gulp": "~3.9.1",
@@ -18,8 +18,7 @@
   },
   "scripts": {
     "dev": "gulp",
-    "newcomponent": "./bin/new_component.sh",
-    "purgestyleguide": "./bin/purge_styleguide.sh"
+    "purgestyleguide": "./src/bin/purge_styleguide.sh"
   },
   "main": "gulpfile.js",
   "repository": {

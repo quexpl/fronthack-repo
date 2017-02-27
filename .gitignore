@@ -1,14 +1,4 @@
-# Ignore the node modules folder (created by 'npm install').
 node_modules
 npm-debug.log
 .DS_Store
 .idea
-
-# We don't want to have the .sass-cache in git.
-.sass-cache
-
-# CSS maps
-css/*.map
-
-# Ruby
-Gemfile.lock
