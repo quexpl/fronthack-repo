@@ -1,3 +1,7 @@
+> **Version 2 is here!**
+
+> New version of Fronthack introduces completly rearranged, more clear [file structure](https://github.com/frontcraft/fronthack/wiki/2.-File-structure-explanation) and a helpfull [commandline interface](https://www.npmjs.com/package/fronthack-cli) which automates installation and primary tasks.
+
 ### Homepage - [fronthack.com](http://fronthack.com/)
 
 ## Getting started
