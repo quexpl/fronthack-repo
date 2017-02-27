@@ -4,10 +4,10 @@
 # WARNING: Before doing that, make sure your gulpfile was not modified.
 
 echo "Removing styleguide files"
-rm -rf ./styleguide
-rm ./sass/styleguide-overrides.sass
-rm -rf ./sass/base/html
-rm -rf ./sass/components/html
+rm -rf ./src/styleguide
+rm ./src/sass/styleguide-overrides.sass
+rm -rf ./src/sass/base/html
+rm -rf ./src/sass/components/html
 
 echo "Removing styleguide generation tasks from Gulp"
 sed -i 's/"gulp-watch": "~4.3.11",/"gulp-watch": "~4.3.11"/' package.json
