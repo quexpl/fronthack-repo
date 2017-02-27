@@ -14,24 +14,24 @@ npm install fronthack
 ```
 
 
-### 3. Install project dependencies
+### 3. Create new Fronthack project in current path
 
-Navigate to fronthack home directory and download all required packages:
 ```
-npm install
+fronthack init
 ```
 
+### 4. Navigate to newly created fronthack directory and check available commands
+
+```
+cd fronthack
+fronthack help
+```
 
 ### 4. Start hacking
 
-To start a gulp-based service which will watch for your Sass changes and compile them into production ready CSS run:
+Run `fronthack watch` to watch for changes you make in a *src* working directory. They will be authomatically compiled to a production ready *dist* directory. Use `fronthack new` command to create new Sass components. 
 
-```
-npm run dev
-```
-Now checkout the files inside **sass/** and start hacking! Craft your HTML markup inside **html-workspace/**
-
-Get more info from our [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack) wiki.
+Fronthack is a CSS framework and a tool to automate your workflow. Check out [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack) wiki to learn how to use it properly.
 
 ----------
 
