@@ -2,15 +2,15 @@
 
 ## Getting started
 
-### 1. You need to have Node.js installed in your system.
+### 1. You need to have Node.js installed on your system.
 
 If you have not already done so, [click here for help](https://nodejs.org/en/download/package-manager/)
 
 
-### 2. Download
+### 2. Install Fronthack Command Line Interface
 
 ```
-npm install fronthack
+npm install fronthack-cli
 ```
 
 
@@ -20,14 +20,14 @@ npm install fronthack
 fronthack init
 ```
 
-### 4. Navigate to newly created fronthack directory and check available commands
+### 4. Navigate to newly created fronthack directory and check out available commands
 
 ```
 cd fronthack
 fronthack help
 ```
 
-### 4. Start hacking
+### 5. Start hacking
 
 Run `fronthack watch` to watch for changes you make in a *src* working directory. They will be authomatically compiled to a production ready *dist* directory. Use `fronthack new` command to create new Sass components. 
 
