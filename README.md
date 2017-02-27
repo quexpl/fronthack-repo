@@ -14,7 +14,7 @@ If you have not already done so, [click here for help](https://nodejs.org/en/dow
 ### 2. Install Fronthack Command Line Interface
 
 ```
-npm install fronthack-cli
+npm install -g fronthack-cli
 ```
 
 
