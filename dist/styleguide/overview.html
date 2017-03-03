@@ -1,19 +1,25 @@
+<blockquote>
+<p class="sg"><strong>Version 2 is here!</strong></p>
+</blockquote>
+<blockquote>
+<p class="sg">New version of Fronthack introduces completly rearranged, more clear <a href="https://github.com/frontcraft/fronthack/wiki/2.-File-structure-explanation" class="sg">file structure</a> and a helpfull <a href="https://www.npmjs.com/package/fronthack-cli" class="sg">commandline interface</a> which automates installation and primary tasks.</p>
+</blockquote>
 <h3 class="sg" name="homepage---fronthack.com">Homepage - <a href="http://fronthack.com/" class="sg">fronthack.com</a></h3>
 <h2 class="sg" name="getting-started">Getting started</h2>
-<h3 class="sg" name="1.-you-need-to-have-node.js-installed-in-your-system.">1. You need to have Node.js installed in your system.</h3>
+<h3 class="sg" name="1.-you-need-to-have-node.js-installed-on-your-system.">1. You need to have Node.js installed on your system.</h3>
 <p class="sg">If you have not already done so, <a href="https://nodejs.org/en/download/package-manager/" class="sg">click here for help</a></p>
-<h3 class="sg" name="2.-download">2. Download</h3>
-<div hljs="">npm install fronthack
+<h3 class="sg" name="2.-install-fronthack-command-line-interface">2. Install Fronthack Command Line Interface</h3>
+<div hljs="">npm install -g fronthack-cli
 </div>
-<h3 class="sg" name="3.-install-project-dependencies">3. Install project dependencies</h3>
-<p class="sg">Navigate to fronthack home directory and download all required packages:</p>
-<div hljs="">npm install
+<h3 class="sg" name="3.-create-new-fronthack-project-in-current-path">3. Create new Fronthack project in current path</h3>
+<div hljs="">fronthack init
 </div>
-<h3 class="sg" name="4.-start-hacking">4. Start hacking</h3>
-<p class="sg">To start a gulp-based service which will watch for your Sass changes and compile them into production ready CSS run:</p>
-<div hljs="">npm run dev
+<h3 class="sg" name="4.-navigate-to-newly-created-fronthack-directory-and-check-out-available-commands">4. Navigate to newly created fronthack directory and check out available commands</h3>
+<div hljs="">cd fronthack
+fronthack help
 </div>
-<p class="sg">Now checkout the files inside <strong>sass/</strong> and start hacking! Craft your HTML markup inside <strong>html-workspace/</strong></p>
-<p class="sg">Get more info from our <a href="https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack" class="sg">How to work with Fronthack</a> wiki.</p>
+<h3 class="sg" name="5.-start-hacking">5. Start hacking</h3>
+<p class="sg">Run <code>fronthack watch</code> to watch for changes you make in a <em>src</em> working directory. They will be authomatically compiled to a production ready <em>dist</em> directory. Use <code>fronthack new</code> command to create new Sass components.</p>
+<p class="sg">Fronthack is a CSS framework and a tool to automate your workflow. Check out <a href="https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack" class="sg">How to work with Fronthack</a> wiki to learn how to use it properly.</p>
 <hr>
 <p class="sg">Development Supported by <a href="http://waat.eu" class="sg">WAAT Ltd</a></p>
