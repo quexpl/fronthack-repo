@@ -4,7 +4,7 @@
 # WARNING: Before doing that, make sure your gulpfile was not modified.
 
 echo "Removing styleguide files"
-rm -rf ./src/styleguide
+rm -rf ./dist/styleguide
 rm ./src/sass/styleguide-overrides.sass
 rm -rf ./src/sass/base/html
 rm -rf ./src/sass/components/html
