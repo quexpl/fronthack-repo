@@ -1,7 +1,3 @@
-> **Version 2 is here!**
-
-> New version of Fronthack introduces completly rearranged, more clear [file structure](https://github.com/frontcraft/fronthack/wiki/2.-File-structure-explanation) and a helpfull [commandline interface](https://www.npmjs.com/package/fronthack-cli) which automates installation and primary tasks.
-
 ### Homepage - [fronthack.com](http://fronthack.com/)
 
 ## Getting started
@@ -14,7 +10,7 @@ If you have not already done so, [click here for help](https://nodejs.org/en/dow
 ### 2. Install Fronthack Command Line Interface
 
 ```
-npm install -g fronthack-cli
+npm install -g fronthack
 ```
 
 
@@ -33,7 +29,7 @@ fronthack help
 
 ### 5. Start hacking
 
-Run `fronthack watch` to watch for changes you make in a *src* working directory. They will be authomatically compiled to a production ready *dist* directory. Use `fronthack new` command to create new Sass components. 
+Run `fronthack watch` to watch for changes you make in a *src* working directory. They will be authomatically compiled to a production ready *dist* directory. Use `fronthack new` command to create new Sass components.
 
 Fronthack is a CSS framework and a tool to automate your workflow. Check out [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack) wiki to learn how to use it properly.
 
