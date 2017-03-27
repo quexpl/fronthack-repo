@@ -31,7 +31,7 @@ fronthack help
 
 Run `fronthack watch` to watch for changes you make in a *src* working directory. They will be authomatically compiled to a production ready *dist* directory. Use `fronthack new` command to create new Sass components.
 
-Fronthack is a CSS framework and a tool to automate your workflow. Check out [How to work with Fronthack](https://github.com/frontcraft/fronthack/wiki/1.-How-to-work-with-Fronthack) wiki to learn how to use it properly.
+Fronthack is a CSS framework and a tool to automate your workflow. Check out [How to work with Fronthack](https://github.com/frontcraft/fronthack-repo/wiki/1.-How-to-work-with-Fronthack) wiki to learn how to use it properly.
 
 ----------
 
