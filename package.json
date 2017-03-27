@@ -1,6 +1,6 @@
 {
   "name": "fronthack-repo",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "Repository with a file structure, which is served by the Fronthack CLI",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
@@ -36,7 +36,7 @@
     "gulp"
   ],
   "author": "Michal Kokocinski <michal@kokocinski.me> (http://kokocinski.me)",
-  "license": "GPL-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/frontcraft/fronthack/issues"
   },
