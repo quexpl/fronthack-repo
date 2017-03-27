@@ -1,6 +1,6 @@
 {
   "name": "fronthack-repo",
-  "version": "2.0.9",
+  "version": "2.1.9",
   "description": "Repository with a file structure, which is served by the Fronthack CLI",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
@@ -22,7 +22,7 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontcraft/fronthack.git"
+    "url": "git+https://github.com/frontcraft/fronthack-repo.git"
   },
   "keywords": [
     "css",
@@ -38,7 +38,7 @@
   "author": "Michal Kokocinski <michal@kokocinski.me> (http://kokocinski.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frontcraft/fronthack/issues"
+    "url": "https://github.com/frontcraft/fronthack-repo/issues"
   },
   "homepage": "http://fronthack.com"
 }
