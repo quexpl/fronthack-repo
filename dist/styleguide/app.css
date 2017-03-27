@@ -238,12 +238,16 @@
   .text-lg-justify {
     text-align: justify; } }
 
-.wrapper {
+.container > .row {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem; }
+
+.wrapper, .container {
   box-sizing: border-box;
   max-width: 1000px;
   margin: 0 auto; }
 
-.container-fluid {
+.container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
   padding-right: 1.5rem;
