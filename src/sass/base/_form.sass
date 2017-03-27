@@ -23,11 +23,13 @@ $form-item-bg: $gray-lighter
   position: relative
   width: $form-item-width
   overflow: visible
+  box-sizing: border-box
+  max-width: 100%
   // Make form item full collumn width if is is composed in grid layout:
   *[class^="col-"] > &,
   *[class^="col-"] > .box > &
     width: auto
-// Table form integration
+// Table layout integration
 td, th
   &.form__item
     margin: 0
@@ -100,7 +102,7 @@ select.form__input
 
 .form__addon
   position: absolute
-  top: $line-height-computed
+  top: $line-height-base
   right: $form-item-height / 3
   font-size: $form-item-font-size * 0.7
   line-height: $form-item-height

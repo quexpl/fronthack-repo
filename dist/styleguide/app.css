@@ -2241,7 +2241,9 @@ blockquote {
   margin: 0 0 30px;
   position: relative;
   width: 300px;
-  overflow: visible; }
+  overflow: visible;
+  box-sizing: border-box;
+  max-width: 100%; }
   *[class^="col-"] > .form__item,
   *[class^="col-"] > .box > .form__item {
     width: auto; }
@@ -2410,7 +2412,7 @@ h4, .h4 {
   margin: 0 0 12px;
   line-height: normal;
   font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
-  font-weight: 400; }
+  font-weight: 500; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -3592,8 +3594,8 @@ input[type="submit"] {
   margin-bottom: 30px;
   background: #4193a9; }
 
-.ornament--orange:before {
-  background-color: #e75404; }
+.ornament--green:before {
+  background-color: #00a651; }
 
 .owl-carousel {
   position: relative; }
@@ -3783,7 +3785,7 @@ input[type="submit"] {
 
 .popover__title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 12px; }
 
 .popover__overlay {
@@ -3900,7 +3902,7 @@ input[type="submit"] {
     left: 0;
     border-width: 5px 8px;
     border-style: solid;
-    border-color: #0a1b2b #0a1b2b transparent transparent; }
+    border-color: #337384 #337384 transparent transparent; }
 
 .ribbon__inner {
   padding: 8px 13px 10px;
@@ -4235,4 +4237,4 @@ input[type="submit"] {
   opacity: 0.8; }
 
 .show-designs .designs--index {
-  background-image: url("../designs/index.jpg"); }
+  background-image: url("../../src/designs/index.jpg"); }
