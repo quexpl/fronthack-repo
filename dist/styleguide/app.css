@@ -2365,7 +2365,7 @@ select.form__input {
       right: 0; }
 
 .form__input:focus {
-  border: 2px solid #4193a9;
+  border: 2px solid #1fc59c;
   box-shadow: none;
   outline-width: 0; }
 
@@ -2466,7 +2466,7 @@ ul:not([class]) {
     padding-left: 30px; }
     ul:not([class]) li:not([class]):before {
       content: "\2022";
-      color: #4193a9;
+      color: #1fc59c;
       font-size: 1.5em;
       position: absolute;
       top: 1.44444px;
@@ -2570,8 +2570,8 @@ table {
   content: '-'; }
 
 .badge {
-  background-color: #4193a9;
-  border: 0 #4193a9 solid;
+  background-color: #1fc59c;
+  border: 0 #1fc59c solid;
   border-radius: 50%;
   font-size: 10px;
   font-weight: 500;
@@ -2691,25 +2691,25 @@ input[type="submit"] {
 
 .btn--primary {
   color: #fff;
-  background-color: #4193a9 !important;
-  border-color: #4193a9; }
+  background-color: #1fc59c !important;
+  border-color: #1fc59c; }
   .btn--primary:hover, .btn--primary:focus {
-    color: #4193a9;
+    color: #1fc59c;
     background-color: transparent !important;
-    border-color: #4193a9;
+    border-color: #1fc59c;
     font-weight: 500; }
 
 .btn--link {
   border: none;
   padding-left: 0;
   padding-right: 0;
-  color: #4193a9;
+  color: #1fc59c;
   background-color: transparent !important;
-  border-color: #4193a9; }
+  border-color: #1fc59c; }
   .btn--link:hover, .btn--link:focus {
-    color: #4193a9;
+    color: #1fc59c;
     background-color: transparent !important;
-    border-color: #4193a9;
+    border-color: #1fc59c;
     text-decoration: underline; }
 
 .btn--disabled {
@@ -2884,8 +2884,8 @@ input[type="submit"] {
   height: 30px;
   float: right;
   text-align: center;
-  background-color: #4193a9;
-  border: 0 #4193a9 solid;
+  background-color: #1fc59c;
+  border: 0 #1fc59c solid;
   border-radius: 50%; }
 
 .field__label {
@@ -3464,7 +3464,7 @@ input[type="submit"] {
   z-index: 101; }
 
 .modal__title {
-  background-color: #4193a9;
+  background-color: #1fc59c;
   padding: 10px 30px;
   color: #fff;
   text-align: center;
@@ -3539,12 +3539,12 @@ input[type="submit"] {
   display: inline-block;
   margin: 15px 30px; }
   .nav-horizontal__link:hover {
-    color: #4193a9; }
+    color: #1fc59c; }
 
 .nav-subway {
   list-style-type: none;
   position: relative;
-  border-left: 2px solid #57c2f0;
+  border-left: 2px solid #00ffac;
   margin-left: 5px;
   padding-left: 20px; }
 
@@ -3558,7 +3558,7 @@ input[type="submit"] {
   margin-top: 8px;
   left: -8px;
   background-color: white;
-  border: 2px #57c2f0 solid;
+  border: 2px #00ffac solid;
   border-radius: 50%;
   width: 10px;
   height: 10px; }
@@ -3581,7 +3581,7 @@ input[type="submit"] {
 
 .nav-vertical__link.is-active, .nav-vertical__link:hover {
   padding-left: 10px;
-  border-left: 5px solid #4193a9;
+  border-left: 5px solid #1fc59c;
   background-color: #fff;
   text-decoration: none;
   font-weight: 500; }
@@ -3592,7 +3592,7 @@ input[type="submit"] {
   width: 30px;
   height: 4px;
   margin-bottom: 30px;
-  background: #4193a9; }
+  background: #1fc59c; }
 
 .ornament--green:before {
   background-color: #00a651; }
@@ -3674,8 +3674,8 @@ input[type="submit"] {
     background-color: #f5f6f8; }
 
 .pagination__item--active {
-  background: #4193a9;
-  border-color: #4193a9;
+  background: #1fc59c;
+  border-color: #1fc59c;
   color: #fff; }
 
 .parallax {
@@ -3728,7 +3728,7 @@ input[type="submit"] {
   font-weight: bold; }
 
 .parallax__demo-solid {
-  background-color: #4193a9; }
+  background-color: #1fc59c; }
 
 .popover {
   position: relative;
@@ -3859,7 +3859,7 @@ input[type="submit"] {
 
 .progress-bar__meter {
   height: 100%;
-  background-color: #4193a9; }
+  background-color: #1fc59c; }
 
 .progress-bar__label {
   position: absolute;
@@ -3878,16 +3878,16 @@ input[type="submit"] {
     margin-left: 10px; }
 
 .rating--1 .rating__dot:nth-last-of-type(3) {
-  background-color: #4193a9; }
+  background-color: #1fc59c; }
 
 .rating--2 .rating__dot:nth-last-of-type(3),
 .rating--2 .rating__dot:nth-last-of-type(2) {
-  background-color: #4193a9; }
+  background-color: #1fc59c; }
 
 .rating--3 .rating__dot:nth-last-of-type(3),
 .rating--3 .rating__dot:nth-last-of-type(2),
 .rating--3 .rating__dot:nth-last-of-type(1) {
-  background-color: #4193a9; }
+  background-color: #1fc59c; }
 
 .ribbon {
   position: absolute;
@@ -3902,12 +3902,12 @@ input[type="submit"] {
     left: 0;
     border-width: 5px 8px;
     border-style: solid;
-    border-color: #337384 #337384 transparent transparent; }
+    border-color: #189979 #189979 transparent transparent; }
 
 .ribbon__inner {
   padding: 8px 13px 10px;
   margin-right: 10px;
-  background-color: #4193a9;
+  background-color: #1fc59c;
   text-align: left;
   float: left;
   color: #fff;
@@ -3921,7 +3921,7 @@ input[type="submit"] {
   color: #101c27; }
 
 .slogan {
-  color: #4193a9;
+  color: #1fc59c;
   margin-top: 45px;
   text-transform: uppercase;
   font-size: 26px;
@@ -3937,19 +3937,19 @@ input[type="submit"] {
   display: inline-block;
   margin: 0 27px 87px;
   font-size: 30px;
-  color: #4193a9;
+  color: #1fc59c;
   width: 58px;
   height: 58px;
   line-height: 58px;
   text-align: center;
   color: #fff;
-  background-color: #4193a9;
-  border: 1px #4193a9 solid;
+  background-color: #1fc59c;
+  border: 1px #1fc59c solid;
   border-radius: 50%; }
   .social-links__link:hover {
-    color: #4193a9;
+    color: #1fc59c;
     background-color: transparent;
-    border: 1px #4193a9 solid;
+    border: 1px #1fc59c solid;
     border-radius: 50%; }
 
 .tabs {
@@ -4018,8 +4018,8 @@ input[type="submit"] {
     display: block;
     width: 15px;
     height: 15px;
-    background-color: #57c2f0;
-    border: 4px solid #57c2f0;
+    background-color: #00ffac;
+    border: 4px solid #00ffac;
     border-radius: 50%;
     box-sizing: border-box;
     z-index: 2; }
@@ -4037,7 +4037,7 @@ input[type="submit"] {
     right: 5px;
     top: 5px;
     z-index: 1;
-    background-color: #57c2f0; }
+    background-color: #00ffac; }
 
 .timeline__item.is-active .timeline__label {
   font-weight: 500; }
@@ -4186,7 +4186,8 @@ input[type="submit"] {
   text-align: center; }
 
 .layout--header {
-  background-color: #d8d8d8; }
+  padding: 40px 0;
+  background-color: #1fc59c; }
 
 .layout--landing {
   background-color: #d8d8d8;
@@ -4198,14 +4199,13 @@ input[type="submit"] {
     font-size: 24px; }
 
 .layout--content {
-  background-color: #f5f6f8;
+  background-color: #fafafa;
   padding: 60px 20px;
   box-sizing: border-box; }
 
 .layout--footer {
-  margin-top: 80px;
   padding: 60px 0;
-  background-color: #d8d8d8; }
+  background-color: #f5f6f8; }
 
 .design-toggler {
   position: fixed;

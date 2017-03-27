@@ -12,7 +12,7 @@ blockquote p.pseudo-class-last-child {
 }
 
 .form__input.pseudo-class-focus {
-  border: 2px solid #4193a9;
+  border: 2px solid #1fc59c;
   box-shadow: none;
   outline-width: 0;
 }
@@ -68,17 +68,17 @@ input[type="submit"].pseudo-class-focus {
 
 .btn--primary.pseudo-class-hover,
 .btn--primary.pseudo-class-focus {
-  color: #4193a9;
+  color: #1fc59c;
   background-color: transparent !important;
-  border-color: #4193a9;
+  border-color: #1fc59c;
   font-weight: 500;
 }
 
 .btn--link.pseudo-class-hover,
 .btn--link.pseudo-class-focus {
-  color: #4193a9;
+  color: #1fc59c;
   background-color: transparent !important;
-  border-color: #4193a9;
+  border-color: #1fc59c;
   text-decoration: underline;
 }
 
@@ -129,12 +129,12 @@ input[type="submit"].pseudo-class-focus {
 }
 
 .nav-horizontal__link.pseudo-class-hover {
-  color: #4193a9;
+  color: #1fc59c;
 }
 
 .nav-vertical__link.pseudo-class-hover {
   padding-left: 10px;
-  border-left: 5px solid #4193a9;
+  border-left: 5px solid #1fc59c;
   background-color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -178,9 +178,9 @@ input[type="submit"].pseudo-class-focus {
 }
 
 .social-links__link.pseudo-class-hover {
-  color: #4193a9;
+  color: #1fc59c;
   background-color: transparent;
-  border: 1px #4193a9 solid;
+  border: 1px #1fc59c solid;
   border-radius: 50%;
 }
 
