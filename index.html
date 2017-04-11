@@ -7,6 +7,7 @@
     <meta name="description" content="Fronthack home page">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
     <style>
       .typed-cursor{
           opacity: 1;
@@ -198,19 +199,49 @@
         <div class="block">
           <h2 class="block__title">Sites built with Fronthack</h2>
           <h3 class="block__subtitle">Sites which frontend has built using Fronthack</h3>
-          <div class="block__content text-center">
-            <br />
-            <a href="http://music.uberchord.com" target="_blank">music.uberchord.com</a><br />
-            <a href="http://smarter-together.eu" target="_blank">smarter-together.eu</a><br />
-            <a href="http://mvp-space.com" target="_blank">mvp-space.com</a><br />
-            <a href="http://waat.eu" target="_blank">waat.eu</a><br />
-            <a href="http://smartcre.waat.eu" target="_blank">smartcre.waat.eu</a><br />
-            <a href="https://ec.europa.eu/eures/droppin" target="_blank">ec.europa.eu/eures/droppin</a><br />
-            <a href="http://smartcities-infosystem.eu" target="_blank">smartcities-infosystem.eu</a><br />
-            <a href="http://een.ec.europa.eu" target="_blank">een.ec.europa.eu</a><br />
+          <div class="block__content">
+            <div class="owl-carousel owl-theme">
+              <a href="http://eurekanetwork.org" target="_blank">
+                <img src="images/jpg/portfolio-eureka.jpg" class="owl-image" alt="" />
+                <span class="owl-url">eurekanetwork.org</span>
+              </a>
+              <a href="http://music.uberchord.com" target="_blank">
+                <img src="images/jpg/portfolio-uberchord.jpg" class="owl-image" alt="" />
+                <span class="owl-url">music.uberchord.com</span>
+              </a>
+              <a href="http://smarter-together.eu" target="_blank">
+                <img src="images/jpg/portfolio-smartertogether.jpg" class="owl-image" alt="" />
+                <span class="owl-url">smarter-together.eu</span>
+              </a>
+              <a href="http://mvp-space.com" target="_blank">
+                <img src="images/jpg/portfolio-mvpspace.jpg" class="owl-image" alt="" />
+                <span class="owl-url">mvp-space.com</span>
+              </a>
+              <a href="http://waat.eu" target="_blank">
+                <img src="images/jpg/portfolio-waat.jpg" class="owl-image" alt="" />
+                <span class="owl-url">waat.eu</span>
+              </a>
+              <a href="http://smartcre.waat.eu" target="_blank">
+                <img src="images/jpg/portfolio-smartcre.jpg" class="owl-image" alt="" />
+                <span class="owl-url">smartcre.waat.eu</span>
+              </a>
+              <a href="http://smartcities-infosystem.eu" target="_blank">
+                <img src="images/jpg/portfolio-smartcities.jpg" class="owl-image" alt="" />
+                <span class="owl-url">smartcities-infosystem.eu</span>
+              </a>
+              <a href="http://een.ec.europa.eu" target="_blank">
+                <img src="images/jpg/portfolio-een.jpg" class="owl-image" alt="" />
+                <span class="owl-url">een.ec.europa.eu</span>
+              </a>
+            </div>
+            <!-- <br />
+            <a href="" target="_blank"></a><br />
+            <a href="" target="_blank"></a><br />
+            <a href="h" target="_blank"></a><br />
+            <a href="" target="_blank"></a><br />
             <a href="https://ec.europa.eu/eurostat/cros" target="_blank">ec.europa.eu/eurostat/cros</a><br />
-            <a href="http://eurekanetwork.org" target="_blank">eurekanetwork.org</a><br />
-            <br /><br /><br />
+            <a href="" target="_blank"></a><br />
+            <br /><br /><br /> -->
           </div>
         </div>
       </div>
@@ -244,6 +275,34 @@
           loop: true,
           backDelay: 1000,
         });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 50,
+        autoPlay: true,
+        nav: true,
+        navText: [
+          "<i class='icon icon--arrow-left'>",
+          "<i class='icon icon--arrow-right'>"
+        ],
+        responsive : {
+          480: {
+            items: 2,
+          },
+          768: {
+            items: 3,
+            dots: false,
+          },
+          1024: {
+            items: 3,
+            margin: 100,
+            dots: false,
+          }
+        },
       });
     </script>
   </body>
