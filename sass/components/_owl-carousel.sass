@@ -67,6 +67,9 @@ $owl-nav-size: 30px
 .owl-image
   width: 290px
   box-shadow: 0 15px 45px lighten($gray-base, 40%)
+  &:hover
+    transform: scale(1.05)
+    transition: all 200ms ease-out
 
 .owl-url
   margin-top: 50px
@@ -79,5 +82,8 @@ $owl-nav-size: 30px
 
 .owl-item:not(.active)
   opacity: 0.5
+  pointer-events: none
+  .owl-image
+    filter: blur(0.5px)
   .owl-url
     visibility: hidden
