@@ -4223,7 +4223,7 @@ input[type="submit"] {
 
 .show-designs .designs {
   position: absolute;
-  top: 13px;
+  top: 0;
   left: 50%;
   height: 9999px;
   width: 1280px;
