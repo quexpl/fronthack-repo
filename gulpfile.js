@@ -1,10 +1,10 @@
 // Gather used gulp plugins
-var gulp = require('gulp'),
-    rename = require('gulp-rename'),
-    watch = require('gulp-watch'),
-    sass = require('gulp-sass'),
+var gulp = require('gulp');
+    rename = require('gulp-rename');
+    watch = require('gulp-watch');
+    sass = require('gulp-sass');
     autoprefixer = require('gulp-autoprefixer');
-    styleguide = require('sc5-styleguide'),
+    styleguide = require('sc5-styleguide');
     livereload = require('gulp-livereload');
     mustache = require('gulp-mustache');
 
