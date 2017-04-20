@@ -26,7 +26,7 @@ sed -i "/sc5-styleguide/d" package.json
 
 sed -i "/styleguide = require/d" gulpfile.js
 sed -i "22,29d" gulpfile.js
-sed -i "46,90d" gulpfile.js
+sed -i "46,91d" gulpfile.js
 sed -i "/    'styleguide',/d" gulpfile.js
 sed -i "/    'images',/d" gulpfile.js
 sed -i "/    'js',/d" gulpfile.js

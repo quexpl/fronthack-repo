@@ -69,7 +69,8 @@ gulp.task('styleguide:generate', function() {
           '<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>',
           '<script src="/js/components/owl-carousel.js"></script>',
         ],
-        disableEncapsulation: true
+        disableEncapsulation: true,
+        disableHtml5Mode: true
       }))
     .pipe(gulp.dest(paths.styleguide.output));
 });
@@ -94,7 +95,7 @@ gulp.task('images', function() {
 
 // Define copying javascript for styleguide task
 gulp.task('js', function() {
-  gulp.src(['js/components/**'])
+  gulp.src(['dist/js/components/**'])
     .pipe(gulp.dest(paths.styleguide.output + '/js/components'));
 });
 

@@ -1,3 +1,13 @@
 .sg-ref,
 .sg-reference-number {
   display: none; }
+
+.sg-nav-item {
+  background-color: #f8f8f8;
+  margin-right: 20px;
+  margin-left: 0 !important; }
+
+.sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a {
+  padding-left: 20px; }
+  .sg.sg-wrapper .sg.sg-side-nav .sg-nav-section > li > a:before {
+    left: 0; }
