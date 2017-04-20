@@ -59,7 +59,7 @@ gulp.task('styleguide:generate', function() {
   return gulp.src(paths.styleguide.sass)
     .pipe(styleguide.generate({
         title: 'Fronthack styleguide',
-        server: true,
+        server: false,
         sideNav: true,
         rootPath: paths.styleguide.output,
         overviewPath: 'README.md',
