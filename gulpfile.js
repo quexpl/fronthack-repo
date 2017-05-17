@@ -5,8 +5,8 @@ var gulp = require('gulp');
     sass = require('gulp-sass');
     autoprefixer = require('gulp-autoprefixer');
     styleguide = require('sc5-styleguide');
-    livereload = require('gulp-livereload');
     mustache = require('gulp-mustache');
+    server = require('gulp-server-livereload');
 
 
 // Set paths
@@ -43,7 +43,6 @@ gulp.task('sass', function () {
       cascade: false
     }))
     .pipe(gulp.dest(paths.sass.output))
-    .pipe(livereload());
 });
 
 // Define Mustache compiling task
@@ -99,6 +98,14 @@ gulp.task('js', function() {
     .pipe(gulp.dest(paths.styleguide.output + '/js/components'));
 });
 
+// Define copying javascript for styleguide task
+gulp.task('webserver', function() {
+  gulp.src('dist')
+    .pipe(server({
+      livereload: true
+    }));
+});
+
 
 // Listen folders for changes and apply defined tasks
 gulp.task('default', [
@@ -106,9 +113,9 @@ gulp.task('default', [
     'sass',
     'images',
     'js',
-    'mustache'
+    'mustache',
+    'webserver'
   ], function() {
-  livereload.listen();
   gulp.watch([paths.sass.allfiles, paths.styleguide.html, paths.mustache.allfiles], [
     'styleguide',
     'sass',
