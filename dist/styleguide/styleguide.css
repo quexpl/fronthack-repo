@@ -4199,6 +4199,27 @@ input[type="submit"] {
   margin: 50px 0;
   text-align: center; }
 
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 10px 0;
+  background-color: transparent; }
+  @media (min-width: 48em) {
+    .breadcrumb {
+      margin-bottom: 30px; } }
+
+.breadcrumb__item {
+  color: #101c27; }
+  .breadcrumb__item:hover {
+    text-decoration: none; }
+  .breadcrumb__item::after {
+    content: ' > ';
+    color: #d8d8d8; }
+  .breadcrumb__item:last-of-type {
+    color: #d8d8d8; }
+    .breadcrumb__item:last-of-type::after {
+      content: none; }
+
 .layout--header {
   padding: 40px 0;
   background-color: #1fc59c; }

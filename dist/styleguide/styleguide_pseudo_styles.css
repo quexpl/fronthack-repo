@@ -212,3 +212,15 @@ input[type="submit"].pseudo-class-focus {
 .tooltip.pseudo-class-hover:after {
   opacity: 1;
 }
+
+.breadcrumb__item.pseudo-class-hover {
+  text-decoration: none;
+}
+
+.breadcrumb__item.pseudo-class-last-of-type {
+  color: #d8d8d8;
+}
+
+.breadcrumb__item.pseudo-class-last-of-type::after {
+  content: none;
+}
