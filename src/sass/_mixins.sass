@@ -153,153 +153,27 @@
       @else
         left: 0
 
-// Add triangular arrow to element by pseudoclasses.
-=arrow($border-color: $gray-light, $bg-color: white, $side: "left", $direction: "in", $size: 25px, $distance: 50px)
-  position: relative
-  &:before
-    z-index: 11
-  &:after
-    z-index: 10
-  &:before,
-  &:after
-    content: ''
-    display: block
-    position: absolute
-    width: 0
-    height: 0
-  // Top side
-  @if $side == "top"
-    border-top: 1px solid $border-color
-    @if $direction == "in"
-      // TODO: Top side in
-    @else if $direction == "out"
-      &:before
-        right: $distance
-        top: -$size + 1
-        border-right: $size solid transparent
-        border-left: $size solid transparent
-        border-bottom: $size solid $bg-color
-      &:after
-        right: $distance - 1
-        top: -$size - 1
-        border-right: $size + 1 solid transparent
-        border-left: $size + 1 solid transparent
-        border-bottom: $size + 1 solid $border-color
-  // Right side
-  @if $side == "right"
-    border-right: 1px solid $border-color
-    @if $direction == "in"
-      &:before
-        top: $distance
-        right: -1px
-        border-top: $size solid transparent
-        border-bottom: $size solid transparent
-        border-right: $size solid $bg-color
-      &:after
-        top: $distance - 1
-        right: -1px
-        border-top: $size + 1 solid transparent
-        border-bottom: $size + 1 solid transparent
-        border-right: $size + 1 solid $border-color
-    @else if $direction == "out"
-      &:before
-        top: $distance
-        right: -$size + 1
-        border-top: $size solid transparent
-        border-bottom: $size solid transparent
-        border-left: $size solid $bg-color
-      &:after
-        top: $distance - 1
-        right: -$size - 1
-        border-top: $size + 1 solid transparent
-        border-bottom: $size + 1 solid transparent
-        border-left: $size + 1 solid $border-color
-  // Bottom side
-  @if $side == "bottom"
-    border-bottom: 1px solid $border-color
-    @if $direction == "in"
-      &:before
-        right: $distance
-        bottom: -1px
-        border-right: $size solid transparent
-        border-left: $size solid transparent
-        border-bottom: $size solid $bg-color
-      &:after
-        right: $distance - 1
-        bottom: 0
-        border-right: $size + 1 solid transparent
-        border-left: $size + 1 solid transparent
-        border-bottom: $size + 1 solid $border-color
-    @else if $direction == "out"
-      &:before
-        left: $distance
-        bottom: -$size + 1
-        border-right: $size solid transparent
-        border-left: $size solid transparent
-        border-top: $size solid $bg-color
-      &:after
-        left: $distance - 1
-        bottom: -$size - 1
-        border-right: $size + 1 solid transparent
-        border-left: $size + 1 solid transparent
-        border-top: $size + 1 solid $border-color
-  // Left side
-  @if $side == "left"
-    border-left: 1px solid $border-color
-    @if $direction == "in"
-      &:before
-        top: $distance
-        left: -1px
-        border-top: $size solid transparent
-        border-bottom: $size solid transparent
-        border-left: $size solid $bg-color
-      &:after
-        top: $distance - 1
-        left: -1px
-        border-top: $size + 1 solid transparent
-        border-bottom: $size + 1 solid transparent
-        border-left: $size + 1 solid $border-color
-    @else if $direction == "out"
-      &:before
-        top: $distance
-        left: -$size + 1
-        border-top: $size solid transparent
-        border-bottom: $size solid transparent
-        border-right: $size solid $bg-color
-      &:after
-        top: $distance - 1
-        left: -$size - 1
-        border-top: $size + 1 solid transparent
-        border-bottom: $size + 1 solid transparent
-        border-right: $size + 1 solid $border-color
-
-// Triangle
-// Will be finally a replcement for arrow mixin
-// Copied from UtilityBelt- https://github.com/dmtintner/UtilityBelt
-=triangle($direction, $size: 8px, $color: #222)
+// Triangle build from borders.
+=triangle($direction, $color, $width)
   content: ''
   display: block
   position: absolute
-  height: 0
   width: 0
-
-  @if $direction == "up"
-    border-bottom: $size solid $color
-    border-left: $size solid transparent
-    border-right: $size solid transparent
-    border-top: none
-  @else if $direction == "down"
-    border-top: $size solid $color
-    border-left: $size solid transparent
-    border-right: $size solid transparent
-    border-bottom: none
-  @else if $direction == "left"
-    border-top: $size solid transparent
-    border-bottom: $size solid transparent
-    border-right: $size solid $color
-    border-left: none
+  height: 0
+  border-style: solid
+  @if $direction == "top"
+    border:
+      width: 0 $width*0.666 $width $width*0.666
+      color: transparent transparent $color transparent
   @else if $direction == "right"
-    border-top: $size solid transparent
-    border-bottom: $size solid transparent
-    border-left: $size solid $color
-    border-right: none
+    border:
+      width: $width*0.666 0 $width*0.666 $width
+      color: transparent transparent transparent  $color
+  @else if $direction == "bottom"
+    border:
+      width: $width $width*0.666 0 $width*0.666
+      color: $color transparent transparent transparent
+  @else if $direction == "left"
+    border:
+      width: $width*0.666 $width $width*0.666 0
+      color: transparent $color transparent transparent

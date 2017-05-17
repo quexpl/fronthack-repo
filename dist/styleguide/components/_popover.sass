@@ -47,7 +47,10 @@ $popover-width: 230px
   color: $text-color
   z-index: 101
   box-shadow: $gray-lighter 2px 0 0
-  +arrow($gray-lighter, #fff, "bottom", "out", 15px, 20px)
+  &::before
+    bottom: -15px
+    left: 20px
+    +triangle(bottom, #fff, 15px)
 
 .popover__title
   font-size: 18px
@@ -67,9 +70,6 @@ $popover-width: 230px
     &::before
       left: auto
       right: 20px
-    &::after
-      left: auto
-      right: 19px
 
 
 // States
