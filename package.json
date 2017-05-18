@@ -1,6 +1,6 @@
 {
   "name": "fronthack-repo",
-  "version": "2.1.17",
+  "version": "2.1.18",
   "description": "Repository with a file structure, which is served by the Fronthack CLI",
   "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",

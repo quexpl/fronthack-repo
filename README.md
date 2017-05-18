@@ -2,7 +2,7 @@
 
 ## Getting started
 
-### 1. You need to have Node.js installed on your system.
+### 1. You need to have a Node.js installed in your system.
 
 If you have not already done so, [click here for help](https://nodejs.org/en/download/package-manager/)
 
