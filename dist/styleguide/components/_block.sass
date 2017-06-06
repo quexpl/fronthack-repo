@@ -4,9 +4,6 @@
 //
 // Markup: html/block.html
 //
-// default                 - Default style
-// .block--title-md-inline - Inline title on tablets
-//
 // Styleguide 2.block
 
 
@@ -19,18 +16,3 @@
 
 .block__content
   +clearfix()
-
-
-
-// Modifiers
-// --------------------------------------------------
-.block--title-md-inline
-  +breakpoint(tablet)
-    display: table
-    width: 100%
-    .block__title
-      display: table-cell
-      white-space: nowrap
-      padding-right: 40px
-    .block__content
-      display: table-cell
