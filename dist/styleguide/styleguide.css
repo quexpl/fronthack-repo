@@ -2512,8 +2512,6 @@ dl {
   display: block;
   margin: 0 0 26px;
   font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif; }
-  .paragraph strong, p strong {
-    font-weight: 700; }
 
 pre {
   background-color: #f5f6f8;
